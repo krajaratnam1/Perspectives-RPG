@@ -19,6 +19,8 @@ public class PlayerSwitch : MonoBehaviour
     public void Start()
     {
         SetPlayer(isBigPlayer);
+        bigStatue.GetComponent<MovementController>().enabled = false;
+        smallStatue.GetComponent<MovementController>().enabled = false;
     }
 
 
@@ -26,7 +28,8 @@ public class PlayerSwitch : MonoBehaviour
     {
         isBigPlayer = isBig;
         fadeDir = isBigPlayer ? 1 : -1;
-        (isBigPlayer ? smallPlayer : bigPlayer).GetComponent<MovementController>().enabled = false;
+        smallPlayer.GetComponent<MovementController>().enabled = false;
+        bigPlayer.GetComponent<MovementController>().enabled = false;
         bigCameraFreeLook.enabled = false;
         smallCameraFreeLook.enabled = false;
     }
