@@ -13,7 +13,7 @@ public class PlayerSwitch : MonoBehaviour
     public RawImage bigView;
     public float fadeTime = 1;
     public int fadeDir = 0; // -1 for out, 1 for in
-
+    public bool isFading = false;
 
 
     public void Start()
@@ -21,11 +21,13 @@ public class PlayerSwitch : MonoBehaviour
         SetPlayer(isBigPlayer);
         bigStatue.GetComponent<MovementController>().enabled = false;
         smallStatue.GetComponent<MovementController>().enabled = false;
+        isFading = false;
     }
 
 
     public void SetPlayer(bool isBig)
     {
+        isFading = true;
         isBigPlayer = isBig;
         fadeDir = isBigPlayer ? 1 : -1;
         smallPlayer.GetComponent<MovementController>().enabled = false;
@@ -74,6 +76,7 @@ public class PlayerSwitch : MonoBehaviour
         smallPlayer.GetComponent<MovementController>().enabled = true;
         bigCameraFreeLook.enabled = false;
         smallCameraFreeLook.enabled = true;
+        isFading = false;
     }
 
     void FinishFadeIn()
@@ -86,6 +89,7 @@ public class PlayerSwitch : MonoBehaviour
         bigPlayer.GetComponent<MovementController>().enabled = true;
         smallCameraFreeLook.enabled = false;
         bigCameraFreeLook.enabled = true;
+        isFading = false;
     }
 
     void Fade()
@@ -125,6 +129,18 @@ public class PlayerSwitch : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             SwitchPlayers();
+        }
+    }
+
+    public bool IsCurrentPlayer(string player)
+    {
+        if (isBigPlayer)
+        {
+            return player == "Big Player";
+        }
+        else
+        {
+            return player == "Small Player";
         }
     }
 }

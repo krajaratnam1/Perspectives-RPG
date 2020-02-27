@@ -76,8 +76,9 @@ public abstract class ColliderInteractionController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyUp(KeyInput))
+        if (Input.GetKeyUp(KeyInput) && !playerSwapSystem.isFading)
         {
+            Debug.Log("OnTriggerStay  other.transform.name: " + other.transform.name);
             GameObject player;
             if (playerSwapSystem.isBigPlayer)
             {
