@@ -22,8 +22,11 @@ public class PlayerSwitch : MonoBehaviour
     }
 
 
+
     public void SetPlayer(bool isBig)
     {
+        Synchronize();
+        Fade();
         isBigPlayer = isBig;
         fadeDir = isBigPlayer ? 1 : -1;
         smallPlayer.GetComponent<MovementController>().enabled = false;
@@ -34,7 +37,9 @@ public class PlayerSwitch : MonoBehaviour
 
     public void SwitchPlayers()
     {
+        print(isBigPlayer);
         SetPlayer(!isBigPlayer);
+        print(isBigPlayer);
     }
 
     void Synchronize()
@@ -76,7 +81,6 @@ public class PlayerSwitch : MonoBehaviour
 
     void FinishFadeIn()
     {
-        print("Finished Fade In");
         bigCameraFreeLook.LookAt = bigPlayer.transform;
         bigCameraFreeLook.Follow = bigPlayer.transform;
         smallCameraFreeLook.LookAt = smallStatue.transform;
@@ -120,10 +124,10 @@ public class PlayerSwitch : MonoBehaviour
         Synchronize();
         Fade();
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        /*if(Input.GetKeyDown(KeyCode.Space))
         {
             SwitchPlayers();
-        }
+        }*/
     }
 }
 
