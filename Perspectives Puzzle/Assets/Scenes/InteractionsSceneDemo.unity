@@ -3713,7 +3713,7 @@ PrefabInstance:
     - target: {fileID: 8059116311168496840, guid: 2fc74d599f40846f38e427068d113725,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.006655537
+      value: -0.006655538
       objectReference: {fileID: 0}
     - target: {fileID: 8059116311168496840, guid: 2fc74d599f40846f38e427068d113725,
         type: 3}
@@ -42170,6 +42170,11 @@ PrefabInstance:
       propertyPath: friendToSyncWith
       value: 
       objectReference: {fileID: 1460256787}
+    - target: {fileID: 2093502694909230129, guid: 001289649d5ecbc43b87b60950f6baab,
+        type: 3}
+      propertyPath: newPosition.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001289649d5ecbc43b87b60950f6baab, type: 3}
 --- !u!1 &4743790760871920212 stripped
@@ -42279,6 +42284,11 @@ PrefabInstance:
       propertyPath: friendToSyncWith
       value: 
       objectReference: {fileID: 110046073155709716}
+    - target: {fileID: 5725213543805693198, guid: a8ad60fad26475945b7cee673bc7b614,
+        type: 3}
+      propertyPath: newPosition.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8ad60fad26475945b7cee673bc7b614, type: 3}
 --- !u!1001 &7056625552658474670

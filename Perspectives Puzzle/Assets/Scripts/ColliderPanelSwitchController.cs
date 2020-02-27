@@ -18,7 +18,7 @@ public class ColliderPanelSwitchController : ColliderInteractionController
         base.Start();
         MethodToCall += ActivatePanelSwitch;
         isUp = false;
-        originalPosition = this.transform.position;
+        originalPosition = pSwitchToMove.transform.position;
     }
 
 
