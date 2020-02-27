@@ -4,7 +4,9 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class MovementController : MonoBehaviour
-{ 
+{
+    public bool canMove = true;
+
     private float InputX, InputZ, Speed, gravity;
 
     [SerializeField] Camera cam;
@@ -31,7 +33,10 @@ public class MovementController : MonoBehaviour
         InputZ = Input.GetAxis("Vertical");
 
         InputDecider();
-        MovementManager();
+        if (canMove)
+        {
+            MovementManager();
+        }
     }
 
 
@@ -41,7 +46,10 @@ public class MovementController : MonoBehaviour
 
         if(Speed > allowRotation)
         {
-            RotationManager();
+            if (canMove)
+            {
+                RotationManager();
+            }
         }
         else
         {

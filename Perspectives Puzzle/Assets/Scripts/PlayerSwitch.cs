@@ -19,8 +19,6 @@ public class PlayerSwitch : MonoBehaviour
     public void Start()
     {
         SetPlayer(isBigPlayer);
-        bigStatue.GetComponent<MovementController>().enabled = false;
-        smallStatue.GetComponent<MovementController>().enabled = false;
     }
 
 
