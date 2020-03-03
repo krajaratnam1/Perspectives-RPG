@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 28488806948068860}
   - component: {fileID: 28488806948068861}
   - component: {fileID: 28488806948068856}
-  - component: {fileID: 6370925084431208732}
   - component: {fileID: 7003538532489497523}
+  - component: {fileID: 8206835906574939018}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -94,23 +94,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6370925084431208732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28488806948068863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644882df4cb284437b724283ea4d4dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyInput: 102
-  playerSwapSystem: {fileID: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
-  highlightColor: {r: 0, g: 0, b: 0, a: 0}
-  highlightTimeout: 0.3
 --- !u!136 &7003538532489497523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -125,6 +108,23 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8206835906574939018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28488806948068863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1370f6ded6c934fa4a65e3b25bf05933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyInput: 101
+  playerSwapSystem: {fileID: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  highlightColor: {r: 0, g: 0, b: 0, a: 0}
+  highlightTimeout: 0.3
 --- !u!1 &7561804967405575743
 GameObject:
   m_ObjectHideFlags: 0

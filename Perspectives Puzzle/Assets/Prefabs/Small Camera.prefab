@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 8954456522593878363}
   - component: {fileID: 8954456522593878362}
   - component: {fileID: 8954456522593878357}
-  - component: {fileID: 1410512159578136618}
+  - component: {fileID: 323189098}
   m_Layer: 0
   m_Name: Small Camera
   m_TagString: Untagged
@@ -479,14 +479,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8954456522593878356}
-  m_LocalRotation: {x: 0.006788695, y: -0.0000000018184236, z: 1.2345007e-11, w: 0.999977}
+  m_LocalRotation: {x: 0.0067892917, y: 0, z: 0, w: 0.999977}
   m_LocalPosition: {x: 0, y: -0.25104952, z: 5.020999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8954456522721292180}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.77800006, y: 0, z: 0}
 --- !u!20 &8954456522593878363
 Camera:
   m_ObjectHideFlags: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1410512159578136618
+--- !u!114 &323189098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8954456522593878356}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36e004fcec68a45e29f219a2fa00db0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 499c167e5f80f4fc88f09a08c1b50c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8954456522721292178

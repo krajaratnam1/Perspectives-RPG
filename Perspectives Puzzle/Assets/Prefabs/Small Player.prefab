@@ -91,8 +91,8 @@ GameObject:
   - component: {fileID: 7110529590703717723}
   - component: {fileID: 7110529590703717722}
   - component: {fileID: 7110529590703717717}
-  - component: {fileID: 7110529590703717716}
   - component: {fileID: 7110529590703717721}
+  - component: {fileID: 97578662}
   m_Layer: 0
   m_Name: Small Player
   m_TagString: Player
@@ -107,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7110529590703717719}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 1.5, z: 0.3}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children:
@@ -192,24 +192,6 @@ CharacterController:
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7110529590703717716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7110529590703717719}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d14c8126ee5b4f61812e4eff5a18502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canMove: 1
-  cam: {fileID: 0}
-  rotationSpeed: 0.5
-  allowRotation: 0.01
-  movementSpeed: 5
-  gravityMultipler: 1
 --- !u!65 &7110529590703717721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -223,3 +205,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &97578662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7110529590703717719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d194baeba3744ef2a10bf6241800d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
+  cam: {fileID: 0}
+  rotationSpeed: 0.3
+  allowRotation: 0.1
+  movementSpeed: 3
+  gravityMultipler: 1

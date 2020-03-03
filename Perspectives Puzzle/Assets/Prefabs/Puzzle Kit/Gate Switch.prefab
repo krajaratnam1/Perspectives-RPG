@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8194465524735320110}
   - component: {fileID: 8194465524735320111}
   - component: {fileID: 8194465524735320106}
-  - component: {fileID: 3006067048533193480}
+  - component: {fileID: 56806806}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -139,7 +139,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.5, z: 3}
   m_Center: {x: 1, y: -0.75, z: 0}
---- !u!114 &3006067048533193480
+--- !u!114 &56806806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,10 +148,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8194465524735320108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a78ded5e4454946965aa22d300d841, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f5c5a601bbeb43f385d7b2d74029f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyInput: 102
+  KeyInput: 101
   playerSwapSystem: {fileID: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   highlightColor: {r: 0, g: 0, b: 0, a: 0}
