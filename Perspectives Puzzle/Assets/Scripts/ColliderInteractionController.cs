@@ -19,6 +19,16 @@ public abstract class ColliderInteractionController : MonoBehaviour
         //playerSwapSystem = GameObject.FindWithTag("PlayerSwap").GetComponent<PlayerSwitch>();
         MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
         baseColor = objectHitRenderer.material.GetColor("_Color");
+
+        if(highlightColor.a <= 0)
+        {
+            highlightColor = new Color(1, 1, 1, 1); // default highlight color will be white
+        }
+
+        if(KeyInput == KeyCode.F) // this is for climbing; can't be the same as buttons!
+        {
+            KeyInput = KeyCode.E;
+        }
     }
 
     // Update is called once per frame

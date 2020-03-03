@@ -10,29 +10,85 @@ public class PlayerSwitch : MonoBehaviour
         smallCam, bigCam;
     public bool isBigPlayer = true;
     public CinemachineFreeLook bigCameraFreeLook, smallCameraFreeLook;
+    public CinemachineBrain smallBrain, bigBrain;
+    public GameObject smallStatueLook, bigStatueLook;
+
     public RawImage bigView;
     public float fadeTime = 1;
     public int fadeDir = 0; // -1 for out, 1 for in
+    public bool simultaneousFadingAndBlending = false;
+
+    public float cooldown = 3.5f, cdTimer = 0;
+
+    float bigFLYAxis, bigFLXAxis, smallFLYAxis, smallFLXAxis;
+
 
 
 
     public void Start()
     {
         SetPlayer(isBigPlayer);
+        if(isBigPlayer)
+        {
+            bigView.color = new Color(bigView.color.r, bigView.color.g, bigView.color.b, 1);
+        } else
+        {
+            bigView.color = new Color(bigView.color.r, bigView.color.g, bigView.color.b, 0);
+        }
     }
 
+    public void LockMouse()
+    {
+        bigFLYAxis = bigCameraFreeLook.m_YAxis.m_MaxSpeed;
+        bigFLXAxis = bigCameraFreeLook.m_XAxis.m_MaxSpeed;
+        bigCameraFreeLook.m_YAxis.m_MaxSpeed = 0;
+        bigCameraFreeLook.m_XAxis.m_MaxSpeed = 0;
 
+        smallFLYAxis = smallCameraFreeLook.m_YAxis.m_MaxSpeed;
+        smallFLXAxis = smallCameraFreeLook.m_XAxis.m_MaxSpeed;
+        smallCameraFreeLook.m_YAxis.m_MaxSpeed = 0;
+        smallCameraFreeLook.m_XAxis.m_MaxSpeed = 0;
+    }
+
+    public void UnlockMouse()
+    {
+        bigCameraFreeLook.m_YAxis.m_MaxSpeed = bigFLYAxis;
+        bigCameraFreeLook.m_XAxis.m_MaxSpeed = bigFLXAxis;
+        smallCameraFreeLook.m_YAxis.m_MaxSpeed = smallFLYAxis;
+        smallCameraFreeLook.m_XAxis.m_MaxSpeed = smallFLXAxis;
+    }
 
     public void SetPlayer(bool isBig)
     {
+        if(cdTimer > 0)
+        {
+            return;
+        }
+
+        cdTimer = cooldown;
+        LockMouse();
         Synchronize();
         Fade();
         isBigPlayer = isBig;
         fadeDir = isBigPlayer ? 1 : -1;
+        if(simultaneousFadingAndBlending)
+        {
+            if(!isBigPlayer)
+            {
+                smallStatueLook.SetActive(true);
+                bigStatueLook.SetActive(false);
+                bigCameraFreeLook.enabled = true;
+                smallCameraFreeLook.enabled = true;
+            } else
+            {
+                bigStatueLook.SetActive(true);
+                smallStatueLook.SetActive(false);
+                bigCameraFreeLook.enabled = true;
+                smallCameraFreeLook.enabled = true;
+            }
+        }
         smallPlayer.GetComponent<MovementController>().enabled = false;
         bigPlayer.GetComponent<MovementController>().enabled = false;
-        bigCameraFreeLook.enabled = false;
-        smallCameraFreeLook.enabled = false;
     }
 
     public void SwitchPlayers()
@@ -44,6 +100,12 @@ public class PlayerSwitch : MonoBehaviour
 
     void Synchronize()
     {
+
+        if(cdTimer > 0)
+        {
+            cdTimer -= Time.deltaTime;
+        }
+
         if (isBigPlayer)
         {
             bigStatue.transform.position = (bigPlayer.transform.position - bigAnchor.transform.position)
@@ -52,8 +114,12 @@ public class PlayerSwitch : MonoBehaviour
             smallPlayer.transform.position = (smallStatue.transform.position - bigAnchor.transform.position)
                    + smallAnchor.transform.position;
             smallPlayer.transform.eulerAngles = smallStatue.transform.eulerAngles;
-            smallCam.transform.position = (bigCam.transform.position - bigAnchor.transform.position)
-                   + smallAnchor.transform.position;
+            if (fadeDir == 0)
+            {
+                bigStatueLook.transform.position = (bigCam.transform.position - bigAnchor.transform.position)
+                    + smallAnchor.transform.position;
+                bigStatueLook.transform.eulerAngles = bigCam.transform.eulerAngles;
+            }
         }
         else
         {
@@ -63,38 +129,51 @@ public class PlayerSwitch : MonoBehaviour
             bigPlayer.transform.position = (bigStatue.transform.position - smallAnchor.transform.position)
                     + bigAnchor.transform.position;
             bigPlayer.transform.eulerAngles = bigStatue.transform.eulerAngles;
-            bigCam.transform.position = (smallCam.transform.position - smallAnchor.transform.position)
-                  + bigAnchor.transform.position;
+            if (fadeDir == 0)
+            {
+                smallStatueLook.transform.position = (smallCam.transform.position - smallAnchor.transform.position)
+                      + bigAnchor.transform.position;
+                smallStatueLook.transform.eulerAngles = smallCam.transform.eulerAngles;
+            }
         }
     }
 
     void FinishFadeOut()
     {
-        bigCameraFreeLook.LookAt = smallStatue.transform;
-        bigCameraFreeLook.Follow = smallStatue.transform;
-        smallCameraFreeLook.LookAt = smallPlayer.transform;
-        smallCameraFreeLook.Follow = smallPlayer.transform;
+        if (!simultaneousFadingAndBlending)
+        {
+            smallStatueLook.SetActive(true);
+            bigStatueLook.SetActive(false);
+            bigCameraFreeLook.enabled = true;
+            smallCameraFreeLook.enabled = true;
+        }
+        UnlockMouse();
         smallPlayer.GetComponent<MovementController>().enabled = true;
-        bigCameraFreeLook.enabled = false;
-        smallCameraFreeLook.enabled = true;
     }
 
     void FinishFadeIn()
     {
-        bigCameraFreeLook.LookAt = bigPlayer.transform;
-        bigCameraFreeLook.Follow = bigPlayer.transform;
-        smallCameraFreeLook.LookAt = smallStatue.transform;
-        smallCameraFreeLook.Follow = smallStatue.transform;
+        if (!simultaneousFadingAndBlending)
+        {
+            bigStatueLook.SetActive(true);
+            smallStatueLook.SetActive(false);
+            bigCameraFreeLook.enabled = true;
+            smallCameraFreeLook.enabled = true;
+        }
         bigPlayer.GetComponent<MovementController>().enabled = true;
-        smallCameraFreeLook.enabled = false;
-        bigCameraFreeLook.enabled = true;
+        UnlockMouse();
     }
 
     void Fade()
     {
         if(fadeDir == -1)
         {
-            if(bigView.color.a <= 0)
+            if (!simultaneousFadingAndBlending)
+            {
+                bigCameraFreeLook.enabled = false;
+                smallCameraFreeLook.enabled = false;
+            }
+            if (bigView.color.a <= 0)
             {
                 fadeDir = 0;
                 FinishFadeOut();
@@ -106,6 +185,11 @@ public class PlayerSwitch : MonoBehaviour
             }
         } else if(fadeDir == 1)
         {
+            if (!simultaneousFadingAndBlending)
+            {
+                bigCameraFreeLook.enabled = false;
+                smallCameraFreeLook.enabled = false;
+            }
             if (bigView.color.a >= 1)
             {
                 fadeDir = 0;
