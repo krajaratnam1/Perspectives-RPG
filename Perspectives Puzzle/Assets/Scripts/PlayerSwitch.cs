@@ -22,6 +22,11 @@ public class PlayerSwitch : MonoBehaviour
 
     float bigFLYAxis, bigFLXAxis, smallFLYAxis, smallFLXAxis;
 
+	Vector3 oldCamPos, oldCamAngles;
+	public bool tracking = false;
+
+	public float angleEpsilon = 1, positionEpsilon = 0.1f;
+
 
 
 
@@ -60,7 +65,7 @@ public class PlayerSwitch : MonoBehaviour
 
     public void SetPlayer(bool isBig)
     {
-        if(cdTimer > 0)
+		if (cdTimer > 0)
         {
             return;
         }
@@ -104,7 +109,35 @@ public class PlayerSwitch : MonoBehaviour
         if(cdTimer > 0)
         {
             cdTimer -= Time.deltaTime;
+            bigStatueLook.transform.position = (bigCam.transform.position - bigAnchor.transform.position)
+                    + smallAnchor.transform.position;
+            bigStatueLook.transform.eulerAngles = bigCam.transform.eulerAngles;
+
+            smallStatueLook.transform.position = (smallCam.transform.position - smallAnchor.transform.position)
+                      + bigAnchor.transform.position;
+            smallStatueLook.transform.eulerAngles = smallCam.transform.eulerAngles;
+
+            if(cdTimer <= 0)
+			{
+                if(isBigPlayer)
+				{
+                    if(bigPlayer.GetComponent<MovementController>().characterController.isGrounded)
+					{
+						bigPlayer.GetComponent<MovementController>().enabled = true;
+						UnlockMouse();
+					}
+				} else
+				{
+					if (smallPlayer.GetComponent<MovementController>().characterController.isGrounded)
+					{
+						smallPlayer.GetComponent<MovementController>().enabled = true;
+						UnlockMouse();
+					}
+				}
+			}
         }
+
+
 
         if (isBigPlayer)
         {
@@ -147,8 +180,11 @@ public class PlayerSwitch : MonoBehaviour
             bigCameraFreeLook.enabled = true;
             smallCameraFreeLook.enabled = true;
         }
-        UnlockMouse();
-        smallPlayer.GetComponent<MovementController>().enabled = true;
+        //UnlockMouse();
+		tracking = true;
+		oldCamPos = smallCameraFreeLook.transform.position;
+		oldCamAngles = smallCameraFreeLook.transform.eulerAngles;
+        //smallPlayer.GetComponent<MovementController>().enabled = true;
     }
 
     void FinishFadeIn()
@@ -160,9 +196,12 @@ public class PlayerSwitch : MonoBehaviour
             bigCameraFreeLook.enabled = true;
             smallCameraFreeLook.enabled = true;
         }
-        bigPlayer.GetComponent<MovementController>().enabled = true;
-        UnlockMouse();
-    }
+		//bigPlayer.GetComponent<MovementController>().enabled = true;
+		//UnlockMouse();
+		tracking = true;
+		oldCamPos = bigCameraFreeLook.transform.position;
+		oldCamAngles = bigCameraFreeLook.transform.eulerAngles;
+	}
 
     void Fade()
     {
@@ -203,11 +242,40 @@ public class PlayerSwitch : MonoBehaviour
         }
     }
 
+    void Track()
+	{
+        if(cdTimer > 0)
+		{
+			return;
+		}
+        if(tracking)
+		{
+			Vector3 posDiff = (isBigPlayer?(bigCameraFreeLook):(smallCameraFreeLook)).transform.position - oldCamPos;
+	        Vector3 angleDiff = (isBigPlayer ? (bigCameraFreeLook) : (smallCameraFreeLook)).transform.eulerAngles - oldCamAngles;
+            if(posDiff.magnitude <= positionEpsilon && angleDiff.magnitude <= angleEpsilon)
+			{
+				print("Camera movement done!");
+				UnlockMouse();
+				tracking = false;
+				(isBigPlayer ? bigPlayer : smallPlayer).GetComponent<MovementController>().enabled = true;
+			} else
+			{
+				oldCamPos = (isBigPlayer ? (bigCameraFreeLook) : (smallCameraFreeLook)).transform.position;
+                oldCamAngles = (isBigPlayer ? (bigCameraFreeLook) : (smallCameraFreeLook)).transform.eulerAngles;
+			}
+		}
+	}
+
     public void Update()
     {
-        Synchronize();
+		Track();
+		Synchronize();
         Fade();
 
+		if(!smallPlayer.GetComponent<MovementController>().characterController.isGrounded)
+		{
+			print("Not Grounded!");
+		}
         /*if(Input.GetKeyDown(KeyCode.Space))
         {
             SwitchPlayers();
