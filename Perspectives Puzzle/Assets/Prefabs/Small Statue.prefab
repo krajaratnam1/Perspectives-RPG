@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aad77abfffa824184b2bb048e2b78d59, type: 2}
+  - {fileID: 2100000, guid: a9c71d15324d4d045a4ca5063a837a87, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8426290256431675053}
   - component: {fileID: 8426290256431675042}
   - component: {fileID: 8426290256431675054}
-  - component: {fileID: 7792422235827828811}
+  - component: {fileID: 6358231796183587370}
   m_Layer: 0
   m_Name: Small Statue
   m_TagString: Player
@@ -107,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426290256431675040}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 1.5, z: 0.3}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children:
@@ -140,7 +140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aad77abfffa824184b2bb048e2b78d59, type: 2}
+  - {fileID: 2100000, guid: a9c71d15324d4d045a4ca5063a837a87, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -205,7 +205,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6739364, y: 1, z: 1.7400742}
   m_Center: {x: 0.0009343624, y: 0, z: -0.080142975}
---- !u!114 &7792422235827828811
+--- !u!114 &6358231796183587370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,12 +214,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8426290256431675040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3415566f08f744df6a36d974254b72e4, type: 3}
+  m_Script: {fileID: 11500000, guid: f92e20200636644dcb2f39c814d0a960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pushing: 0
   prompting: 0
   pushDirection: {x: 0, y: 0, z: 0}
-  speed: 3
+  speed: 1
   pushKey: 102
   prompt: {fileID: 0}
