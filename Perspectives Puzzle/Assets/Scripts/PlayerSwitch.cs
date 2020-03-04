@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
+using Fungus;
 
 public class PlayerSwitch : MonoBehaviour
 {
+	public Flowchart flowchart;
     public GameObject bigPlayer, bigStatue, smallPlayer, smallStatue, bigAnchor, smallAnchor,
         smallCam, bigCam;
     public bool isBigPlayer = true;
+	public string SwapToBigBlock, SwapToSmallBlock;
     public CinemachineFreeLook bigCameraFreeLook, smallCameraFreeLook;
     public CinemachineBrain smallBrain, bigBrain;
     public GameObject smallStatueLook, bigStatueLook;
@@ -100,9 +103,9 @@ public class PlayerSwitch : MonoBehaviour
 
     public void SwitchPlayers()
     {
-        print(isBigPlayer);
         SetPlayer(!isBigPlayer);
-        print(isBigPlayer);
+		flowchart.ExecuteBlock(isBigPlayer?SwapToBigBlock:SwapToSmallBlock);
+
     }
 
     void Synchronize()
@@ -259,7 +262,7 @@ public class PlayerSwitch : MonoBehaviour
             Vector3 angleDiff = (isBigPlayer ? (bigCameraFreeLook) : (smallCameraFreeLook)).transform.eulerAngles - oldCamAngles;
             if (posDiff.magnitude <= positionEpsilon && angleDiff.magnitude <= angleEpsilon)
             {
-                print("Camera movement done!");
+                //print("Camera movement done!");
                 UnlockMouse();
                 tracking = false;
                 (isBigPlayer ? bigPlayer : smallPlayer).GetComponent<MovementController>().enabled = true;
@@ -280,7 +283,7 @@ public class PlayerSwitch : MonoBehaviour
 
         if (!smallPlayer.GetComponent<MovementController>().characterController.isGrounded)
         {
-            print("Not Grounded!");
+            //print("Not Grounded!");
         }
         /*if(Input.GetKeyDown(KeyCode.Space))
         {

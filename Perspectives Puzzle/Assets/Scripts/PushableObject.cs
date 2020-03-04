@@ -44,6 +44,7 @@ public class PushableObject : MonoBehaviour
             if(Input.GetKeyDown(pushKey))
             {
                 movement.canMove = false;
+				movement.isPushing = true;
                 pushing = true;
                 pushDirection = -movement.gameObject.transform.position + transform.position;
                 pushDirection = new Vector3(pushDirection.x, 0, pushDirection.z);
@@ -51,6 +52,7 @@ public class PushableObject : MonoBehaviour
             } else
             {
                 movement.canMove = true;
+				movement.isPushing = false;
             }
         } else
         {
@@ -58,6 +60,7 @@ public class PushableObject : MonoBehaviour
             if (movement != null)
             {
                 movement.canMove = true;
+				movement.isPushing = false;
             }
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class MovementController : MonoBehaviour
 {
-    public bool canMove = true;
+    public bool canMove = true, isPushing = false;
 
     private float InputX, InputZ, Speed, gravity;
 
