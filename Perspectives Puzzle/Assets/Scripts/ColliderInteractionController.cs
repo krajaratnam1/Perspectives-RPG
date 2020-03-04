@@ -10,8 +10,8 @@ public abstract class ColliderInteractionController : MonoBehaviour
     public PlayerSwitch playerSwapSystem;
     public Color baseColor;
     public Color highlightColor;
-	public float highlightTimeout = 0.3f;
-	float timer = 0; // time out to dehighlight button
+    public float highlightTimeout = 0.3f;
+    float timer = 0; // time out to dehighlight button
 
     // Start is called before the first frame update
     public void Start()
@@ -19,20 +19,30 @@ public abstract class ColliderInteractionController : MonoBehaviour
         //playerSwapSystem = GameObject.FindWithTag("PlayerSwap").GetComponent<PlayerSwitch>();
         MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
         baseColor = objectHitRenderer.material.GetColor("_Color");
+        playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
+        if (highlightColor.a <= 0)
+        {
+            highlightColor = new Color(1, 1, 1, 1); // default highlight color will be white
+        }
+
+        if (KeyInput == KeyCode.F) // this is for climbing; can't be the same as buttons!
+        {
+            KeyInput = KeyCode.E;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (timer > 0.3f) // timed out
-		{
-			MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-			objectHitRenderer.material.SetColor("_Color", baseColor);
-		}
-		else
-		{
-			timer += Time.deltaTime;
-		}
+        if (timer > 0.3f) // timed out
+        {
+            MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+            objectHitRenderer.material.SetColor("_Color", baseColor);
+        }
+        else
+        {
+            timer += Time.deltaTime;
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -87,11 +97,11 @@ public abstract class ColliderInteractionController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-		if (CheckColliderIsPlayable(other))
-		{
-			timer = 0;
-			if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
-			{/*
+        if (CheckColliderIsPlayable(other))
+        {
+            timer = 0;
+            if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
+            {/*
                 Debug.Log("OnTriggerStay  other.transform.name: " + other.transform.name);
                 GameObject player;
                 if (playerSwapSystem.isBigPlayer)
@@ -104,20 +114,20 @@ public abstract class ColliderInteractionController : MonoBehaviour
                 }
 
                 Collider playerCollider = player.GetComponent<SphereCollider>();*/
-				if (CheckColliderIsPlayer(other))
-				{
+                if (CheckColliderIsPlayer(other))
+                {
 
-					Debug.Log("Activated Collider");
-					MethodToCall();
-				}
-			}
-		}
+                    Debug.Log("Activated Collider");
+                    MethodToCall();
+                }
+            }
+        }
     }
 
     public bool CheckColliderIsPlayable(Collider other)
-	{
-		return other.name == playerSwapSystem.bigPlayer.name || other.name == playerSwapSystem.smallPlayer.name;
-	}
+    {
+        return other.name == playerSwapSystem.bigPlayer.name || other.name == playerSwapSystem.smallPlayer.name;
+    }
 
     public bool CheckColliderIsPlayer(Collider other)
     {

@@ -10,7 +10,7 @@ public class MovementController : MonoBehaviour
     private float InputX, InputZ, Speed, gravity;
 
     [SerializeField] Camera cam;
-    private CharacterController characterController;
+    public CharacterController characterController;
 
     private Vector3 desiredMoveDirection;
 
@@ -19,6 +19,8 @@ public class MovementController : MonoBehaviour
     [SerializeField] float allowRotation = 0.1f;
     [SerializeField] float movementSpeed = 1f;
     [SerializeField] float gravityMultipler;
+
+    public bool gravityEnabled = true;
 
     // Start is called before the first frame update
     void Start()
@@ -41,11 +43,11 @@ public class MovementController : MonoBehaviour
     }
 
 
-    void InputDecider() 
+    void InputDecider()
     {
         Speed = new Vector2(InputX, InputZ).sqrMagnitude;
 
-        if(Speed > allowRotation)
+        if (Speed > allowRotation)
         {
             if (canMove)
             {
@@ -81,13 +83,13 @@ public class MovementController : MonoBehaviour
     void MovementManager()
     {
         gravity -= 9.8f * Time.deltaTime;
-        gravity = gravity * gravityMultipler;
+        gravity = gravityEnabled ? (gravity * gravityMultipler) : 0;
 
         Vector3 moveDirection = desiredMoveDirection * (movementSpeed * Time.deltaTime);
         moveDirection = new Vector3(moveDirection.x, gravity, moveDirection.z);
-        characterController.Move(moveDirection); 
+        characterController.Move(moveDirection);
 
-        if(characterController.isGrounded)
+        if (characterController.isGrounded)
         {
             gravity = 0;
         }

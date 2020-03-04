@@ -14,6 +14,7 @@ public class ClimbableObject : MonoBehaviour
     float centeringTimer = 0;
     public KeyCode pushKey = KeyCode.F;
     public GameObject prompt;
+    float origHeight = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,11 @@ public class ClimbableObject : MonoBehaviour
         {
             prompt.SetActive(false);
             player.Move(Vector3.up * height * Time.deltaTime / climbTime);
-            if(player.gameObject.transform.position.y >= height)
+            if (player.gameObject.transform.position.y >= height + origHeight)
             {
+                print(height + origHeight);
                 climbing = false;
-                player.Move(Vector3.down * (player.gameObject.transform.position.y - height));
+                player.Move(Vector3.down * (player.gameObject.transform.position.y - (height + origHeight)));
                 // finished climbing
                 centering = true;
                 centeringTimer = 0;
@@ -43,11 +45,11 @@ public class ClimbableObject : MonoBehaviour
             return;
         }
 
-        if(centering)
+        if (centering)
         {
             centeringTimer += Time.deltaTime;
             player.Move(centerDirection * Time.deltaTime);
-            if(centeringTimer >= centeringTime) // done centering
+            if (centeringTimer >= centeringTime) // done centering
             {
                 centering = false;
                 movement.canMove = true;
@@ -63,6 +65,7 @@ public class ClimbableObject : MonoBehaviour
                 climbing = true;
                 prompt.SetActive(false);
                 prompting = false;
+                origHeight = player.gameObject.transform.position.y;
             }
             else
             {
