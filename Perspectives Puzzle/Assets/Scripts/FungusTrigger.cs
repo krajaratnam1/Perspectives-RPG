@@ -8,6 +8,7 @@ public class FungusTrigger : MonoBehaviour
     public PlayerSwitch playerSwapSystem;
     public Flowchart flowchart;
     public string bigPlayerBlock, smallPlayerBlock, pushingBlock;
+    public bool Overriding = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +32,20 @@ public class FungusTrigger : MonoBehaviour
             {
                 if(bigPlayerBlock != "")
                 {
+                    if (Overriding)
+                    {
+                        flowchart.StopAllBlocks();
+                    }
                     flowchart.ExecuteBlock(bigPlayerBlock);
                 }
             } else
             {
                 if(smallPlayerBlock != "")
                 {
+                    if (Overriding)
+                    {
+                        flowchart.StopAllBlocks();
+                    }
                     flowchart.ExecuteBlock(smallPlayerBlock);
                 }
             }
@@ -51,7 +60,6 @@ public class FungusTrigger : MonoBehaviour
                 {
                     flowchart.StopAllBlocks();
                     flowchart.ExecuteBlock(pushingBlock);
-                    print("testingo");
                 }
             }
             return;
