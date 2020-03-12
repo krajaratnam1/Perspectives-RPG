@@ -35,6 +35,7 @@ public class PlayerSwitch : MonoBehaviour
 
     public void Start()
     {
+        flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
         SetPlayer(isBigPlayer);
         if (isBigPlayer)
         {
