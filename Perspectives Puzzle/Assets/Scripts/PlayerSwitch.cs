@@ -285,10 +285,10 @@ public class PlayerSwitch : MonoBehaviour
         {
             //print("Not Grounded!");
         }
-        /*if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             SwitchPlayers();
-        }*/
+        }
     }
 }
 

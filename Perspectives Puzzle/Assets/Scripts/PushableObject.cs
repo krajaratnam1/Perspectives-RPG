@@ -76,7 +76,7 @@ public class PushableObject : MonoBehaviour
             if (movement.enabled)
             { 
                 prompting = true;
-            }
+            } 
             
         }
     }

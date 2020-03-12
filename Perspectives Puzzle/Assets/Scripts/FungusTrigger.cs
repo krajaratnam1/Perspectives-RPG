@@ -9,6 +9,7 @@ public class FungusTrigger : MonoBehaviour
     public Flowchart flowchart;
     public string bigPlayerBlock, smallPlayerBlock, pushingBlock;
     public bool Overriding = true;
+    bool pushingBlockExecuted = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,24 +29,27 @@ public class FungusTrigger : MonoBehaviour
     {
         if (other.GetComponent<MovementController>() != null) // is a player
         {
-            if(playerSwapSystem.isBigPlayer)
+            if(playerSwapSystem.isBigPlayer && other.name == "Big Player")
             {
-                if(bigPlayerBlock != "")
+                if(bigPlayerBlock != "" && !pushingBlockExecuted)
                 {
                     if (Overriding)
                     {
+                        print("overriding");
                         flowchart.StopAllBlocks();
                     }
                     flowchart.ExecuteBlock(bigPlayerBlock);
                 }
-            } else
+            } else if(!playerSwapSystem.isBigPlayer && other.name == "Small Player")
             {
-                if(smallPlayerBlock != "")
+                if(smallPlayerBlock != "" && !pushingBlockExecuted)
                 {
                     if (Overriding)
                     {
+                        print("small");
                         flowchart.StopAllBlocks();
                     }
+                    print(smallPlayerBlock);
                     flowchart.ExecuteBlock(smallPlayerBlock);
                 }
             }
@@ -58,6 +62,8 @@ public class FungusTrigger : MonoBehaviour
             {
                 if (pushingBlock != "")
                 {
+                    print("Pushing Block Executed");
+                    pushingBlockExecuted = true;
                     flowchart.StopAllBlocks();
                     flowchart.ExecuteBlock(pushingBlock);
                 }
@@ -72,8 +78,10 @@ public class FungusTrigger : MonoBehaviour
         {
             if (other.GetComponent<PushableObject>().pushing)
             {
-                if (pushingBlock != "")
+                if (pushingBlock != "" && !pushingBlockExecuted)
                 {
+                    print("Pushing Block Executed");
+                    pushingBlockExecuted = true;
                     flowchart.ExecuteBlock(pushingBlock);
                 }
             }
