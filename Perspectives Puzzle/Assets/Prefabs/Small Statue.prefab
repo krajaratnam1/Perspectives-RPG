@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 2592129008469148571}
   - component: {fileID: 2592129008469148570}
   - component: {fileID: 2592129008469148573}
-  - component: {fileID: 2592129008469148568}
   - component: {fileID: 2592129008469148572}
   - component: {fileID: 2592129008469148575}
   - component: {fileID: 2592129008469148574}
@@ -108,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2592129008469148544}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.62, y: 101, z: 55.02}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children:
@@ -162,26 +161,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2592129008469148568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2592129008469148544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572f1d426c149412892c19aa8a6c7c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  characterController: {fileID: 0}
-  rotationSpeed: 0.3
-  allowRotation: 0.1
-  movementSpeed: 1
-  gravityMultipler: 1
-  gravityEnabled: 1
-  big: 0
 --- !u!65 &2592129008469148572
 BoxCollider:
   m_ObjectHideFlags: 0

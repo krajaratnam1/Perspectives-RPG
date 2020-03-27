@@ -35,7 +35,24 @@ public class PlayerSwitch : MonoBehaviour
 
     public void Start()
     {
+        //find everything
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        bigPlayer = GameObject.Find("Big Player");
+        bigStatue = GameObject.Find("Big Statue");
+        smallPlayer = GameObject.Find("Small Player");
+        smallStatue = GameObject.Find("Small Statue");
+        bigAnchor = GameObject.Find("Level 1 Big Room Anchor");
+        smallAnchor = GameObject.Find("Level 1 Small Room Anchor");
+        smallCam = GameObject.Find("Small Camera");
+        bigCam = GameObject.Find("Big Camera");
+        bigCameraFreeLook = GameObject.Find("Big CM Third Person Camera").GetComponent<CinemachineFreeLook>();
+        smallCameraFreeLook = GameObject.Find("Small CM Third Person Camera").GetComponent<CinemachineFreeLook>();
+        bigBrain = GameObject.Find("Big Camera").GetComponent<CinemachineBrain>();
+        smallBrain = GameObject.Find("Small Camera").GetComponent<CinemachineBrain>();
+        bigStatueLook = GameObject.Find("Big CM Statue Look");
+        smallStatueLook = GameObject.Find("Small CM Statue Look");
+        bigView = GameObject.Find("Big View").GetComponent<RawImage>();
+
         SetPlayer(isBigPlayer);
         if (isBigPlayer)
         {
