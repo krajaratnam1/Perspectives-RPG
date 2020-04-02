@@ -10,8 +10,8 @@ public class PlayerSwitch : MonoBehaviour
 	public Flowchart flowchart;
     public GameObject bigPlayer, bigStatue, smallPlayer, smallStatue, bigAnchor, smallAnchor,
         smallCam, bigCam;
-    public bool isBigPlayer = true;
-	public string SwapToBigBlock, SwapToSmallBlock;
+    public bool isBigPlayer = true, cancelNextSwapBig = false, cancelNextSwapSmall = false;
+	public string SwapToBigBlock, SwapToBigFailedBlock, SwapToSmallBlock, SwapToSmallFailedBlock;
     public CinemachineFreeLook bigCameraFreeLook, smallCameraFreeLook;
     public CinemachineBrain smallBrain, bigBrain;
     public GameObject smallStatueLook, bigStatueLook;
@@ -21,7 +21,7 @@ public class PlayerSwitch : MonoBehaviour
     public int fadeDir = 0; // -1 for out, 1 for in
     public bool simultaneousFadingAndBlending = false;
 
-    public float cooldown = 1f, cdTimer = 0;
+    public float cooldown = 1f, cdTimer = 0, swapBack = -1, swapBackTime = 4;
 
     float bigFLYAxis, bigFLXAxis, smallFLYAxis, smallFLXAxis;
 
@@ -85,13 +85,53 @@ public class PlayerSwitch : MonoBehaviour
         smallCameraFreeLook.m_XAxis.m_MaxSpeed = smallFLXAxis;
     }
 
+    public bool isStuck(CharacterController chara)
+    {
+        Vector3 orig = chara.gameObject.transform.position;
+        chara.Move(new Vector3(0, 0, .1f));
+        if(chara.gameObject.transform.position != orig)
+        {
+            chara.gameObject.transform.position = orig;
+            return false;
+        }
+
+        chara.Move(new Vector3(0, 0, -.1f));
+        if (chara.gameObject.transform.position != orig)
+        {
+            chara.gameObject.transform.position = orig;
+            return false;
+        }
+
+        chara.Move(new Vector3(.1f, 0, 0));
+        if (chara.gameObject.transform.position != orig)
+        {
+            chara.gameObject.transform.position = orig;
+            return false;
+        }
+
+
+        chara.Move(new Vector3(-.1f, 0, 0));
+        if (chara.gameObject.transform.position != orig)
+        {
+            chara.gameObject.transform.position = orig;
+            return false;
+        }
+
+        return true;
+
+    }
+
+
     public void SetPlayer(bool isBig)
     {
         if (cdTimer > 0)
         {
             return;
         }
-
+        smallStatue.GetComponent<PushableObject>().carryTimer = -1;
+        smallStatue.GetComponent<PushableObject>().carried = false;
+        bigStatue.GetComponent<ClimbableObject>().climbing = false;
+        bigStatue.GetComponent<ClimbableObject>().centering = false;
         cdTimer = cooldown;
         LockMouse();
         Synchronize();
@@ -117,12 +157,22 @@ public class PlayerSwitch : MonoBehaviour
         }
         smallPlayer.GetComponent<MovementController>().enabled = false;
         bigPlayer.GetComponent<MovementController>().enabled = false;
+
+        if(isStuck(isBigPlayer?bigPlayer.GetComponent<CharacterController>():smallPlayer.GetComponent<CharacterController>()) || isBig?cancelNextSwapBig:cancelNextSwapSmall)
+        {
+            swapBack = swapBackTime;
+            flowchart.ExecuteBlock(isBigPlayer ? SwapToBigFailedBlock : SwapToSmallFailedBlock);
+        } else
+        {
+            flowchart.ExecuteBlock(isBigPlayer ? SwapToBigBlock : SwapToSmallBlock);
+
+        }
+
     }
 
     public void SwitchPlayers()
     {
         SetPlayer(!isBigPlayer);
-		flowchart.ExecuteBlock(isBigPlayer?SwapToBigBlock:SwapToSmallBlock);
 
     }
 
@@ -146,16 +196,22 @@ public class PlayerSwitch : MonoBehaviour
                 {
                     if (bigPlayer.GetComponent<MovementController>().characterController.isGrounded)
                     {
-                        bigPlayer.GetComponent<MovementController>().enabled = true;
-                        UnlockMouse();
+                        if (!(isStuck(isBigPlayer ? bigPlayer.GetComponent<CharacterController>() : smallPlayer.GetComponent<CharacterController>()) || swapBack > 0))
+                        {
+                            bigPlayer.GetComponent<MovementController>().enabled = true;
+                            UnlockMouse();
+                        }
                     }
                 }
                 else
                 {
                     if (smallPlayer.GetComponent<MovementController>().characterController.isGrounded)
                     {
-                        smallPlayer.GetComponent<MovementController>().enabled = true;
-                        UnlockMouse();
+                        if (!(isStuck(isBigPlayer ? bigPlayer.GetComponent<CharacterController>() : smallPlayer.GetComponent<CharacterController>()) || swapBack > 0))
+                        {
+                            smallPlayer.GetComponent<MovementController>().enabled = true;
+                            UnlockMouse();
+                        }
                     }
                 }
             }
@@ -281,9 +337,12 @@ public class PlayerSwitch : MonoBehaviour
             if (posDiff.magnitude <= positionEpsilon && angleDiff.magnitude <= angleEpsilon)
             {
                 //print("Camera movement done!");
-                UnlockMouse();
-                tracking = false;
-                (isBigPlayer ? bigPlayer : smallPlayer).GetComponent<MovementController>().enabled = true;
+                if (!(isStuck(isBigPlayer ? bigPlayer.GetComponent<CharacterController>() : smallPlayer.GetComponent<CharacterController>()) || swapBack > 0))
+                {
+                    UnlockMouse();
+                    tracking = false;
+                    (isBigPlayer ? bigPlayer : smallPlayer).GetComponent<MovementController>().enabled = true;
+                }
             }
             else
             {
@@ -306,6 +365,16 @@ public class PlayerSwitch : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             SwitchPlayers();
+        }
+
+        if(swapBack >= 0)
+        {
+            swapBack -= Time.deltaTime;
+            if(swapBack <= 0)
+            {
+                swapBack = -1;
+                SwitchPlayers();
+            }
         }
     }
 }

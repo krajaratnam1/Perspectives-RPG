@@ -58,7 +58,7 @@ public class FungusTrigger : MonoBehaviour
 
         if (other.GetComponent<PushableObject>() != null) // is small statue
         {
-            if (other.GetComponent<PushableObject>().pushing)
+            if (other.GetComponent<PushableObject>().carried)
             {
                 if (pushingBlock != "")
                 {
@@ -76,7 +76,7 @@ public class FungusTrigger : MonoBehaviour
     {
         if (other.GetComponent<PushableObject>() != null) // is small statue
         {
-            if (other.GetComponent<PushableObject>().pushing)
+            if (other.GetComponent<PushableObject>().carried)
             {
                 if (pushingBlock != "" && !pushingBlockExecuted)
                 {
