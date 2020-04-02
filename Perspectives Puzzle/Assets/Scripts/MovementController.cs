@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 [RequireComponent(typeof(CharacterController))]
 public class MovementController : MonoBehaviour
 {
+    public PlayerSwitch playerSwapSystem;
+    public Flowchart flowchart;
     public bool playerCanMove = true, canMove = true, isPushing = false;
 
     private float InputX, InputZ, Speed, gravity;
+
+    public string blockOnFall = "Fallen";
 
     Vector3 lastGroundedPos;
 
@@ -30,6 +35,8 @@ public class MovementController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         lastGroundedPos = this.transform.position + Vector3.down * 5;
+        playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
+        flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
     }
 
     // Update is called once per frame
@@ -63,6 +70,7 @@ public class MovementController : MonoBehaviour
             groundedTimer = 0;
             if(ungroundedTimer >= 1f)
             {
+                flowchart.ExecuteBlock(blockOnFall);
                 print("Repositioning");
                 transform.position = lastGroundedPos + Vector3.up*5;
                 ungroundedTimer = 0;

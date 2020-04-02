@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class PushableObject : MonoBehaviour
 {
-    public bool pushing = false, prompting = false;
+    public bool carried = false, prompting = false;
     public Vector3 pushDirection;
     MovementController movement;
     CharacterController player;
     CharacterController pushable;
+    public float carryTimer = -1, carryTime = 0.5f;
     public float speed = 1;
     public KeyCode pushKey = KeyCode.F;
     public GameObject prompt;
@@ -18,41 +19,68 @@ public class PushableObject : MonoBehaviour
     void Start()
     {
         pushable = gameObject.GetComponent<CharacterController>();
+        //prompt = GameObject.Find("Push Prompt");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(pushing)
+        if (carried)
         {
-            prompt.SetActive(false);
-            if(Input.GetKey(pushKey))
+            if(carryTimer > 0)
             {
-                player.Move(speed * pushDirection * Time.deltaTime);
-                pushable.Move(speed * pushDirection * Time.deltaTime);
-                return;
-            } else
-            {
-                pushing = false;
-            }
-        }
-
-        if(prompting)
-        {
-            prompt.SetActive(true);
-            if(Input.GetKeyDown(pushKey))
-            {
-                movement.canMove = false;
-				movement.isPushing = true;
-                pushing = true;
-                pushDirection = -movement.gameObject.transform.position + transform.position;
-                pushDirection = new Vector3(pushDirection.x, 0, pushDirection.z);
-                prompt.SetActive(false);
+                carryTimer -= Time.deltaTime;
+                transform.localPosition += Vector3.up * 0.25f * Time.deltaTime / carryTime;
+                if(transform.localPosition.y >= 0)
+                {
+                    carryTimer = -1;
+                }
             } else
             {
                 movement.canMove = true;
-				movement.isPushing = false;
+            }
+        } else
+        {
+            if (carryTimer > 0)
+            {
+                carryTimer -= Time.deltaTime;
+                transform.localPosition += Vector3.down * 0.25f * Time.deltaTime / carryTime;
+                if(transform.localPosition.y <= -0.25f)
+                {
+                    carryTimer = -1;
+                }
+            } else
+            {
+                movement.canMove = true;
+                transform.SetParent(null);
+                movement.GetComponent<CharacterController>().radius = 0.5f;
+
+            }
+        }
+
+        if(prompting || carried) 
+        {
+            prompt.GetComponent<Text>().text = carried ? "Press F to Put Down" : "Press F to Pick Up";
+            prompt.SetActive(true);
+            if(Input.GetKeyDown(pushKey))
+            {
+                if (carried)
+                {
+                    movement.canMove = false;
+                    carried = false;
+                    carryTimer = carryTime;
+                }
+                else
+                {
+                    movement.canMove = false;
+                    carried = true;
+                    carryTimer = carryTime;
+                    transform.SetParent(movement.transform);
+                    transform.localPosition = new Vector3(0, -0.25f, 0.87f);
+                    transform.localEulerAngles = Vector3.zero;
+                    movement.GetComponent<CharacterController>().radius = 1.15f;
+                }
             }
         } else
         {
