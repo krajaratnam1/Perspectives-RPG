@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 2484014624581606488}
   - component: {fileID: 2484014624581606495}
   - component: {fileID: 2484014624581606494}
-  - component: {fileID: 2484014624581606493}
   - component: {fileID: 2484014624581606492}
   m_Layer: 9
   m_Name: Small Player
@@ -172,7 +171,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.95, y: 1, z: 0.95}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &2484014624581606494
 CharacterController:
@@ -192,19 +191,6 @@ CharacterController:
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &2484014624581606493
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2484014624581606499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2484014624581606492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,9 +203,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194baeba3744ef2a10bf6241800d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSwapSystem: {fileID: 0}
+  flowchart: {fileID: 0}
   playerCanMove: 1
   canMove: 1
   isPushing: 0
+  blockOnFall: Fallen
   cam: {fileID: 0}
   characterController: {fileID: 2484014624581606494}
   rotationSpeed: 0.3
