@@ -310,8 +310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyInput: 32
   playerSwapSystem: {fileID: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
-  highlightColor: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
+  highlightColor: {r: 1, g: 0.5801887, b: 0.5801887, a: 1}
   highlightTimeout: 0.3
 --- !u!65 &6064872916574912459
 BoxCollider:

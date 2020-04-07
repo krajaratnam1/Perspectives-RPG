@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fdc8e3595db494e8189b1b45fec55510, type: 2}
+  - {fileID: 2100000, guid: 523f6a3bca21c45aa8aec79f6e1d17ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,9 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194baeba3744ef2a10bf6241800d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSwapSystem: {fileID: 0}
+  flowchart: {fileID: 0}
   playerCanMove: 1
   canMove: 1
   isPushing: 0
+  blockOnFall: Fallen
   cam: {fileID: 0}
   characterController: {fileID: 1236070910504333547}
   rotationSpeed: 0.3
