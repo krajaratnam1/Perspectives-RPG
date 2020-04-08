@@ -52,9 +52,13 @@ public class PushableObject : MonoBehaviour
                 }
             } else
             {
-                movement.canMove = true;
+                if (movement != null)
+                {
+                    movement.canMove = true;
+                    movement.GetComponent<CharacterController>().radius = 0.7f;
+                }
                 transform.SetParent(null);
-                movement.GetComponent<CharacterController>().radius = 0.7f;
+                
 
             }
         }
