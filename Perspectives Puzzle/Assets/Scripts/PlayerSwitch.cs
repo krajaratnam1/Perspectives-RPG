@@ -14,7 +14,7 @@ public class PlayerSwitch : MonoBehaviour
 	public string SwapToBigBlock, SwapToBigFailedBlock, SwapToSmallBlock, SwapToSmallFailedBlock;
     public CinemachineFreeLook bigCameraFreeLook, smallCameraFreeLook;
     public CinemachineBrain smallBrain, bigBrain;
-    public GameObject smallStatueLook, bigStatueLook;
+    public GameObject smallStatueLook, bigStatueLook, pushPromptParent, climbPromptParent;
 
     public RawImage bigView;
     public float fadeTime = 1;
@@ -52,6 +52,9 @@ public class PlayerSwitch : MonoBehaviour
         bigStatueLook = GameObject.Find("Big CM Statue Look");
         smallStatueLook = GameObject.Find("Small CM Statue Look");
         bigView = GameObject.Find("Big View").GetComponent<RawImage>();
+        pushPromptParent = GameObject.Find("Push Prompt Parent");
+        climbPromptParent = GameObject.Find("Climb Prompt Parent");
+
 
         SetPlayer(isBigPlayer);
         if (isBigPlayer)
@@ -132,12 +135,16 @@ public class PlayerSwitch : MonoBehaviour
         smallStatue.GetComponent<PushableObject>().carried = false;
         bigStatue.GetComponent<ClimbableObject>().climbing = false;
         bigStatue.GetComponent<ClimbableObject>().centering = false;
+        bigPlayer.GetComponent<MovementController>().carrying = false;
+        smallPlayer.GetComponent<MovementController>().climbing = false;
         cdTimer = cooldown;
         LockMouse();
         Synchronize();
         Fade();
         isBigPlayer = isBig;
         fadeDir = isBigPlayer ? 1 : -1;
+        (isBigPlayer ? pushPromptParent : climbPromptParent).SetActive(true);
+        (isBigPlayer ? climbPromptParent : pushPromptParent).SetActive(false);
         if (simultaneousFadingAndBlending)
         {
             if (!isBigPlayer)

@@ -8,7 +8,7 @@ public class MovementController : MonoBehaviour
 {
     public PlayerSwitch playerSwapSystem;
     public Flowchart flowchart;
-    public bool playerCanMove = true, canMove = true, isPushing = false;
+    public bool playerCanMove = true, canMove = true, carrying = false, climbing = false;
 
     private float InputX, InputZ, Speed, gravity;
 
@@ -63,6 +63,7 @@ public class MovementController : MonoBehaviour
             if (groundedTimer >= 0.5f)
             {
                 lastGroundedPos = transform.position;
+                groundedTimer = 0;
             }
         } else
         {

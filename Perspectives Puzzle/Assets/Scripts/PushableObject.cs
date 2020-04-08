@@ -52,9 +52,13 @@ public class PushableObject : MonoBehaviour
                 }
             } else
             {
-                movement.canMove = true;
+                if (movement != null)
+                {
+                    movement.canMove = true;
+                    movement.GetComponent<CharacterController>().radius = 0.7f;
+                }
                 transform.SetParent(null);
-                movement.GetComponent<CharacterController>().radius = 0.5f;
+                
 
             }
         }
@@ -63,6 +67,7 @@ public class PushableObject : MonoBehaviour
         {
             prompt.GetComponent<Text>().text = carried ? "Press F to Put Down" : "Press F to Pick Up";
             prompt.SetActive(true);
+            movement.carrying = carried;
             if(Input.GetKeyDown(pushKey))
             {
                 if (carried)
@@ -79,7 +84,7 @@ public class PushableObject : MonoBehaviour
                     transform.SetParent(movement.transform);
                     transform.localPosition = new Vector3(0, -0.25f, 0.87f);
                     transform.localEulerAngles = Vector3.zero;
-                    movement.GetComponent<CharacterController>().radius = 1.15f;
+                    //movement.GetComponent<CharacterController>().radius = 1.15f;
                 }
             }
         } else
@@ -88,7 +93,7 @@ public class PushableObject : MonoBehaviour
             if (movement != null)
             {
                 movement.canMove = true;
-				movement.isPushing = false;
+				movement.carrying = false;
             }
         }
     }
