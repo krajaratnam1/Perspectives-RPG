@@ -65,7 +65,6 @@ public class InvisibleWall : MonoBehaviour
             }
 
             float dist = Vector3.Distance(transform.position, movement.transform.position);
-            print(dist);
             if(dist < visibilityDistance)
             {
                 alpha = 1 - (dist / visibilityDistance);

@@ -5,6 +5,7 @@ using Fungus;
 
 public class FungusTrigger : MonoBehaviour
 {
+    public TimestampManager timeManager; 
     public InvisibleWall invisWall = null;
     public PlayerSwitch playerSwapSystem;
     public Flowchart flowchart;
@@ -16,6 +17,7 @@ public class FungusTrigger : MonoBehaviour
     {
         playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        timeManager = GameObject.Find("Timer").GetComponent<TimestampManager>();
 
     }
 
@@ -59,6 +61,10 @@ public class FungusTrigger : MonoBehaviour
 
             if (invisWall != null)
             {
+                if(invisWall.isExit && other.name == "Big Player")
+                {
+                    timeManager.IncrementLevel();
+                }
                 invisWall.gameObject.SetActive(false);
             }
 
