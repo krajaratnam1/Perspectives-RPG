@@ -207,7 +207,8 @@ MonoBehaviour:
   flowchart: {fileID: 0}
   playerCanMove: 1
   canMove: 1
-  isPushing: 0
+  carrying: 0
+  climbing: 0
   blockOnFall: Fallen
   cam: {fileID: 0}
   characterController: {fileID: 2484014624581606494}
