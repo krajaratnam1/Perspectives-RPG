@@ -794,7 +794,6 @@ GameObject:
   - component: {fileID: 3890792709833707810}
   - component: {fileID: 3890792709833707813}
   - component: {fileID: 3890792709833707812}
-  - component: {fileID: 3890792709833707815}
   - component: {fileID: 3890792709833707814}
   - component: {fileID: 3890792709833707865}
   - component: {fileID: 3890792709833707864}
@@ -888,6 +887,10 @@ GameObject:
   - component: {fileID: 3890792709088699616}
   - component: {fileID: 2336157523632481223}
   - component: {fileID: 3890792709088699620}
+  - component: {fileID: 6878554744336370344}
+  - component: {fileID: 2784675098793639160}
+  - component: {fileID: 7905536321327625842}
+  - component: {fileID: 1206180094662346548}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -922,11 +925,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1900.3818, y: -17.641968}
+  scrollPos: {x: 351.2998, y: 13.396418}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.25
+  zoom: 0.6099998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -934,8 +937,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 3890792709833707923}
-  selectedCommands: []
+  - {fileID: 3890792709833707858}
+  selectedCommands:
+  - {fileID: 2336157523632481223}
   variables:
   - {fileID: 3890792709088699666}
   - {fileID: 3890792709088699667}
@@ -969,7 +973,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63
     y: 64
-    width: 132
+    width: 135.24594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -998,7 +1002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 1
-  storyText: But she never abandoned me.
+  storyText: He said I had him wrapped around my little finger, and he couldn't let
+    go.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1025,9 +1030,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 56.684723
-    y: 97.28249
-    width: 146
+    x: 53.559723
+    y: 112.61082
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1053,7 +1058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: I was too scared to go out alone.
+  storyText: I was scared of doing things on my own as a little girl. He was the big
+    fry and I was the small fry.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1082,7 +1088,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.88096
     y: 164.02164
-    width: 156
+    width: 159.8361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1107,8 +1113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 280.0501
-    y: 82
+    x: 338.67093
+    y: 244.06882
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1145,9 +1151,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 264.10022
-    y: 354.3427
-    width: 126
+    x: 362.37662
+    y: 480.20508
+    width: 133.6066
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1230,7 +1236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.82586
     y: 208.95667
-    width: 120
+    width: 122.13117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1261,7 +1267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 1
-  storyText: I remember when I used to look up to her.
+  storyText: I looked up to him, coming home smelling like brine, a conqueror on top
+    of the sea.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1608,9 +1615,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 451.73917
-    y: 59
-    width: 130
+    x: 187.94606
+    y: 81.41377
+    width: 131.96725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1637,9 +1644,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 438.17633
-    y: 328.8427
-    width: 144
+    x: 189.81575
+    y: 134.01512
+    width: 146.72134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1771,9 +1778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 451.81528
-    y: 100.37622
-    width: 130
+    x: 162.41452
+    y: 317.38538
+    width: 131.96725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1886,9 +1893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 443.0275
-    y: 386.75574
-    width: 144
+    x: 177.51013
+    y: 357.69974
+    width: 146.72134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1900,7 +1907,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707864}
   - {fileID: 3890792709833707865}
   - {fileID: 3890792709833707814}
-  - {fileID: 3890792709833707815}
+  - {fileID: 1206180094662346548}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709088699650
 MonoBehaviour:
@@ -2301,7 +2308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 1
-  storyText: She pushed me towards success.
+  storyText: 'He''d go forward and carry me with him, like a trawler catching bits
+    of a sea of childlike wonder. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2727,7 +2735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 1
-  storyText: I couldn't do anything without her.
+  storyText: '"The sea is calling" he''d say. Why did he have to go? Why couldn''t
+    he be there for me?'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2818,7 +2827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 1
-  storyText: She used to do almost everything for me.
+  storyText: Even though he'd come back from a long day, he'd be there for me. I had
+    so much respect for him.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2911,7 +2921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 48.456467
     y: 295.17392
-    width: 132
+    width: 135.24594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2954,7 +2964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 51
   indentLevel: 1
-  storyText: She was always there when I needed her.
+  storyText: He was always there when I needed him. He had to be in control of everything.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3109,7 +3119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 1
-  storyText: As I got a little older, I felt like I was falling short.
+  storyText: As I grew up, I think I didn't live up to his expectations.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3522,7 +3532,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 73.45622
     y: 440.13058
-    width: 120
+    width: 122.13117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3555,7 +3565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 57.445587
     y: 391.26004
-    width: 156
+    width: 159.8361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3580,7 +3590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 0
-  storyText: I still needed her.
+  storyText: And I guess I was young, so it didn't bother me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3671,9 +3681,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -190.72644
-    y: 166.01433
-    width: 146
+    x: -264.86432
+    y: 155.26117
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3766,7 +3776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 1
-  storyText: But what could I do?
+  storyText: '"What happened to that little girl you used to be?" He''d tell me.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3857,34 +3867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 1
-  storyText: Maybe I just needed to be there for her.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &3890792709833707815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 78
-  indentLevel: 1
-  storyText: I knew that she couldn't do everything by herself.
+  storyText: '"I can handle it on my own," he''d say and grunt and make a fuss.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3975,7 +3958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 1
-  storyText: I wanted to do more for her.
+  storyText: Proud men have trouble accepting help from their daughters.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4066,7 +4049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 108
   indentLevel: 1
-  storyText: She wanted me to be challenged.
+  storyText: Looking back, he just didn't want me to live a life like his. He was
+    scared. Not that he would ever show it.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4093,7 +4077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 105
   indentLevel: 1
-  storyText: She wouldn't ever let me take the easy way out.
+  storyText: '"Not good enough!" he''d say. He wanted to see something better, but
+    he didn''t know how to do better.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4248,9 +4233,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -178.68294
-    y: 233.18158
-    width: 156
+    x: -251.505
+    y: 221.11263
+    width: 159.8361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4275,7 +4260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 1
-  storyText: She kept asking more of me.
+  storyText: He thought I wasn't trying, but the world had changed while he was spending
+    his days at sea.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4688,7 +4674,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 45.40207
     y: 328.45642
-    width: 146
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4714,7 +4700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 1
-  storyText: But she needed me too.
+  storyText: Looking back, he needed me too.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4741,9 +4727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -164.14719
-    y: 279.16345
-    width: 120
+    x: -235.47672
+    y: 265.77856
+    width: 122.13117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4774,7 +4760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 86
   indentLevel: 0
-  storyText: She still wouldn't move on without me.
+  storyText: He'd always come back... but that just made me feel guilty for not being
+    able to take care of the house on my own.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4865,9 +4852,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -187.67201
-    y: 132.73177
-    width: 132
+    x: -263.12567
+    y: 119.17027
+    width: 135.24594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4893,9 +4880,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 442.09888
-    y: 540.67615
-    width: 144
+    x: -154.10335
+    y: 178.49791
+    width: 146.72134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4923,7 +4910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 119
   indentLevel: 1
-  storyText: It was all much harder for me than she thought.
+  storyText: He thought I wasn't trying and that I needed to be pushed. But the world's
+    more complicated than casting a net.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5014,7 +5002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 1
-  storyText: I struggled to meet her standards.
+  storyText: Investors, marketers, realtors, people in fancy suits. He didn't understand
+    any of that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5190,7 +5179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 114
   indentLevel: 1
-  storyText: She thought I was looking to cut corners.
+  storyText: He gave pressure because he felt pressure, like a barge taking on too
+    much water, bursting at the seams.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5281,7 +5271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 112
   indentLevel: 1
-  storyText: Her disappointment grew every time I asked for help.
+  storyText: '"I have experience. Let me help you!" That''s all he saw.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5372,9 +5362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 447.78397
-    y: 244.001
-    width: 130
+    x: -138.06146
+    y: 223.67267
+    width: 131.96725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5489,7 +5479,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.07181
     y: 691.0017
-    width: 120
+    width: 122.13117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5904,7 +5894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 153
   indentLevel: 0
-  storyText: I didn't want to disappoint her.
+  storyText: I was always worried about disappointing him.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5997,7 +5987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 34.960407
     y: 579.3275
-    width: 146
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6038,8 +6028,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 48.586227
-    y: 642.39124
-    width: 156
+    y: 644.0306
+    width: 159.8361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6064,7 +6054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 136
   indentLevel: 0
-  storyText: She was very patient back then.
+  storyText: He was very patient back then.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6091,7 +6081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 189
   indentLevel: 0
-  storyText: She'd always wait for me.
+  storyText: He said he wouldn't be there for me forever, but he'd always stick around.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6247,8 +6237,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 41.07202
-    y: 544.57007
-    width: 132
+    y: 535.26776
+    width: 135.24594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6274,9 +6264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 447.57
-    y: 144.96634
-    width: 130
+    x: 182.13715
+    y: 615.6561
+    width: 131.96725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6284,7 +6274,10 @@ MonoBehaviour:
   blockName: lvl 3 big swaps
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 6878554744336370344}
+  - {fileID: 2784675098793639160}
+  - {fileID: 7905536321327625842}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707929
 MonoBehaviour:
@@ -6449,9 +6442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 456.6338
-    y: 444.8059
-    width: 144
+    x: 166.97878
+    y: 577.5642
+    width: 146.72134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6477,7 +6470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 163
   indentLevel: 1
-  storyText: But she wanted me to climb even higher.
+  storyText: 'He didn''t approve, but I wanted to build off his knowledge of the sea. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6589,9 +6582,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -189.74222
-    y: 514.8208
-    width: 156
+    x: -301.81125
+    y: 525.1655
+    width: 159.8361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6616,7 +6609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 180
   indentLevel: 0
-  storyText: I still wasn't ready...
+  storyText: I was a teenager, but I still thought of him as big and   powerful. I
+    didn't realize he needed me more.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6707,9 +6701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -199.36804
-    y: 453.49213
-    width: 146
+    x: -311.43707
+    y: 463.83704
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6735,7 +6729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 1
-  storyText: She thought I had potential.
+  storyText: He knew that my grades weren't "good enough". But what *was* good enough?
+    Looking back, he didn't know either.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7146,9 +7141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -171.63503
-    y: 565.1665
-    width: 120
+    x: -285.34335
+    y: 575.5112
+    width: 122.13117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7179,7 +7174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 144
   indentLevel: 1
-  storyText: Years passed, but I always held her in the highest of regards.
+  storyText: Years passed, but I still looked up to him. Even after I had surpassed
+    him.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7206,9 +7202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 455.42725
-    y: 187.76042
-    width: 130
+    x: -211.81383
+    y: 496.38123
+    width: 131.96725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7236,7 +7232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 193
   indentLevel: 1
-  storyText: She wanted me to figure things out by myself.
+  storyText: He both couldn't let go taking care of me, yet wanted me to be independent.
+    He didn't know where to draw the line.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7391,9 +7388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 454.58286
-    y: 496.88306
-    width: 144
+    x: -200.58923
+    y: 462.40042
+    width: 146.72134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7421,7 +7418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 198
   indentLevel: 1
-  storyText: But she still wanted to see me grow.
+  storyText: I needed to do things by myself. I couldn't keep dangling by his side.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7512,7 +7509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 196
   indentLevel: 1
-  storyText: So she wanted me to do more on my own.
+  storyText: He wanted me to handle myself. To him, life at home should be easy compared
+    to the sea.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7773,7 +7771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 191
   indentLevel: 1
-  storyText: She took charge some days.
+  storyText: 'He liked to be hands-on with things, both at work and at home. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7800,9 +7798,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -194.94562
-    y: 418.73468
-    width: 132
+    x: -307.01465
+    y: 429.0796
+    width: 135.24594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7828,7 +7826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 209
   indentLevel: 0
-  storyText: I wonder what she thought of me back then.
+  storyText: 'I wanted to be a fisherman like him some day. He really hoped I''d grow
+    out of that idea. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7855,7 +7854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  storyText: I just wanted to be good for her
+  storyText: The sad thing that dads realize, is that their daughter has to grow up
+    some day.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7882,7 +7882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 211
   indentLevel: 0
-  storyText: She wouldn't admit it, but I think she was proud of me for a little bit.
+  storyText: Dependable parents give their children a head start in life... But ultimately
+    we all have to raise ourselves.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7909,7 +7910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: She started calling me lazy.
+  storyText: Sometimes the monster that hurts most is the one that is trying to help
+    you.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7936,7 +7938,191 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: She always wanted me to improve.
+  storyText: He'd love to be the one to bring me forward, but I was getting older,
+    and I knew more about the world than he did.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &6878554744336370344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 214
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 3890792709088699666}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 1
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &2784675098793639160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 215
+  indentLevel: 1
+  storyText: '"You''re going to be amazing," he''d say. "You''re gonna climb past
+    wherever I can reach. None of this fishing nonsense!"'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &7905536321327625842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 216
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 3890792709088699666}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1206180094662346548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 217
+  indentLevel: 1
+  storyText: I wanted to be strong like him, to make him proud of me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
