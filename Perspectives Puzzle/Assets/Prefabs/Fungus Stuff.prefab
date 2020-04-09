@@ -873,6 +873,12 @@ GameObject:
   - component: {fileID: 6878554744336370344}
   - component: {fileID: 2784675098793639160}
   - component: {fileID: 7905536321327625842}
+  - component: {fileID: 750889685}
+  - component: {fileID: 750889684}
+  - component: {fileID: 750889683}
+  - component: {fileID: 750889682}
+  - component: {fileID: 750889681}
+  - component: {fileID: 750889680}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -907,11 +913,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 437.35873, y: -77.4247}
+  scrollPos: {x: 451.7691, y: 23.141663}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.56474996
+  zoom: 0.50475
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -919,8 +925,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 3890792709833707901}
-  selectedCommands: []
+  - {fileID: 3890792709833707858}
+  selectedCommands:
+  - {fileID: 2336157523632481223}
   variables:
   - {fileID: 3890792709088699666}
   - {fileID: 3890792709088699667}
@@ -954,7 +961,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.41004
     y: 64
-    width: 136.76407
+    width: 147.07776
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -983,7 +990,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 53.559723
     y: 112.61082
-    width: 150.92963
+    width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1037,9 +1044,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 69.88096
-    y: 164.02164
-    width: 163.3245
+    x: 73.422356
+    y: 165.79233
+    width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1066,7 +1073,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 338.67093
     y: 244.06882
-    width: 120
+    width: 127.26597
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1104,7 +1111,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 362.37662
     y: 480.20508
-    width: 133.22267
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1187,7 +1194,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.82586
     y: 208.95663
-    width: 124.369194
+    width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1568,7 +1575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.94606
     y: 81.41377
-    width: 133.22267
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1597,7 +1604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 209.81575
     y: 135.83333
-    width: 145.61754
+    width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1729,9 +1736,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 224.8094
+    x: 226.5801
     y: 372.08786
-    width: 133.22267
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1845,7 +1852,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 196.1314
     y: 311.08878
-    width: 145.61754
+    width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2839,9 +2846,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 48.456467
+    x: 47.456467
     y: 295.17392
-    width: 136.76407
+    width: 147.07776
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3422,9 +3429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 73.45622
-    y: 440.13058
-    width: 124.369194
+    x: 71.34985
+    y: 438.0242
+    width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3455,9 +3462,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 59.21628
+    x: 60.986977
     y: 391.26
-    width: 163.3245
+    width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3547,8 +3554,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -264.86432
-    y: 155.26117
-    width: 150.92963
+    y: 153.49048
+    width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3796,8 +3803,8 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 1
   storyText: First I thought my baby brother was a nuisance, y'know, kid's stuff.
-    But he kept getting in trouble at school. And when mom wasn't around, I had to
-    watch over him. It wasn't weird to me, I just wanted to help.
+    But he kept getting in trouble at school. When mom wasn't around, I had to watch
+    over him. I just wanted to help.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4016,9 +4023,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -251.60991
+    x: -272.85825
     y: 219.34193
-    width: 163.3245
+    width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4044,7 +4051,8 @@ MonoBehaviour:
   itemId: 96
   indentLevel: 1
   storyText: 'Everything had seemed normal (that was just how moms were, I''d tell
-    myself) but by the time I was in high school, I knew I needed to get out. '
+    myself) but by the time I was in high school, she just didn''t see the obstacles
+    in my way. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4456,8 +4464,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 45.40207
-    y: 328.45642
-    width: 150.92963
+    y: 326.68573
+    width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4484,7 +4492,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -235.47672
     y: 265.77856
-    width: 124.369194
+    width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4581,7 +4589,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -264.94385
     y: 119.17027
-    width: 136.76407
+    width: 147.07776
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4606,9 +4614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -154.10335
+    x: -152.33266
     y: 178.49791
-    width: 145.61754
+    width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4620,6 +4628,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707844}
   - {fileID: 3890792709833707845}
   - {fileID: 3890792709833707842}
+  - {fileID: 750889681}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707842
 MonoBehaviour:
@@ -4700,7 +4709,7 @@ MonoBehaviour:
   itemId: 117
   indentLevel: 1
   storyText: Grandma would tell me "You deserve better than this. {i}Know{/i} that."
-    Between her and my teachers, I don't know what I would have done.
+    Between her and my teachers, I could believe in myself.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5033,9 +5042,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -124.5999
-    y: 231.36499
-    width: 133.22267
+    x: -120.84802
+    y: 226.65726
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5047,6 +5056,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707898}
   - {fileID: 3890792709833707899}
   - {fileID: 3890792709833707896}
+  - {fileID: 750889682}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707900
 MonoBehaviour:
@@ -5149,7 +5159,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.07181
     y: 691.0017
-    width: 124.369194
+    width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5628,9 +5638,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 34.960407
-    y: 579.3275
-    width: 150.92963
+    x: 33.090374
+    y: 581.1976
+    width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5669,9 +5679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 48.586227
+    x: 46.716194
     y: 645.9537
-    width: 163.3245
+    width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5826,7 +5836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 41.07202
     y: 535.26776
-    width: 136.76407
+    width: 147.07776
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5851,9 +5861,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 182.13715
-    y: 617.5792
-    width: 133.22267
+    x: 184.00719
+    y: 630.66956
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6029,9 +6039,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 163.13263
-    y: 577.564
-    width: 145.61754
+    x: 165.00266
+    y: 579.4341
+    width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6173,7 +6183,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -301.81122
     y: 523.34735
-    width: 163.3245
+    width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6264,7 +6274,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -311.43707
     y: 463.83704
-    width: 150.92963
+    width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6289,8 +6299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 1
-  storyText: She was worried about some monster looming over on the horizon. She'd
-    push and push.
+  storyText: She was trying to support me for some monster looming over on the horizon.
+    She'd push and push.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6701,9 +6711,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -283.52518
+    x: -285.3952
     y: 577.4343
-    width: 124.369194
+    width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6734,7 +6744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 144
   indentLevel: 1
-  storyText: Years passed, and the school noticed me.
+  storyText: Mom tried to teach me everything she knew. She wanted me to be able to
+    be a strong woman and "find a nice man who won't leave you".
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6761,9 +6772,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -159.08658
+    x: -155.5452
     y: 525.4721
-    width: 133.22267
+    width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6920,7 +6931,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -184.22565
     y: 475.12766
-    width: 145.61754
+    width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7303,7 +7314,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -307.01465
     y: 429.0796
-    width: 136.76407
+    width: 147.07776
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7357,8 +7368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  storyText: It's hard to stop a monster from coming for you if you don't know what
-    it looks like.
+  storyText: I wanted to help mom. Every child wants to help their parent. I thought
+    we were a team.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7413,9 +7424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: Sometimes parents get angry with us, but they never give us the care
-    and stability we need in our lives to flourish. Fortunately, I was able to get
-    out of there.
+  storyText: Sometimes parents can get angry with us, but they might not give us the
+    care and stability we need to flourish. I'm here to tell you that every child
+    deserves that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7442,8 +7453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: 'Mom was worried about a monster coming for me. But she never knew how
-    to stop it coming for her. '
+  storyText: 'Mom didn''t know how to stop a monster coming for me, or even herself.
+    The older I got, the more I was helping her out. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7534,8 +7545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 215
   indentLevel: 1
-  storyText: Mom tried to teach me everything she knew. She wanted me to be able to
-    be a strong woman and "find a nice man who won't leave you".
+  storyText: She provided food, shelter, clothes. I never had to worry materially.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7612,6 +7622,165 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &750889685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -56.659264
+    y: 353.65314
+    width: 281.7979
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 1
+  itemId: 217
+  blockName: Level 2 - Cooperate - Child helps out
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
+--- !u!114 &750889684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 64.33373
+    y: 743.704
+    width: 143.1154
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 1
+  itemId: 218
+  blockName: Level 3 - Boost
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
+--- !u!114 &750889683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -322.76312
+    y: 631.5023
+    width: 335.28973
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 1
+  itemId: 219
+  blockName: Level 4 - Inverse Level 2, parent boosts child
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
+--- !u!114 &750889682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 1
+  storyText: How could I focus on doing well in class in an environment like that?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &750889681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
+  indentLevel: 1
+  storyText: 'I tried to take care of my family, but I needed to be able to take care
+    of my own needs first. I was a child. I needed to get out. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &750889680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -383.68933
+    y: 70.37745
+    width: 289.72263
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 1
+  itemId: 222
+  blockName: Level 5 - Complex, child solves puzzle
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
 --- !u!1 &3890792709561238700
 GameObject:
   m_ObjectHideFlags: 0
