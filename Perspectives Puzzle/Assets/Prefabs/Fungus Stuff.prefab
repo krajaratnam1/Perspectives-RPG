@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &239118621938087821
+--- !u!1 &3890792707890451819
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,62 +8,141 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 239118621938087822}
-  - component: {fileID: 239118621938087816}
-  - component: {fileID: 239118621938087823}
-  m_Layer: 0
-  m_Name: background
+  - component: {fileID: 3890792707890451818}
+  - component: {fileID: 3890792707890451820}
+  - component: {fileID: 3890792707890451821}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &239118621938087822
+--- !u!224 &3890792707890451818
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239118621938087821}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 3890792707890451819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3890792708762760125}
-  m_RootOrder: 1
+  m_Father: {fileID: 3890792707948819840}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &239118621938087816
+--- !u!222 &3890792707890451820
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239118621938087821}
+  m_GameObject: {fileID: 3890792707890451819}
   m_CullTransparentMesh: 0
---- !u!114 &239118621938087823
+--- !u!114 &3890792707890451821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239118621938087821}
+  m_GameObject: {fileID: 3890792707890451819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!1 &3890792707948819841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3890792707948819840}
+  - component: {fileID: 3890792707948819845}
+  - component: {fileID: 3890792707948819842}
+  - component: {fileID: 3890792707948819843}
+  m_Layer: 5
+  m_Name: Continue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3890792707948819840
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792707948819841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3890792707890451818}
+  m_Father: {fileID: 3890792708315971952}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -38.900024, y: 38.074993}
+  m_SizeDelta: {x: 77.900024, y: 77}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3890792707948819845
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792707948819841}
+  m_CullTransparentMesh: 0
+--- !u!114 &3890792707948819842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792707948819841}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c17f96ea4f59f40cbbd7b74231a307ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -73,6 +152,60 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3890792707948819843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792707948819841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3890792707948819842}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3890792708764566158}
+        m_MethodName: SetButtonClickedFlag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3890792708315971953
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,14 +235,15 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3890792707948819840}
   m_Father: {fileID: 3890792708762760125}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: -40}
+  m_AnchorMax: {x: 1, y: 0.78700006}
+  m_AnchoredPosition: {x: 3, y: -91}
+  m_SizeDelta: {x: -61, y: -63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3890792708315971957
 CanvasRenderer:
@@ -138,21 +272,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: dd65f5f4cde6341d997feeeb7255dfba, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 2
+    m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 4
     m_MaxSize: 50
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0.8
-  m_Text: 'something
-
-    something else'
+    m_LineSpacing: 1
+  m_Text: Story text
 --- !u!114 &3890792708315971955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,16 +336,17 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3890792709741414628}
+  - {fileID: 3890792709916721626}
   - {fileID: 3890792708315971952}
-  - {fileID: 239118621938087822}
   m_Father: {fileID: 3890792708764566159}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 40}
-  m_SizeDelta: {x: 1600, y: 200}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -750.0001, y: 0}
+  m_SizeDelta: {x: 1500, y: 335}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &3890792708762760113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -235,12 +368,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7019608, g: 0.68235296, b: 0.8352941, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e8ab00ef0d9684dcb9deb52811d91218, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -420,13 +553,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 0.25
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 3890792707948819843}
   dialogCanvas: {fileID: 3890792708764566150}
-  nameText: {fileID: 0}
+  nameText: {fileID: 3890792709741414631}
   nameTextGO: {fileID: 0}
   storyText: {fileID: 3890792708315971954}
   storyTextGO: {fileID: 0}
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 3890792709916721628}
   fitTextWithImage: 1
   closeOtherDialogs: 0
 --- !u!114 &3890792708764566147
@@ -594,7 +727,6 @@ GameObject:
   - component: {fileID: 3890792709088699621}
   - component: {fileID: 3890792709088699622}
   - component: {fileID: 3890792709088699623}
-  - component: {fileID: 3890792709088699674}
   - component: {fileID: 3890792709088699675}
   - component: {fileID: 3890792709088699672}
   - component: {fileID: 3890792709088699673}
@@ -628,7 +760,6 @@ GameObject:
   - component: {fileID: 3890792709088699708}
   - component: {fileID: 3890792709088699709}
   - component: {fileID: 3890792709088699706}
-  - component: {fileID: 3890792709088699707}
   - component: {fileID: 3890792709088699711}
   - component: {fileID: 3890792709088699710}
   - component: {fileID: 3890792709088699697}
@@ -642,7 +773,6 @@ GameObject:
   - component: {fileID: 3890792709088699688}
   - component: {fileID: 3890792709833707837}
   - component: {fileID: 3890792709833707836}
-  - component: {fileID: 3890792709833707839}
   - component: {fileID: 3890792709833707838}
   - component: {fileID: 3890792709833707825}
   - component: {fileID: 3890792709833707824}
@@ -654,18 +784,14 @@ GameObject:
   - component: {fileID: 3890792709833707830}
   - component: {fileID: 3890792709833707817}
   - component: {fileID: 3890792709833707823}
-  - component: {fileID: 3890792709833707822}
   - component: {fileID: 3890792709833707809}
   - component: {fileID: 3890792709833707808}
   - component: {fileID: 3890792709833707811}
   - component: {fileID: 3890792709833707810}
   - component: {fileID: 3890792709833707813}
-  - component: {fileID: 3890792709833707812}
   - component: {fileID: 3890792709833707814}
   - component: {fileID: 3890792709833707865}
   - component: {fileID: 3890792709833707864}
-  - component: {fileID: 3890792709833707867}
-  - component: {fileID: 3890792709833707866}
   - component: {fileID: 3890792709833707869}
   - component: {fileID: 3890792709833707868}
   - component: {fileID: 3890792709833707858}
@@ -677,19 +803,15 @@ GameObject:
   - component: {fileID: 3890792709833707848}
   - component: {fileID: 3890792709833707851}
   - component: {fileID: 3890792709833707850}
-  - component: {fileID: 3890792709833707853}
   - component: {fileID: 3890792709833707852}
-  - component: {fileID: 3890792709833707855}
   - component: {fileID: 3890792709833707854}
   - component: {fileID: 3890792709833707841}
   - component: {fileID: 3890792709833707840}
-  - component: {fileID: 3890792709833707843}
   - component: {fileID: 3890792709833707842}
   - component: {fileID: 3890792709833707845}
   - component: {fileID: 3890792709833707844}
   - component: {fileID: 3890792709833707847}
   - component: {fileID: 3890792709833707846}
-  - component: {fileID: 3890792709833707897}
   - component: {fileID: 3890792709833707896}
   - component: {fileID: 3890792709833707899}
   - component: {fileID: 3890792709833707898}
@@ -703,13 +825,10 @@ GameObject:
   - component: {fileID: 3890792709833707890}
   - component: {fileID: 3890792709833707893}
   - component: {fileID: 3890792709833707892}
-  - component: {fileID: 3890792709833707895}
   - component: {fileID: 3890792709833707894}
   - component: {fileID: 3890792709833707881}
   - component: {fileID: 3890792709833707883}
   - component: {fileID: 3890792709833707886}
-  - component: {fileID: 3890792709833707873}
-  - component: {fileID: 3890792709833707872}
   - component: {fileID: 3890792709833707875}
   - component: {fileID: 3890792709833707877}
   - component: {fileID: 3890792709833707876}
@@ -722,7 +841,6 @@ GameObject:
   - component: {fileID: 3890792709833707935}
   - component: {fileID: 3890792709833707934}
   - component: {fileID: 3890792709833707923}
-  - component: {fileID: 3890792709833707922}
   - component: {fileID: 3890792709833707925}
   - component: {fileID: 3890792709833707924}
   - component: {fileID: 3890792709833707927}
@@ -735,11 +853,9 @@ GameObject:
   - component: {fileID: 3890792709833707916}
   - component: {fileID: 3890792709833707918}
   - component: {fileID: 3890792709833707905}
-  - component: {fileID: 3890792709833707904}
   - component: {fileID: 3890792709833707907}
   - component: {fileID: 3890792709833707906}
   - component: {fileID: 3890792709833707909}
-  - component: {fileID: 3890792709833707908}
   - component: {fileID: 3890792709833707911}
   - component: {fileID: 3890792709833707910}
   - component: {fileID: 3890792709833707961}
@@ -757,7 +873,6 @@ GameObject:
   - component: {fileID: 6878554744336370344}
   - component: {fileID: 2784675098793639160}
   - component: {fileID: 7905536321327625842}
-  - component: {fileID: 1206180094662346548}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -792,20 +907,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 351.2998, y: 13.396418}
+  scrollPos: {x: 437.35873, y: -77.4247}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6099998
+  zoom: 0.56474996
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands:
-  - {fileID: 2336157523632481223}
+  selectedBlocks:
+  - {fileID: 3890792709833707901}
+  selectedCommands: []
   variables:
   - {fileID: 3890792709088699666}
   - {fileID: 3890792709088699667}
@@ -837,9 +952,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 63
+    x: 66.41004
     y: 64
-    width: 135.24594
+    width: 136.76407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -850,38 +965,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709088699708}
   - {fileID: 3890792709088699709}
-  - {fileID: 3890792709088699674}
   - {fileID: 3890792709088699706}
-  - {fileID: 3890792709088699707}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709088699674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 1
-  indentLevel: 1
-  storyText: He said I had him wrapped around my little finger, and he couldn't let
-    go.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709088699675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,7 +983,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 53.559723
     y: 112.61082
-    width: 150.00003
+    width: 150.92963
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -924,8 +1009,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: I was scared of doing things on my own as a little girl. He was the big
-    fry and I was the small fry.
+  storyText: 'I was scared of doing things on my own as a little girl. She was tall
+    and her hair was straight. She was my hero. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -954,7 +1039,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.88096
     y: 164.02164
-    width: 159.8361
+    width: 163.3245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1019,7 +1104,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 362.37662
     y: 480.20508
-    width: 133.6066
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1101,8 +1186,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 85.82586
-    y: 208.95667
-    width: 122.13117
+    y: 208.95663
+    width: 124.369194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1133,8 +1218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 1
-  storyText: I looked up to him, coming home smelling like brine, a conqueror on top
-    of the sea.
+  storyText: We lived by the water. It was Mom's dream. But she was worried a great
+    and terrible monster would come for me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1483,7 +1568,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.94606
     y: 81.41377
-    width: 131.96725
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1510,9 +1595,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 189.81575
-    y: 134.01512
-    width: 146.72134
+    x: 209.81575
+    y: 135.83333
+    width: 145.61754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1644,9 +1729,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 162.41452
-    y: 317.38538
-    width: 131.96725
+    x: 224.8094
+    y: 372.08786
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1658,7 +1743,6 @@ MonoBehaviour:
   - {fileID: 3890792709833707813}
   - {fileID: 3890792709833707810}
   - {fileID: 3890792709833707811}
-  - {fileID: 3890792709833707812}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709088699655
 MonoBehaviour:
@@ -1759,9 +1843,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 177.51013
-    y: 357.69974
-    width: 146.72134
+    x: 196.1314
+    y: 311.08878
+    width: 145.61754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1773,7 +1857,6 @@ MonoBehaviour:
   - {fileID: 3890792709833707864}
   - {fileID: 3890792709833707865}
   - {fileID: 3890792709833707814}
-  - {fileID: 1206180094662346548}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709088699650
 MonoBehaviour:
@@ -2160,34 +2243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
---- !u!114 &3890792709088699707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 35
-  indentLevel: 1
-  storyText: 'He''d go forward and carry me with him, like a trawler catching bits
-    of a sea of childlike wonder. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709088699711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,8 +2656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 1
-  storyText: '"The sea is calling" he''d say. Why did he have to go? Why couldn''t
-    he be there for me?'
+  storyText: '"What monster? How do we stop it?" I''d ask. "I''ll tell you later,"
+    she''d say. "I''m really tired from work today."'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2693,8 +2748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 1
-  storyText: Even though he'd come back from a long day, he'd be there for me. I had
-    so much respect for him.
+  storyText: 'She thought monsters were all around us. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2787,7 +2841,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 48.456467
     y: 295.17392
-    width: 135.24594
+    width: 136.76407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2798,9 +2852,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709833707825}
   - {fileID: 3890792709833707838}
-  - {fileID: 3890792709833707839}
   - {fileID: 3890792709833707836}
-  - {fileID: 3890792709833707853}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707836
 MonoBehaviour:
@@ -2816,33 +2868,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
---- !u!114 &3890792709833707839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 51
-  indentLevel: 1
-  storyText: He was always there when I needed him. He had to be in control of everything.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,7 +3010,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 1
-  storyText: As I grew up, I think I didn't live up to his expectations.
+  storyText: I thought it was just a normal house. Didn't all girls have to live like
+    this?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3398,7 +3424,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 73.45622
     y: 440.13058
-    width: 122.13117
+    width: 124.369194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3429,9 +3455,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 57.445587
-    y: 391.26004
-    width: 159.8361
+    x: 59.21628
+    y: 391.26
+    width: 163.3245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3442,33 +3468,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709088699617}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 56
-  indentLevel: 0
-  storyText: And I guess I was young, so it didn't bother me.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3549,7 +3548,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -264.86432
     y: 155.26117
-    width: 150.00003
+    width: 150.92963
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3560,9 +3559,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709833707868}
   - {fileID: 3890792709833707869}
-  - {fileID: 3890792709833707866}
   - {fileID: 3890792709833707883}
-  - {fileID: 3890792709833707867}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707811
 MonoBehaviour:
@@ -3642,7 +3639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 1
-  storyText: '"What happened to that little girl you used to be?" He''d tell me.'
+  storyText: Mom was tired from work, sure, but that wasn't any excuse for yelling
+    for no reason. Was it weird? As a kid, she was just mom.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3719,33 +3717,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 74
-  indentLevel: 1
-  storyText: '"I can handle it on my own," he''d say and grunt and make a fuss.'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3824,7 +3795,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 1
-  storyText: Proud men have trouble accepting help from their daughters.
+  storyText: First I thought my baby brother was a nuisance, y'know, kid's stuff.
+    But he kept getting in trouble at school. And when mom wasn't around, I had to
+    watch over him. It wasn't weird to me, I just wanted to help.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3901,62 +3874,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 108
-  indentLevel: 1
-  storyText: Looking back, he just didn't want me to live a life like his. He was
-    scared. Not that he would ever show it.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &3890792709833707866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 105
-  indentLevel: 1
-  storyText: '"Not good enough!" he''d say. He wanted to see something better, but
-    he didn''t know how to do better.'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4099,9 +4016,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -251.505
-    y: 221.11263
-    width: 159.8361
+    x: -251.60991
+    y: 219.34193
+    width: 163.3245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4126,8 +4043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 1
-  storyText: He thought I wasn't trying, but the world had changed while he was spending
-    his days at sea.
+  storyText: 'Everything had seemed normal (that was just how moms were, I''d tell
+    myself) but by the time I was in high school, I knew I needed to get out. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4540,7 +4457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 45.40207
     y: 328.45642
-    width: 150.00003
+    width: 150.92963
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4550,35 +4467,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707809}
-  - {fileID: 3890792709833707822}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 53
-  indentLevel: 1
-  storyText: Looking back, he needed me too.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4595,7 +4484,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -235.47672
     y: 265.77856
-    width: 122.13117
+    width: 124.369194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4612,34 +4501,6 @@ MonoBehaviour:
   - {fileID: 3890792709833707860}
   - {fileID: 3890792709833707861}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 86
-  indentLevel: 0
-  storyText: He'd always come back... but that just made me feel guilty for not being
-    able to take care of the house on my own.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,9 +4579,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -263.12567
+    x: -264.94385
     y: 119.17027
-    width: 135.24594
+    width: 136.76407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4730,7 +4591,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707854}
-  - {fileID: 3890792709833707855}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707840
 MonoBehaviour:
@@ -4748,7 +4608,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -154.10335
     y: 178.49791
-    width: 146.72134
+    width: 145.61754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4760,36 +4620,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707844}
   - {fileID: 3890792709833707845}
   - {fileID: 3890792709833707842}
-  - {fileID: 3890792709833707843}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 119
-  indentLevel: 1
-  storyText: He thought I wasn't trying and that I needed to be pushed. But the world's
-    more complicated than casting a net.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4868,8 +4699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 1
-  storyText: Investors, marketers, realtors, people in fancy suits. He didn't understand
-    any of that.
+  storyText: Grandma would tell me "You deserve better than this. {i}Know{/i} that."
+    Between her and my teachers, I don't know what I would have done.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5031,34 +4862,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 114
-  indentLevel: 1
-  storyText: He gave pressure because he felt pressure, like a barge taking on too
-    much water, bursting at the seams.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5137,7 +4940,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 112
   indentLevel: 1
-  storyText: '"I have experience. Let me help you!" That''s all he saw.'
+  storyText: "\u201CHe\u2019ll be fine,\u201D she\u2019d say, when my brother would
+    skip class or smoke in the bathroom. But if she caught me crossing my legs, she\u2019d
+    be screaming, \u201CNo man on Earth would want a girl like you!\u201D\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5228,9 +5033,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -138.06146
-    y: 223.67267
-    width: 131.96725
+    x: -124.5999
+    y: 231.36499
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5242,7 +5047,6 @@ MonoBehaviour:
   - {fileID: 3890792709833707898}
   - {fileID: 3890792709833707899}
   - {fileID: 3890792709833707896}
-  - {fileID: 3890792709833707897}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707900
 MonoBehaviour:
@@ -5345,7 +5149,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.07181
     y: 691.0017
-    width: 122.13117
+    width: 124.369194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5746,33 +5550,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 153
-  indentLevel: 0
-  storyText: I was always worried about disappointing him.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5853,7 +5630,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 34.960407
     y: 579.3275
-    width: 150.00003
+    width: 150.92963
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5863,7 +5640,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707894}
-  - {fileID: 3890792709833707895}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707883
 MonoBehaviour:
@@ -5894,8 +5670,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 48.586227
-    y: 644.0306
-    width: 159.8361
+    y: 645.9537
+    width: 163.3245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5906,60 +5682,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709088699616}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 136
-  indentLevel: 0
-  storyText: He was very patient back then.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &3890792709833707872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 189
-  indentLevel: 0
-  storyText: He said he wouldn't be there for me forever, but he'd always stick around.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6104,7 +5826,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 41.07202
     y: 535.26776
-    width: 135.24594
+    width: 136.76407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6114,7 +5836,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707877}
-  - {fileID: 3890792709833707873}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707878
 MonoBehaviour:
@@ -6131,8 +5852,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 182.13715
-    y: 615.6561
-    width: 131.96725
+    y: 617.5792
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6308,9 +6029,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 166.97878
-    y: 577.5642
-    width: 146.72134
+    x: 163.13263
+    y: 577.564
+    width: 145.61754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6336,7 +6057,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 163
   indentLevel: 1
-  storyText: 'He didn''t approve, but I wanted to build off his knowledge of the sea. '
+  storyText: '"Your child has a gift!" My teachers would say. "You need to nurture
+    her!" Mom would keep quiet, but at home would say "What''s wrong? Are they saying
+    I''m a bad mother?!"'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6448,9 +6171,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -301.81125
-    y: 525.1655
-    width: 159.8361
+    x: -301.81122
+    y: 523.34735
+    width: 163.3245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6461,34 +6184,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709088699620}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 180
-  indentLevel: 0
-  storyText: I was a teenager, but I still thought of him as big and   powerful. I
-    didn't realize he needed me more.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6569,7 +6264,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -311.43707
     y: 463.83704
-    width: 150.00003
+    width: 150.92963
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6579,7 +6274,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707925}
-  - {fileID: 3890792709833707922}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707927
 MonoBehaviour:
@@ -6595,8 +6289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 1
-  storyText: He knew that my grades weren't "good enough". But what *was* good enough?
-    Looking back, he didn't know either.
+  storyText: She was worried about some monster looming over on the horizon. She'd
+    push and push.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7007,9 +6701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -285.34335
-    y: 575.5112
-    width: 122.13117
+    x: -283.52518
+    y: 577.4343
+    width: 124.369194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7040,8 +6734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 144
   indentLevel: 1
-  storyText: Years passed, but I still looked up to him. Even after I had surpassed
-    him.
+  storyText: Years passed, and the school noticed me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7068,9 +6761,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -211.81383
-    y: 496.38123
-    width: 131.96725
+    x: -159.08658
+    y: 525.4721
+    width: 133.22267
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7082,36 +6775,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707906}
   - {fileID: 3890792709833707964}
   - {fileID: 3890792709833707907}
-  - {fileID: 3890792709833707904}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 193
-  indentLevel: 1
-  storyText: He both couldn't let go taking care of me, yet wanted me to be independent.
-    He didn't know where to draw the line.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7254,9 +6918,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -200.58923
-    y: 462.40042
-    width: 146.72134
+    x: -184.22565
+    y: 475.12766
+    width: 145.61754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7268,35 +6932,7 @@ MonoBehaviour:
   - {fileID: 3890792709833707961}
   - {fileID: 3890792709833707910}
   - {fileID: 3890792709833707911}
-  - {fileID: 3890792709833707908}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 198
-  indentLevel: 1
-  storyText: I needed to do things by myself. I couldn't keep dangling by his side.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3890792709833707911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7375,8 +7011,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 196
   indentLevel: 1
-  storyText: He wanted me to handle myself. To him, life at home should be easy compared
-    to the sea.
+  storyText: Over time, I learned mom didn't know how to gracefully admit when she
+    didn't know something, like making a loan payment.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7637,7 +7273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 191
   indentLevel: 1
-  storyText: 'He liked to be hands-on with things, both at work and at home. '
+  storyText: When Mom couldn't be there for me, I could rely on staying at my grandma's
+    place to lay low when she'd invite trouble over.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7666,7 +7303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -307.01465
     y: 429.0796
-    width: 135.24594
+    width: 136.76407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7676,7 +7313,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707875}
-  - {fileID: 3890792709833707872}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709088699619
 MonoBehaviour:
@@ -7692,8 +7328,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 209
   indentLevel: 0
-  storyText: 'I wanted to be a fisherman like him some day. He really hoped I''d grow
-    out of that idea. '
+  storyText: As a kid, I didn't know what she meant. I thought it was something adults
+    knew about. Looking back, maybe she was warning me of something far worse than
+    just some fairy tale.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7720,8 +7357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  storyText: The sad thing that dads realize, is that their daughter has to grow up
-    some day.
+  storyText: It's hard to stop a monster from coming for you if you don't know what
+    it looks like.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7748,8 +7385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 211
   indentLevel: 0
-  storyText: Dependable parents give their children a head start in life... But ultimately
-    we all have to raise ourselves.
+  storyText: 'As I grew up, I understood that all parents are terrified. She tried
+    to give me a head start in life, but only in the ways she knew how. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7776,8 +7413,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: Sometimes the monster that hurts most is the one that is trying to help
-    you.
+  storyText: Sometimes parents get angry with us, but they never give us the care
+    and stability we need in our lives to flourish. Fortunately, I was able to get
+    out of there.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7804,8 +7442,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: He'd love to be the one to bring me forward, but I was getting older,
-    and I knew more about the world than he did.
+  storyText: 'Mom was worried about a monster coming for me. But she never knew how
+    to stop it coming for her. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7896,8 +7534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 215
   indentLevel: 1
-  storyText: '"You''re going to be amazing," he''d say. "You''re gonna climb past
-    wherever I can reach. None of this fishing nonsense!"'
+  storyText: Mom tried to teach me everything she knew. She wanted me to be able to
+    be a strong woman and "find a nice man who won't leave you".
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7974,33 +7612,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &1206180094662346548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 217
-  indentLevel: 1
-  storyText: I wanted to be strong like him, to make him proud of me.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!1 &3890792709561238700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8033,3 +7644,174 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3890792709741414629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3890792709741414628}
+  - component: {fileID: 3890792709741414630}
+  - component: {fileID: 3890792709741414631}
+  m_Layer: 5
+  m_Name: NameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3890792709741414628
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709741414629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3890792708762760125}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 586.5, y: -38.369995}
+  m_SizeDelta: {x: 1106, y: 71}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3890792709741414630
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709741414629}
+  m_CullTransparentMesh: 0
+--- !u!114 &3890792709741414631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709741414629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.25882354, g: 0.25490198, b: 0.2627451, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: bb145366ce7024469a5758b08d31802c, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 50
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Character Name
+--- !u!1 &3890792709916721627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3890792709916721626}
+  - component: {fileID: 3890792709916721631}
+  - component: {fileID: 3890792709916721628}
+  - component: {fileID: 3890792709916721629}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3890792709916721626
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709916721627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3890792708762760125}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -178.5, y: 263.13}
+  m_SizeDelta: {x: 357, y: 435}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3890792709916721631
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709916721627}
+  m_CullTransparentMesh: 0
+--- !u!114 &3890792709916721628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709916721627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3890792709916721629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709916721627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 350
+  m_PreferredHeight: 350
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
