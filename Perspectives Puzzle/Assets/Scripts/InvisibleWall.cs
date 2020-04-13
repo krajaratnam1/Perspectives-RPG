@@ -5,6 +5,7 @@ using UnityEngine;
 public class InvisibleWall : MonoBehaviour
 {
     public bool isExit = true;
+    public PlayerSwitch playerSwapSystem;
     public int level = 1;
     public FungusTrigger blocking, otherSide;
     float alphaMultiplier = 1;
@@ -15,6 +16,7 @@ public class InvisibleWall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
         rippleMat = Resources.Load<Material>("Ripple");
         if(isExit)
         {
@@ -74,8 +76,15 @@ public class InvisibleWall : MonoBehaviour
                 alpha = 0;
             }
 
-            Color col = rippleMat.GetColor("_Color");
-            rippleMat.SetColor("_Color", new Color(col.r, col.g, col.b, alpha));
+
+            if (movement.isBig == playerSwapSystem.isBigPlayer)
+            {
+                Color col = rippleMat.GetColor("_Color");
+                rippleMat.SetColor("_Color", new Color(col.r, col.g, col.b, alpha));
+
+                print(level.ToString() + " " + (isExit?"Exit":"Entrance"));
+            }
+
         }
     }
 
