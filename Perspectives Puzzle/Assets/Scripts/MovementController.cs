@@ -8,7 +8,7 @@ public class MovementController : MonoBehaviour
 {
     public PlayerSwitch playerSwapSystem;
     public Flowchart flowchart;
-    public bool playerCanMove = true, canMove = true, carrying = false, climbing = false;
+    public bool playerCanMove = true, canMove = true, carrying = false, climbing = false, isBig = false;
 
     private float InputX, InputZ, Speed, gravity;
 

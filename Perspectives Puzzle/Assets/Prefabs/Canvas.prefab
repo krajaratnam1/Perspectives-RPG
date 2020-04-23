@@ -677,10 +677,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8833f9b8625464ee0981bda6cfcb120a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 0}
-  chapterSelect: {fileID: 0}
+  window: {fileID: 6911908684784551971}
+  chapterSelect: {fileID: 3540414777366027652}
   playerSwapSystem: {fileID: 0}
-  timeText: {fileID: 0}
+  timeText: {fileID: 1442904058607472410}
   times: []
   level: 0
   timeString: 
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e9f9072d4e3418390ed301137b1c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 0}
+  window: {fileID: 1811693500537725273}
   level1BigStatue: {fileID: 0}
   level1BigPlayer: {fileID: 0}
   level1SmallPlayer: {fileID: 0}
@@ -755,7 +755,7 @@ MonoBehaviour:
   level5SmallPlayer: {fileID: 0}
   level5SmallStatue: {fileID: 0}
   selection: 0
-  selectionText: {fileID: 0}
+  selectionText: {fileID: 7668183223355789782}
   playerSwapSystem: {fileID: 0}
   flowchart: {fileID: 0}
 --- !u!1 &3634213312165955139
@@ -1223,7 +1223,7 @@ RectTransform:
   m_GameObject: {fileID: 6911908684784551971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 5732185411097278540}
   - {fileID: 8608510388398867240}
@@ -1232,7 +1232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 27}
   m_SizeDelta: {x: 900, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2857354216932760578

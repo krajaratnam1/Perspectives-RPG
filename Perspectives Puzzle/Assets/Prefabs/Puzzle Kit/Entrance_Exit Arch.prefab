@@ -4708,7 +4708,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 42a742dc9d00348eba0543069017e2af, type: 2}
+  - {fileID: 2100000, guid: 70542421402164af6867d526c3da553c, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9493,7 +9493,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 42a742dc9d00348eba0543069017e2af, type: 2}
+  - {fileID: 2100000, guid: 70542421402164af6867d526c3da553c, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -13413,7 +13413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452e6b2e42ba744dcb4152648e873ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invisWall: {fileID: 7167681482235675507}
+  timeManager: {fileID: 0}
+  invisWall: {fileID: 72007452113647454}
   playerSwapSystem: {fileID: 0}
   flowchart: {fileID: 0}
   bigPlayerBlock: 
@@ -15355,6 +15356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452e6b2e42ba744dcb4152648e873ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeManager: {fileID: 0}
   invisWall: {fileID: 0}
   playerSwapSystem: {fileID: 0}
   flowchart: {fileID: 0}
@@ -15384,7 +15386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070918284184928857}
-  - component: {fileID: 7167681482235675507}
+  - component: {fileID: 72007452113647454}
   - component: {fileID: 7167681482235675504}
   m_Layer: 8
   m_Name: Invis Wall System
@@ -15411,7 +15413,7 @@ Transform:
   m_Father: {fileID: 904240349803269642}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &7167681482235675507
+--- !u!114 &72007452113647454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15420,14 +15422,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7167681482235675506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 598c971403d6b4156a7bb8c2e8cb4e55, type: 3}
+  m_Script: {fileID: 11500000, guid: 2639c93d4cc9f4f08b9a008be447d6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExit: 1
+  playerSwapSystem: {fileID: 0}
   level: 1
   blocking: {fileID: 2226963285158497866}
   otherSide: {fileID: 904240350882837160}
-  visibilityDistance: 4.7
+  visibilityDistance: 6.3
   alpha: 0
   movement: {fileID: 0}
   rippleMat: {fileID: 0}
@@ -15444,5 +15447,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 31.312304, y: 19.710169, z: 25.551739}
-  m_Center: {x: 15.406152, y: 1.0585413, z: -0.52183676}
+  m_Size: {x: 10.719074, y: 19.710169, z: 25.551739}
+  m_Center: {x: 5.109537, y: 1.0585413, z: -0.52183723}

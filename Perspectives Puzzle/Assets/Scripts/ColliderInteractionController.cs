@@ -11,6 +11,7 @@ public abstract class ColliderInteractionController : MonoBehaviour
     public Color baseColor;
     public Color highlightColor;
     public float highlightTimeout = 0.3f;
+    public string selected = "";
     float timer = 0; // time out to dehighlight button
 
     // Start is called before the first frame update
@@ -38,10 +39,20 @@ public abstract class ColliderInteractionController : MonoBehaviour
         {
             MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
             objectHitRenderer.material.SetColor("_Color", baseColor);
+            selected = "";
         }
         else
         {
             timer += Time.deltaTime;
+        }
+
+        if (selected == (playerSwapSystem.isBigPlayer ? playerSwapSystem.bigPlayer.name : playerSwapSystem.smallPlayer.name))
+        {
+            if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
+            {
+                Debug.Log("Activated Collider");
+                MethodToCall();
+            }
         }
     }
 
@@ -67,6 +78,7 @@ public abstract class ColliderInteractionController : MonoBehaviour
         {
             MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
             objectHitRenderer.material.SetColor("_Color", highlightColor);
+            selected = other.name;
         }
     }
 
@@ -92,6 +104,7 @@ public abstract class ColliderInteractionController : MonoBehaviour
         {
             MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
             objectHitRenderer.material.SetColor("_Color", baseColor);
+            selected = "";
         }
     }
 
@@ -100,27 +113,15 @@ public abstract class ColliderInteractionController : MonoBehaviour
         if (CheckColliderIsPlayable(other))
         {
             timer = 0;
-            if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
-            {/*
-                Debug.Log("OnTriggerStay  other.transform.name: " + other.transform.name);
-                GameObject player;
-                if (playerSwapSystem.isBigPlayer)
-                {
-                    player = playerSwapSystem.bigPlayer;
-                }
-                else
-                {
-                    player = playerSwapSystem.smallPlayer;
-                }
-
-                Collider playerCollider = player.GetComponent<SphereCollider>();*/
+            /*if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
+            {
                 if (CheckColliderIsPlayer(other))
                 {
 
                     Debug.Log("Activated Collider");
                     MethodToCall();
                 }
-            }
+            }*/
         }
     }
 
@@ -143,4 +144,7 @@ public abstract class ColliderInteractionController : MonoBehaviour
 
         return other.name == player.name;
     }
+
+
 }
+
