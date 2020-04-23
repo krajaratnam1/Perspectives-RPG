@@ -883,6 +883,10 @@ GameObject:
   - component: {fileID: 1392385770103486199}
   - component: {fileID: 5953544322084216338}
   - component: {fileID: 1040403005835881010}
+  - component: {fileID: 3513091713279495068}
+  - component: {fileID: 3513091713279495067}
+  - component: {fileID: 3513091713279495066}
+  - component: {fileID: 3513091713279495065}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -917,10 +921,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 394.31506, y: -107.616165}
+  scrollPos: {x: 285.35013, y: 5.3110075}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 369
   zoom: 0.50475
   scrollViewRect:
     serializedVersion: 2
@@ -929,9 +933,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 3890792709833707858}
-  selectedCommands:
-  - {fileID: 2336157523632481223}
+  - {fileID: 3890792709088699668}
+  selectedCommands: []
   variables:
   - {fileID: 3890792709088699666}
   - {fileID: 3890792709088699667}
@@ -1076,7 +1079,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 338.67093
-    y: 244.06882
+    y: 245.9919
     width: 127.26597
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3559,7 +3562,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -264.86432
-    y: 153.49048
+    y: 151.44966
     width: 162.92719
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4590,7 +4593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -264.94385
+    x: -266.98468
     y: 119.17027
     width: 147.07776
     height: 40
@@ -4617,8 +4620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -152.33266
-    y: 178.49791
+    x: -143.4719
+    y: 160.77638
     width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5044,8 +5047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -120.84802
-    y: 228.63844
+    x: -114.518936
+    y: 234.96756
     width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7884,6 +7887,115 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList: []
   suppressAllAutoSelections: 0
+--- !u!114 &3513091713279495068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 192.41101
+    y: 15.824266
+    width: 149.05893
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 229
+  blockName: Interstitial 0 - 1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3513091713279495067}
+  suppressAllAutoSelections: 0
+--- !u!114 &3513091713279495067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 230
+  indentLevel: 0
+  storyText: 'I had solved many puzzles for other people in their lives. But it was
+    finally time to solve the puzzles in my own. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &3513091713279495066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 153.8396
+    y: 258.6814
+    width: 149.05893
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 233
+  blockName: Interstitial 1 - 2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3513091713279495065}
+  suppressAllAutoSelections: 0
+--- !u!114 &3513091713279495065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 232
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &3890792709561238700
 GameObject:
   m_ObjectHideFlags: 0
