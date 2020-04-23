@@ -16,8 +16,6 @@ public class ClimbableObject : MonoBehaviour
     public GameObject prompt;
     float origHeight = 0;
 
-    Animator animator;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,13 +29,12 @@ public class ClimbableObject : MonoBehaviour
         if (climbing)
         {
             prompt.SetActive(false);
-            //player.Move(Vector3.up * height * Time.deltaTime / climbTime);
+            player.Move(Vector3.up * height * Time.deltaTime / climbTime);
             if (player.gameObject.transform.position.y >= height + origHeight)
             {
                 print(height + origHeight);
                 climbing = false;
-                animator.SetBool("IsClimbing", climbing);
-                //player.Move(Vector3.down * (player.gameObject.transform.position.y - (height + origHeight)));
+                player.Move(Vector3.down * (player.gameObject.transform.position.y - (height + origHeight)));
                 // finished climbing
                 centering = true;
                 centeringTimer = 0;
@@ -51,7 +48,7 @@ public class ClimbableObject : MonoBehaviour
         if (centering)
         {
             centeringTimer += Time.deltaTime;
-            //player.Move(centerDirection * Time.deltaTime);
+            player.Move(centerDirection * Time.deltaTime);
             if (centeringTimer >= centeringTime) // done centering
             {
                 centering = false;
@@ -66,7 +63,6 @@ public class ClimbableObject : MonoBehaviour
             {
                 movement.canMove = false;
                 climbing = true;
-                animator.SetBool("IsClimbing", climbing);
                 prompt.SetActive(false);
                 prompting = false;
                 origHeight = player.gameObject.transform.position.y;
@@ -84,8 +80,6 @@ public class ClimbableObject : MonoBehaviour
                 movement.canMove = true;
             }
         }
-
-
     }
 
     public void OnTriggerStay(Collider other)
@@ -95,7 +89,6 @@ public class ClimbableObject : MonoBehaviour
 
             movement = other.gameObject.GetComponent<MovementController>();
             player = other.gameObject.GetComponent<CharacterController>();
-            animator = player.gameObject.GetComponent<Animator>();
 
             if (movement.enabled && !climbing && !centering)
             {
