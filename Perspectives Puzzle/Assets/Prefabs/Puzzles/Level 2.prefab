@@ -2388,13 +2388,14 @@ GameObject:
   - component: {fileID: 1201409013500677446}
   - component: {fileID: 910113191951116930}
   - component: {fileID: 3847019784618091723}
+  - component: {fileID: 4101183167529978362}
   m_Layer: 8
   m_Name: Entrance Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &15450638697440433
 Transform:
   m_ObjectHideFlags: 0
@@ -2403,7 +2404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370236375490624426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.25, y: 2.5, z: 2.5299835}
+  m_LocalPosition: {x: -15.25, y: 2.5, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4996154579524796196}
@@ -4316,6 +4317,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4101183167529978362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370236375490624426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092ced3c6e22e437184c1209cb734cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClosed: 0
+  fogCloseDistance: 40
+  fogFarDistance: 150
+  lerpSpeed: 2
 --- !u!1 &1504945214000867699
 GameObject:
   m_ObjectHideFlags: 0
@@ -20453,15 +20470,15 @@ GameObject:
   - component: {fileID: 4454091558473552481}
   - component: {fileID: 8324289328227339842}
   - component: {fileID: 9014112436249639064}
-  - component: {fileID: 6757550161429500725}
   - component: {fileID: 2503556393862452337}
+  - component: {fileID: 8187128225934776423}
   m_Layer: 9
   m_Name: Exit Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &601953483503550145
 Transform:
   m_ObjectHideFlags: 0
@@ -20470,7 +20487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3570614054309797361}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.3600006, y: 2.5, z: 10.11}
+  m_LocalPosition: {x: 2.5, y: 2.5, z: 10.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4996154580983041709}
@@ -22350,26 +22367,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &6757550161429500725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3570614054309797361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 452e6b2e42ba744dcb4152648e873ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeManager: {fileID: 0}
-  invisWall: {fileID: 0}
-  playerSwapSystem: {fileID: 0}
-  flowchart: {fileID: 0}
-  bigPlayerBlock: Level 2 Big Exit
-  smallPlayerBlock: Level 2 Small Exit
-  pushingBlock: Level 2 Pushing Exit
-  Overriding: 1
 --- !u!65 &2503556393862452337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22383,6 +22380,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8187128225934776423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3570614054309797361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092ced3c6e22e437184c1209cb734cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClosed: 0
+  fogCloseDistance: 40
+  fogFarDistance: 150
+  lerpSpeed: 2
 --- !u!1 &3637448711527351699
 GameObject:
   m_ObjectHideFlags: 0
@@ -22396,15 +22409,15 @@ GameObject:
   - component: {fileID: 1236735040012062843}
   - component: {fileID: 1260015768047704482}
   - component: {fileID: 1600639432832480992}
-  - component: {fileID: 1564405543518354256}
   - component: {fileID: 66643814956753849}
+  - component: {fileID: 5578419870724921506}
   m_Layer: 8
   m_Name: Exit Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5662252521161201159
 Transform:
   m_ObjectHideFlags: 0
@@ -22413,7 +22426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3637448711527351699}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.36, y: 2.5, z: 10.11}
+  m_LocalPosition: {x: 2.5, y: 2.5, z: 10.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4996154579524796196}
@@ -24293,26 +24306,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &1564405543518354256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3637448711527351699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 452e6b2e42ba744dcb4152648e873ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeManager: {fileID: 0}
-  invisWall: {fileID: 0}
-  playerSwapSystem: {fileID: 0}
-  flowchart: {fileID: 0}
-  bigPlayerBlock: Level 2 Big Exit
-  smallPlayerBlock: Level 2 Small Exit
-  pushingBlock: Level 2 Pushing Exit
-  Overriding: 1
 --- !u!65 &66643814956753849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24326,6 +24319,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5578419870724921506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637448711527351699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092ced3c6e22e437184c1209cb734cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClosed: 0
+  fogCloseDistance: 40
+  fogFarDistance: 150
+  lerpSpeed: 2
 --- !u!1 &3777018334909264687
 GameObject:
   m_ObjectHideFlags: 0
@@ -56365,15 +56374,15 @@ GameObject:
   - component: {fileID: 21277363002642706}
   - component: {fileID: 926218474946215885}
   - component: {fileID: 8338690955134958426}
-  - component: {fileID: 621588339609758019}
   - component: {fileID: 442343597163606173}
+  - component: {fileID: 6621888863920315759}
   m_Layer: 9
   m_Name: Entrance Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4861963140750673400
 Transform:
   m_ObjectHideFlags: 0
@@ -56382,7 +56391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582210726527449479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.4, y: 2.5, z: 2.5299835}
+  m_LocalPosition: {x: -15.25, y: 2.5, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4996154580983041709}
@@ -58262,26 +58271,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &621588339609758019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8582210726527449479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 452e6b2e42ba744dcb4152648e873ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeManager: {fileID: 0}
-  invisWall: {fileID: 0}
-  playerSwapSystem: {fileID: 0}
-  flowchart: {fileID: 0}
-  bigPlayerBlock: Level 2 Enter
-  smallPlayerBlock: Level 2 Enter
-  pushingBlock: 
-  Overriding: 1
 --- !u!65 &442343597163606173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58295,6 +58284,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6621888863920315759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582210726527449479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092ced3c6e22e437184c1209cb734cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClosed: 0
+  fogCloseDistance: 40
+  fogFarDistance: 150
+  lerpSpeed: 2
 --- !u!1 &8793607814726020824
 GameObject:
   m_ObjectHideFlags: 0
@@ -78032,6 +78037,12 @@ PrefabInstance:
       objectReference: {fileID: 1790554515238061266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e313732445e664c5a8fbd1154899a570, type: 3}
+--- !u!4 &3276535792331323973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7506796820960113253, guid: e313732445e664c5a8fbd1154899a570,
+    type: 3}
+  m_PrefabInstance: {fileID: 4996154580968998944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4996154580150030723 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1364302243, guid: e313732445e664c5a8fbd1154899a570,
@@ -78044,12 +78055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c695eb58a3614cce95bf2ca9ebdf2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &3276535792331323973 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7506796820960113253, guid: e313732445e664c5a8fbd1154899a570,
-    type: 3}
-  m_PrefabInstance: {fileID: 4996154580968998944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4996154581002550461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78814,15 +78819,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7539158b85e5a47ca93fea6e929a5827, type: 3}
---- !u!1 &8482261736021402612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 28488806948068863, guid: 7539158b85e5a47ca93fea6e929a5827,
-    type: 3}
-  m_PrefabInstance: {fileID: 8489912504037113355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &808031961298599395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9143590069848376296, guid: 7539158b85e5a47ca93fea6e929a5827,
+    type: 3}
+  m_PrefabInstance: {fileID: 8489912504037113355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8482261736021402612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 28488806948068863, guid: 7539158b85e5a47ca93fea6e929a5827,
     type: 3}
   m_PrefabInstance: {fileID: 8489912504037113355}
   m_PrefabAsset: {fileID: 0}

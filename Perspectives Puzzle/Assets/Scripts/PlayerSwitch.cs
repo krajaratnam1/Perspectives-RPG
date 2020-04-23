@@ -30,6 +30,9 @@ public class PlayerSwitch : MonoBehaviour
 
     public float angleEpsilon = 0.0025f, positionEpsilon = 0.1f;
 
+    //check state of fog globally
+    public bool fogIsClose = false;
+
 
 
 

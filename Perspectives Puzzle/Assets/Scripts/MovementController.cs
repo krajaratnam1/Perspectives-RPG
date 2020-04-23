@@ -22,6 +22,8 @@ public class MovementController : MonoBehaviour
     private Vector3 desiredMoveDirection;
     float ungroundedTimer = 0, groundedTimer = 0;
 
+    Animator animator;
+
 
     [SerializeField] float rotationSpeed = 0.3f;
     [SerializeField] float allowRotation = 0.1f;
@@ -30,6 +32,8 @@ public class MovementController : MonoBehaviour
 
     public bool gravityEnabled = true;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +41,7 @@ public class MovementController : MonoBehaviour
         lastGroundedPos = this.transform.position + Vector3.down * 5;
         playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -46,6 +51,7 @@ public class MovementController : MonoBehaviour
         InputZ = Input.GetAxis("Vertical");
 
         InputDecider();
+        
         if (canMove)
         {
             MovementManager();
@@ -76,6 +82,11 @@ public class MovementController : MonoBehaviour
                 transform.position = lastGroundedPos + Vector3.up*5;
                 ungroundedTimer = 0;
             }
+        }
+
+        //Animator Stuff
+        if(animator != null){
+            animator.SetFloat("MoveSpeed", Speed);
         }
 
     }
