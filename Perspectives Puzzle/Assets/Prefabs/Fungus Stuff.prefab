@@ -807,12 +807,10 @@ GameObject:
   - component: {fileID: 3890792709833707854}
   - component: {fileID: 3890792709833707841}
   - component: {fileID: 3890792709833707840}
-  - component: {fileID: 3890792709833707842}
   - component: {fileID: 3890792709833707845}
   - component: {fileID: 3890792709833707844}
   - component: {fileID: 3890792709833707847}
   - component: {fileID: 3890792709833707846}
-  - component: {fileID: 3890792709833707896}
   - component: {fileID: 3890792709833707899}
   - component: {fileID: 3890792709833707898}
   - component: {fileID: 3890792709833707901}
@@ -878,8 +876,6 @@ GameObject:
   - component: {fileID: 750889683}
   - component: {fileID: 750889680}
   - component: {fileID: 2953655878487708518}
-  - component: {fileID: 750889681}
-  - component: {fileID: 750889682}
   - component: {fileID: 1392385770103486199}
   - component: {fileID: 5953544322084216338}
   - component: {fileID: 1040403005835881010}
@@ -887,6 +883,12 @@ GameObject:
   - component: {fileID: 3513091713279495067}
   - component: {fileID: 3513091713279495066}
   - component: {fileID: 3513091713279495065}
+  - component: {fileID: 3513091713279495084}
+  - component: {fileID: 3513091713279495085}
+  - component: {fileID: 3513091713279495086}
+  - component: {fileID: 3513091713279495087}
+  - component: {fileID: 3513091713279495088}
+  - component: {fileID: 3513091713279495089}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -932,8 +934,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 3890792709088699668}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 3890792709088699666}
@@ -1199,8 +1200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 85.82586
-    y: 206.97545
+    x: 88.51132
+    y: 205.63272
     width: 133.2095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1232,8 +1233,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 1
-  storyText: I was very observant from a young age. Early on, I knew that seeing from
-    other people's perspectives could help me in life.
+  storyText: "Puzzle 1 - My Mother's Perspective \nI learned from a young age that
+    it was useful to see from my mother's perspective. I sensed early that she needed
+    my help."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1743,8 +1745,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 226.5801
-    y: 372.08786
+    x: 228.35078
+    y: 382.712
     width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3025,8 +3027,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 1
-  storyText: I could see things her way, and I could see things my way. We needed
-    both of our perspectives to get us through life.
+  storyText: 'Puzzle 2 - Helping Mom
+
+    She was a nurse and a single mom. When she''d come home, she''d need my help too.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3437,7 +3440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 71.34985
+    x: 73.33103
     y: 438.0242
     width: 133.2095
     height: 40
@@ -3654,8 +3657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 1
-  storyText: Early on, I could tell she needed me to reach where she couldn't reach.
-    The world had changed from when she grew up. (visual asset for different times)
+  storyText: Early on, she needed my help too. I didn't think anything of it.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3810,8 +3812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 1
-  storyText: She could see things my way, but we still needed to work together to
-    keep the house running. (visual asset opp)
+  storyText: She would carry my part of the way, but I needed to help her around the
+    house too.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4031,7 +4033,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -272.85825
-    y: 219.34193
+    y: 221.65474
     width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4057,8 +4059,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 1
-  storyText: 'By the time I was in high school, she just didn''t see the obstacles
-    in my way. '
+  storyText: 'Puzzle 5 - Invisible Obstacles
+
+    She kept pushing me, but she didn''t see the obstacles in my way.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4633,73 +4636,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709833707844}
   - {fileID: 3890792709833707845}
-  - {fileID: 3890792709833707842}
-  - {fileID: 750889681}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 118
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 3890792709088699667}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 2
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3890792709833707845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,8 +4651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 1
-  storyText: She knew I had obstacles she couldn't see. The world had changed from
-    when she was growing up. (Visual opp)
+  storyText: I had obstacles she couldn't see. The world had changed from when she
+    was growing up.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4877,70 +4814,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 113
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 3890792709088699666}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 2
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3890792709833707899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5048,7 +4921,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -114.518936
-    y: 234.96756
+    y: 233.81116
     width: 143.1154
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5060,8 +4933,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 3890792709833707898}
   - {fileID: 3890792709833707899}
-  - {fileID: 3890792709833707896}
-  - {fileID: 750889682}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707900
 MonoBehaviour:
@@ -5866,7 +5737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 184.00719
+    x: 187.4764
     y: 630.66956
     width: 143.1154
     height: 40
@@ -6044,7 +5915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 165.00266
+    x: 166.15906
     y: 579.4341
     width: 156.98364
     height: 40
@@ -6072,8 +5943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 163
   indentLevel: 1
-  storyText: I still needed her but all children should outgrow their parent's limited
-    worldview.
+  storyText: I was learning all I could in school so I could make her proud.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6303,7 +6173,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 1
-  storyText: She supported us. I needed to rely on her again and again.
+  storyText: 'Puzzle 4 - Putting out Fires
+
+    I thought I could relax. But I learned I couldn''t let my guard down.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6747,8 +6619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 144
   indentLevel: 1
-  storyText: She knew she couldn't handle things on her own. But if she gave me a
-    boost, I could help us get through those tough times.
+  storyText: 'Puzzle 3 - Getting a Boost
+
+    She knew she couldn''t handle things on her own. But if she gave me a boost, I
+    could help us get through those tough times.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7025,8 +6899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 196
   indentLevel: 1
-  storyText: I'd need open doors where she couldn't reach. I had to trust she would
-    support me.
+  storyText: We had to help each other out a lot in those times.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7287,8 +7160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 191
   indentLevel: 1
-  storyText: We needed each other. She'd give me a boost in life. And then she'd have
-    to trust I would open the door for her.
+  storyText: She'd give me a boost in life. And I would open the door for her.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7342,8 +7214,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 209
   indentLevel: 0
-  storyText: She'd warn me of danger and monsters and it carried me forward in life,
-    but I quickly learned I could do things on my own.
+  storyText: She was a nurse. In TV and movies, I thought she was helping people and
+    was a superhero and maybe she'd bring home a nice man. What I didn't know is that
+    it meant she needed my help too.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7370,8 +7243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  storyText: I was helping mom. Every child wants to help their parent. We were a
-    team, I thought.
+  storyText: I was helping mom. Every child wants to help their parent. I thought
+    all kids had to do that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7398,9 +7271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 211
   indentLevel: 0
-  storyText: 'As I grew up, I understood that all parents are terrified for their
-    children. She tried to give me a head start in life, but only in the ways she
-    knew how. '
+  storyText: As I grew up, I understood that all parents are terrified for their children.
+    She tried to give me a head start in life, but only as far as she could.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7427,9 +7299,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: Young people need the older generations' experience. The older generation
-    needs our fresh eyes. With each other's perspectives, we open the door for each
-    other's futures.
+  storyText: I had a future she never had a chance at, but she could only get me part
+    of the way there. Parents only help out where they can, but every child's life
+    is a puzzle for themselves to solve. Sometimes for more than a lifetime.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7456,7 +7328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: Trust, support, and reliability. That's the foundation of a healthy relationship.
+  storyText: It was hard to focus in an environment like that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7755,60 +7627,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList: []
   suppressAllAutoSelections: 0
---- !u!114 &750889681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 227
-  indentLevel: 1
-  storyText: 
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &750889682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 228
-  indentLevel: 1
-  storyText: 
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1392385770103486199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7902,7 +7720,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 192.41101
-    y: 15.824266
+    y: 14.481533
     width: 149.05893
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7928,8 +7746,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 230
   indentLevel: 0
-  storyText: 'I had solved many puzzles for other people in their lives. But it was
-    finally time to solve the puzzles in my own. '
+  storyText: 'The Story of My Mother
+
+    I had solved many puzzles for other people throughout my life. But it was finally
+    time to solve the puzzles in my own. This is first story of several stories in
+    my life.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7956,7 +7777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 153.8396
+    x: 152.6832
     y: 258.6814
     width: 149.05893
     height: 40
@@ -7983,7 +7804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 232
   indentLevel: 0
-  storyText: 
+  storyText: I was excited when she wanted me to boil water for mac and cheese, the
+    orange box with the dinosaurs bigger than thumbnail. Of course, she was teaching
+    me to take care of myself.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7996,6 +7819,175 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &3513091713279495084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 239
+  indentLevel: 0
+  storyText: 'She didn''t get her bachelor''s but she knew education was important.
+    She thought all she needed was to provide for me. Scholarships, exams, fancy forms
+    that she never navigated herself. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &3513091713279495085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -86.41008
+    y: 118.7331
+    width: 145.09659
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 238
+  blockName: Interstitial 4- 5
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3513091713279495084}
+  suppressAllAutoSelections: 0
+--- !u!114 &3513091713279495086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 237
+  indentLevel: 0
+  storyText: Years later, I was boiling water again. I finished homework, so I went
+    back to my room to play computer games, a dorky where a green guy taught us math.
+    She was so tired that she didn't hear it and the stove caught fire and we called
+    the fire department.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &3513091713279495087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -148.43735
+    y: 423.3921
+    width: 149.05893
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 236
+  blockName: Interstitial 3 - 4
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3513091713279495086}
+  suppressAllAutoSelections: 0
+--- !u!114 &3513091713279495088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 235
+  indentLevel: 0
+  storyText: "I had food, a roof over my head, a bed to sleep in. She wanted me to
+    focus on school. If she had another chance at life, it was what she would\u2019ve
+    wanted. So she saw me as that second chance. "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &3513091713279495089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 187.07312
+    y: 502.48962
+    width: 149.05893
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 240
+  blockName: Interstitial 2 - 3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3513091713279495088}
+  suppressAllAutoSelections: 0
 --- !u!1 &3890792709561238700
 GameObject:
   m_ObjectHideFlags: 0
