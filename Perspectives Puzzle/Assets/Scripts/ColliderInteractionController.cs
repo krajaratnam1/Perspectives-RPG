@@ -113,6 +113,15 @@ public abstract class ColliderInteractionController : MonoBehaviour
         if (CheckColliderIsPlayable(other))
         {
             timer = 0;
+            if (CheckColliderIsPlayer(other))
+            {
+                if (selected != other.name)
+                {
+                    selected = other.name;
+                    MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+                    objectHitRenderer.material.SetColor("_Color", highlightColor);
+                }
+            }
             /*if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
             {
                 if (CheckColliderIsPlayer(other))
