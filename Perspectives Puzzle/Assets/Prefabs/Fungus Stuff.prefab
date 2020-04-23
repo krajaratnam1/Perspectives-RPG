@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3890792708315971957}
   - component: {fileID: 3890792708315971954}
   - component: {fileID: 3890792708315971955}
+  - component: {fileID: 212115959}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
@@ -98,6 +99,21 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &212115959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792708315971953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &3890792708762760122
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,8 +579,6 @@ GameObject:
   - component: {fileID: 3890792709088699703}
   - component: {fileID: 3890792709088699688}
   - component: {fileID: 3890792709833707837}
-  - component: {fileID: 3890792709833707836}
-  - component: {fileID: 3890792709833707838}
   - component: {fileID: 3890792709833707825}
   - component: {fileID: 3890792709833707824}
   - component: {fileID: 3890792709833707827}
@@ -583,7 +597,6 @@ GameObject:
   - component: {fileID: 3890792709833707814}
   - component: {fileID: 3890792709833707865}
   - component: {fileID: 3890792709833707864}
-  - component: {fileID: 3890792709833707869}
   - component: {fileID: 3890792709833707868}
   - component: {fileID: 3890792709833707858}
   - component: {fileID: 3890792709833707861}
@@ -616,7 +629,6 @@ GameObject:
   - component: {fileID: 3890792709833707892}
   - component: {fileID: 3890792709833707894}
   - component: {fileID: 3890792709833707881}
-  - component: {fileID: 3890792709833707883}
   - component: {fileID: 3890792709833707886}
   - component: {fileID: 3890792709833707875}
   - component: {fileID: 3890792709833707877}
@@ -680,6 +692,14 @@ GameObject:
   - component: {fileID: 3513091713279495087}
   - component: {fileID: 3513091713279495088}
   - component: {fileID: 3513091713279495089}
+  - component: {fileID: 1820711274}
+  - component: {fileID: 1820711306}
+  - component: {fileID: 1820711325}
+  - component: {fileID: 1820711326}
+  - component: {fileID: 1820711368}
+  - component: {fileID: 1820711369}
+  - component: {fileID: 1820711370}
+  - component: {fileID: 1820711371}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -714,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 285.35013, y: 5.3110075}
+  scrollPos: {x: 277.4254, y: 25.122837}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 369
@@ -1536,7 +1556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 228.35078
+    x: 226.3696
     y: 382.712
     width: 143.1154
     height: 40
@@ -2659,87 +2679,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707825}
-  - {fileID: 3890792709833707838}
-  - {fileID: 3890792709833707836}
+  - {fileID: 1820711370}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 52
-  indentLevel: 0
---- !u!114 &3890792709833707838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 50
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 3890792709088699704}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3890792709833707825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2820,7 +2761,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: 'Puzzle 2 - Helping Mom
 
-    She was a nurse and a single mom. When she''d come home, she''d need my help too.'
+    She was a nurse and a single mom. When she''d come home, she''d be so exhausted.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3367,8 +3308,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707868}
-  - {fileID: 3890792709833707869}
-  - {fileID: 3890792709833707883}
+  - {fileID: 1820711274}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707811
 MonoBehaviour:
@@ -3448,7 +3388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 1
-  storyText: Early on, she needed my help too. I didn't think anything of it.
+  storyText: When she needed my help, I didn't think anything of it. I just wanted
+    to help.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3603,8 +3544,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 1
-  storyText: She would carry my part of the way, but I needed to help her around the
-    house too.
+  storyText: She would carry me part of the way, but I needed to help her around the
+    house.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3633,70 +3574,6 @@ MonoBehaviour:
   indentLevel: 0
   compareOperator: 0
   variable: {fileID: 3890792709088699667}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &3890792709833707869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 106
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 3890792709088699705}
   booleanData:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -4275,6 +4152,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707809}
+  - {fileID: 1820711371}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707852
 MonoBehaviour:
@@ -4399,6 +4277,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707854}
+  - {fileID: 1820711326}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707840
 MonoBehaviour:
@@ -4414,8 +4293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -143.4719
-    y: 160.77638
+    x: -137.52835
+    y: 156.81403
     width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5317,21 +5196,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707894}
+  - {fileID: 1820711325}
   suppressAllAutoSelections: 0
---- !u!114 &3890792709833707883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890792709088699618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 109
-  indentLevel: 0
 --- !u!114 &3890792709833707886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5513,6 +5379,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707877}
+  - {fileID: 1820711369}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707878
 MonoBehaviour:
@@ -5528,7 +5395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 187.4764
+    x: 189.45758
     y: 630.66956
     width: 143.1154
     height: 40
@@ -5846,8 +5713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -301.81122
-    y: 523.34735
+    x: -303.7924
+    y: 525.32855
     width: 176.79544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5949,6 +5816,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707925}
+  - {fileID: 1820711306}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709833707927
 MonoBehaviour:
@@ -5966,7 +5834,8 @@ MonoBehaviour:
   indentLevel: 1
   storyText: 'Puzzle 4 - Putting out Fires
 
-    I thought I could relax. But I learned I couldn''t let my guard down.'
+    I thought I could relax. It was just boiling a pot of water! But I learned I couldn''t
+    let my guard down.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6690,7 +6559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 196
   indentLevel: 1
-  storyText: We had to help each other out a lot in those times.
+  storyText: We had to help each other out a lot in those times. Things weren't getting
+    easier for her.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6990,6 +6860,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3890792709833707875}
+  - {fileID: 1820711368}
   suppressAllAutoSelections: 0
 --- !u!114 &3890792709088699619
 MonoBehaviour:
@@ -7035,7 +6906,7 @@ MonoBehaviour:
   itemId: 210
   indentLevel: 0
   storyText: I was helping mom. Every child wants to help their parent. I thought
-    all kids had to do that.
+    it was normal for kids to do that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7063,7 +6934,7 @@ MonoBehaviour:
   itemId: 211
   indentLevel: 0
   storyText: As I grew up, I understood that all parents are terrified for their children.
-    She tried to give me a head start in life, but only as far as she could.
+    She wanted me to study so hard, that the ink in the pages would stick to my fingers.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7092,7 +6963,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I had a future she never had a chance at, but she could only get me part
     of the way there. Parents only help out where they can, but every child's life
-    is a puzzle for themselves to solve. Sometimes for more than a lifetime.
+    is a puzzle for themselves to solve. You're lucky if you do it in one lifetime.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7119,7 +6990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: It was hard to focus in an environment like that.
+  storyText: Her hospital had a change in management. They were all about the bottom
+    line. It was hard to focus in an environment like that.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7625,8 +7497,8 @@ MonoBehaviour:
   itemId: 239
   indentLevel: 0
   storyText: 'She didn''t get her bachelor''s but she knew education was important.
-    She thought all she needed was to provide for me. Scholarships, exams, fancy forms
-    that she never navigated herself. '
+    She thought all she needed was to provide for me. Scholarships, exams, fancy forms?
+    She never navigated them herself. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7710,7 +7582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -148.43735
+    x: -146.45616
     y: 423.3921
     width: 149.05893
     height: 40
@@ -7738,7 +7610,7 @@ MonoBehaviour:
   itemId: 235
   indentLevel: 0
   storyText: "I had food, a roof over my head, a bed to sleep in. She wanted me to
-    focus on school. If she had another chance at life, it was what she would\u2019ve
+    focus on my education. If she had another chance at life, it was what she would\u2019ve
     wanted. So she saw me as that second chance. "
   description: 
   character: {fileID: 0}
@@ -7779,6 +7651,222 @@ MonoBehaviour:
   commandList:
   - {fileID: 3513091713279495088}
   suppressAllAutoSelections: 0
+--- !u!114 &1820711274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 248
+  indentLevel: 0
+  storyText: I wouldn't leave without her.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 247
+  indentLevel: 0
+  storyText: I wouldn't leave without her.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 246
+  indentLevel: 0
+  storyText: I wouldn't leave without her.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 245
+  indentLevel: 0
+  storyText: She wouldn't leave without me.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 244
+  indentLevel: 0
+  storyText: She wouldn't leave without me.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 243
+  indentLevel: 0
+  storyText: She wouldn't leave without me.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 242
+  indentLevel: 0
+  storyText: She wouldn't leave without me.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1820711371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890792709088699618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 241
+  indentLevel: 0
+  storyText: I wouldn't leave without her.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &3890792709561238700
 GameObject:
   m_ObjectHideFlags: 0
