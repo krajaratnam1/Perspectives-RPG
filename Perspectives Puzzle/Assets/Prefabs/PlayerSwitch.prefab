@@ -53,20 +53,29 @@ MonoBehaviour:
   smallCam: {fileID: 0}
   bigCam: {fileID: 0}
   isBigPlayer: 0
+  cancelNextSwapBig: 0
+  cancelNextSwapSmall: 0
   SwapToBigBlock: Swap To Big
+  SwapToBigFailedBlock: 
   SwapToSmallBlock: Swap To Small
+  SwapToSmallFailedBlock: 
   bigCameraFreeLook: {fileID: 0}
   smallCameraFreeLook: {fileID: 0}
   smallBrain: {fileID: 0}
   bigBrain: {fileID: 0}
   smallStatueLook: {fileID: 0}
   bigStatueLook: {fileID: 0}
+  pushPromptParent: {fileID: 0}
+  climbPromptParent: {fileID: 0}
   bigView: {fileID: 0}
   fadeTime: 1
   fadeDir: 0
   simultaneousFadingAndBlending: 0
   cooldown: 1
   cdTimer: 0
+  swapBack: -1
+  swapBackTime: 4
   tracking: 0
   angleEpsilon: 0.0025
   positionEpsilon: 0.1
+  fogIsClose: 0
