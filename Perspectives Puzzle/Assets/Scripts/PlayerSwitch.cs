@@ -7,6 +7,7 @@ using Fungus;
 
 public class PlayerSwitch : MonoBehaviour
 {
+    bool firstFade = true;
 	public Flowchart flowchart;
     public GameObject bigPlayer, bigStatue, smallPlayer, smallStatue, bigAnchor, smallAnchor,
         smallCam, bigCam;
@@ -15,6 +16,7 @@ public class PlayerSwitch : MonoBehaviour
     public CinemachineFreeLook bigCameraFreeLook, smallCameraFreeLook;
     public CinemachineBrain smallBrain, bigBrain;
     public GameObject smallStatueLook, bigStatueLook, pushPromptParent, climbPromptParent;
+    public AudioSource whoosh;
 
     public RawImage bigView;
     public float fadeTime = 1;
@@ -57,6 +59,7 @@ public class PlayerSwitch : MonoBehaviour
         bigView = GameObject.Find("Big View").GetComponent<RawImage>();
         pushPromptParent = GameObject.Find("Push Prompt Parent");
         climbPromptParent = GameObject.Find("Climb Prompt Parent");
+        whoosh = GameObject.Find("Whoosh").GetComponent<AudioSource>();
 
 
         SetPlayer(isBigPlayer);
@@ -274,6 +277,11 @@ public class PlayerSwitch : MonoBehaviour
         tracking = true;
         oldCamPos = smallCameraFreeLook.transform.position;
         oldCamAngles = smallCameraFreeLook.transform.eulerAngles;
+        if(!firstFade)
+        {
+            whoosh.Play();
+        }
+        firstFade = false;
         //smallPlayer.GetComponent<MovementController>().enabled = true;
     }
 
@@ -291,6 +299,12 @@ public class PlayerSwitch : MonoBehaviour
         tracking = true;
         oldCamPos = bigCameraFreeLook.transform.position;
         oldCamAngles = bigCameraFreeLook.transform.eulerAngles;
+
+        if(!firstFade)
+        {
+            whoosh.Play();
+        }
+        firstFade = false;
     }
 
     void Fade()
