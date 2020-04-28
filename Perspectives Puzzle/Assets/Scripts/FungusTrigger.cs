@@ -30,11 +30,17 @@ public class FungusTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Fungus Trigger - OnTriggerEnter - " + this.name);
+
+        Debug.Log("playerSwapSystem.isBigPlayer - " + playerSwapSystem.isBigPlayer);
+
+        Debug.Log("other.name - " + other.name);
+
         if (other.GetComponent<MovementController>() != null) // is a player
         {
-            
+            Debug.Log("Fungus Trigger - OnTriggerEnter - Player");
 
-            if(playerSwapSystem.isBigPlayer && other.name == "Big Player")
+            if (playerSwapSystem.isBigPlayer && other.name == "Big Player")
             {
                 if(bigPlayerBlock != "" && !pushingBlockExecuted)
                 {
@@ -73,11 +79,12 @@ public class FungusTrigger : MonoBehaviour
 
         if (other.GetComponent<PushableObject>() != null) // is small statue
         {
+            Debug.Log("Fungus Trigger - OnTriggerEnter - Small Statue");
             if (other.GetComponent<PushableObject>().carried)
             {
                 if (pushingBlock != "")
                 {
-                    print("Pushing Block Executed");
+                    print("Pushing Block Executed - " + this.name);
                     pushingBlockExecuted = true;
                     flowchart.StopAllBlocks();
                     flowchart.ExecuteBlock(pushingBlock);
