@@ -7,7 +7,11 @@ using Fungus;
 
 public class PlayerSwitch : MonoBehaviour
 {
+    Vector3 initSmallPlayerPos, initBigStatuePos; // for mirroring... "small" is first player.
+
+
     bool firstFade = true;
+    public bool enterToSwap = false, mirroring = false;
 	public Flowchart flowchart;
     public GameObject bigPlayer, bigStatue, smallPlayer, smallStatue, bigAnchor, smallAnchor,
         smallCam, bigCam;
@@ -61,7 +65,6 @@ public class PlayerSwitch : MonoBehaviour
         climbPromptParent = GameObject.Find("Climb Prompt Parent");
         whoosh = GameObject.Find("Whoosh").GetComponent<AudioSource>();
 
-
         SetPlayer(isBigPlayer);
         if (isBigPlayer)
         {
@@ -71,6 +74,10 @@ public class PlayerSwitch : MonoBehaviour
         {
             bigView.color = new Color(bigView.color.r, bigView.color.g, bigView.color.b, 0);
         }
+
+
+        initSmallPlayerPos = smallPlayer.transform.position;
+        initBigStatuePos = bigStatue.transform.position;
     }
 
     public void LockMouse()
@@ -376,11 +383,67 @@ public class PlayerSwitch : MonoBehaviour
         }
     }
 
+    bool enterToSwapDisabled = false;
+
+    public void EnterToSwap()
+    {
+
+        if(enterToSwapDisabled)
+        {
+            (isBigPlayer ? bigPlayer : smallPlayer).GetComponent<MovementController>().enabled = true;
+            enterToSwapDisabled = false;
+        }
+
+        if(enterToSwap)
+        {
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                if(isBigPlayer)
+                {
+                    Vector3 temp = bigPlayer.transform.position;
+                    bigPlayer.GetComponent<MovementController>().enabled = false;
+                    bigPlayer.transform.position = smallStatue.transform.position;
+                    smallStatue.transform.position = temp;
+                    enterToSwapDisabled = true;
+                } else
+                {
+                    Vector3 temp = smallPlayer.transform.position;
+                    smallPlayer.GetComponent<MovementController>().enabled = false;
+                    smallPlayer.transform.position = bigStatue.transform.position;
+                    bigStatue.transform.position = temp;
+                    enterToSwapDisabled = true;
+                }
+            }
+        }
+    }
+
+    
+
+    public void Mirroring()
+    {
+        if(mirroring)
+        {
+            if(isBigPlayer)
+            {
+                Vector3 diff = bigPlayer.transform.position - (initBigStatuePos + Vector3.up * 100);
+                smallStatue.transform.position = (initSmallPlayerPos + Vector3.up * 100) + new Vector3(diff.x, diff.y, -diff.z);
+                smallStatue.transform.eulerAngles = -(bigPlayer.transform.eulerAngles - (new Vector3(0, 180, 0))) + new Vector3(0, 180, 0);
+            } else
+            {
+                Vector3 diff = smallPlayer.transform.position - initSmallPlayerPos;
+                bigStatue.transform.position = initBigStatuePos + new Vector3(diff.x, diff.y, -diff.z);
+            }
+        }
+    }
+
     public void Update()
     {
         Track();
         Synchronize();
         Fade();
+        EnterToSwap();
+        Mirroring();
+
 
         if (!smallPlayer.GetComponent<MovementController>().characterController.isGrounded)
         {
