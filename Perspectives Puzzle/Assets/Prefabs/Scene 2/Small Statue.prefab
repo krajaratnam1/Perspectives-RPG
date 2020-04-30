@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4323744793539135952}
   - component: {fileID: 4052366125150358694}
   m_Layer: 8
-  m_Name: Statue 2
+  m_Name: Small Statue
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 3245729110126579226}
   - component: {fileID: 7248283022627309487}
   - component: {fileID: 45129779868261508}
+  - component: {fileID: 64841041159574546}
   m_Layer: 8
   m_Name: Small Statue
   m_TagString: Player
@@ -138,7 +139,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7954615567046122097}
-  m_Mesh: {fileID: 4711208715938537054, guid: d405a778cdda240e2921288633039d03, type: 3}
+  m_Mesh: {fileID: 4711208715938537054, guid: fa2fe4baf4fc44525bf7a46f8d39285f, type: 3}
 --- !u!23 &45129779868261508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -177,3 +178,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &64841041159574546
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954615567046122097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4711208715938537054, guid: fa2fe4baf4fc44525bf7a46f8d39285f, type: 3}
