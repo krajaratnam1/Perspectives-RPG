@@ -79,6 +79,7 @@ public class ClimbableObject : MonoBehaviour
             {
                 movement.canMove = true;
             }
+            
         }
     }
 

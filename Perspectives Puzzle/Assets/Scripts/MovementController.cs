@@ -10,17 +10,17 @@ public class MovementController : MonoBehaviour
     public Flowchart flowchart;
     public bool playerCanMove = true, canMove = true, carrying = false, climbing = false, isBig = false;
 
-    private float InputX, InputZ, Speed, gravity;
+    private float InputX, InputZ, Speed, gravity, cloneGravity;
 
     public string blockOnFall = "Fallen";
 
-    Vector3 lastGroundedPos;
+    public Vector3 lastGroundedPos, cloneGroundedPos;
 
     [SerializeField] Camera cam;
     public CharacterController characterController;
 
     private Vector3 desiredMoveDirection;
-    float ungroundedTimer = 0, groundedTimer = 0;
+    public float ungroundedTimer = 0, groundedTimer = 0, cloneUngroundedTimer = 0, cloneGroundedTimer = 0;
 
     Animator animator;
 
@@ -39,9 +39,15 @@ public class MovementController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         lastGroundedPos = this.transform.position + Vector3.down * 5;
+        
         playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
         animator = GetComponent<Animator>();
+
+        if (playerSwapSystem.mirroring)
+        {
+            cloneGroundedPos = (playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).transform.position + Vector3.down * 5;
+        }
     }
 
     // Update is called once per frame
@@ -62,11 +68,13 @@ public class MovementController : MonoBehaviour
             return;
         }
 
-        if(characterController.isGrounded)
+        // the below code is for repositioning the player after falling
+
+        if(characterController.isGrounded) // keeping track of the position when they're not falling
         {
             groundedTimer += Time.deltaTime;
             ungroundedTimer = 0;
-            if (groundedTimer >= 0.5f)
+            if (groundedTimer >= 0.5f) // to make sure that we don't place the player ridiculously close to just before they fell
             {
                 lastGroundedPos = transform.position;
                 groundedTimer = 0;
@@ -75,12 +83,38 @@ public class MovementController : MonoBehaviour
         {
             ungroundedTimer += Time.deltaTime;
             groundedTimer = 0;
-            if(ungroundedTimer >= 1f)
+            if(ungroundedTimer >= 1f) 
             {
                 flowchart.ExecuteBlock(blockOnFall);
-                print("Repositioning");
+                print("Repositioning after fall");
                 transform.position = lastGroundedPos + Vector3.up*5;
                 ungroundedTimer = 0;
+            }
+        }
+
+
+        // repositioning clone after falling
+
+        if(playerSwapSystem.mirroring)
+        {
+            if((playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).GetComponent<CharacterController>().isGrounded)
+            {
+                cloneGroundedTimer += Time.deltaTime;
+                cloneUngroundedTimer = 0;
+                if(cloneGroundedTimer >= 0.5f)
+                {
+                    cloneGroundedPos = (playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).transform.position;
+                    cloneGroundedTimer = 0;
+                }
+            } else
+            {
+                cloneUngroundedTimer += Time.deltaTime;
+                cloneGroundedTimer = 0;
+                if(cloneUngroundedTimer >= 1f)
+                {
+                    print("Repositioning clone after fall.");
+                    (playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).transform.position = cloneGroundedPos + Vector3.up * 5;
+                }
             }
         }
 
@@ -138,9 +172,23 @@ public class MovementController : MonoBehaviour
         moveDirection = new Vector3(moveDirection.x, gravity, moveDirection.z);
         characterController.Move(moveDirection);
 
+        
+
         if (characterController.isGrounded)
         {
             gravity = 0;
+        }
+
+
+        if (playerSwapSystem.mirroring) // move the statue accordingly
+        {
+            cloneGravity -= 9.8f * Time.deltaTime;
+            cloneGravity = gravityEnabled ? (cloneGravity * gravityMultipler) : 0;
+            (playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).GetComponent<CharacterController>().Move(new Vector3(moveDirection.x, cloneGravity, -moveDirection.z));
+            if((playerSwapSystem.isBigPlayer ? playerSwapSystem.smallStatue : playerSwapSystem.bigStatue).GetComponent<CharacterController>().isGrounded)
+            {
+                cloneGravity = 0;
+            }
         }
     }
 

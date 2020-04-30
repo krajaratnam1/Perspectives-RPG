@@ -39,6 +39,8 @@ public class PressurePlate : MonoBehaviour
         if (weight > 0)
         {
             mr.material.SetColor("_Color", highlightColor);
+
+            
             if (toDisappear != null)
             {
                 toDisappear.SetActive(false);
@@ -51,10 +53,10 @@ public class PressurePlate : MonoBehaviour
         } else
         {
             mr.material.SetColor("_Color", baseColor);
-            if (toDisappear != null)
+            /*if (toDisappear != null)
             {
                 toDisappear.SetActive(true);
-            }
+            }*/
 
             if (optionalFungusBlock != "")
             {
@@ -65,9 +67,13 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null)
+        if(other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null || other.GetComponent<CharacterController>() != null)
         {
             weight++;
+            if (toDisappear != null)
+            {
+                toDisappear.SetActive(false);
+            }
         } else
         {
             print("Not Playable");
@@ -76,9 +82,16 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null)
+        if (other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null || other.GetComponent<CharacterController>() != null)
         {
             weight--;
+            if(weight <= 0)
+            {
+                if (toDisappear != null)
+                {
+                    toDisappear.SetActive(true);
+                }
+            }
         } else
         {
             print("Not playable");

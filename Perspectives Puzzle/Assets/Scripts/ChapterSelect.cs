@@ -14,7 +14,7 @@ public class ChapterSelect : MonoBehaviour
         level5BigStatue, level5BigPlayer, level5SmallPlayer, level5SmallStatue;
 
 
-    public int selection = 0;
+    public int selection = 0, maxPuzzle = 0;
 
     public Text selectionText;
 
@@ -23,6 +23,8 @@ public class ChapterSelect : MonoBehaviour
     GameObject[] bigStatues, bigPlayers, smallStatues, smallPlayers;
 
     public Flowchart flowchart;
+
+    bool disabledMvt = false; 
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,9 @@ public class ChapterSelect : MonoBehaviour
             if(bigStatues[i] == null)
             {
                 print("did not find " + "Level " + (i + 1).ToString() + " Big Statue Spawn");
+            } else
+            {
+                maxPuzzle = i;
             }
         }
 
@@ -56,12 +61,15 @@ public class ChapterSelect : MonoBehaviour
 
     public void SetLevel(int level)
     {
-        if(level < 0 || level > 4)
+        if(level < 0 || level > maxPuzzle)
         {
             return;
         } else
         {
+            
             print(smallStatues[level].name);
+            (playerSwapSystem.isBigPlayer ? playerSwapSystem.bigPlayer : playerSwapSystem.smallPlayer).GetComponent<MovementController>().enabled = false;
+            disabledMvt = true;
             playerSwapSystem.smallStatue.transform.position = smallStatues[level].transform.position;
             playerSwapSystem.bigStatue.transform.position = bigStatues[level].transform.position;
             playerSwapSystem.smallPlayer.transform.position = smallPlayers[level].transform.position;
@@ -72,7 +80,10 @@ public class ChapterSelect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (disabledMvt)
+        {
+            (playerSwapSystem.isBigPlayer ? playerSwapSystem.bigPlayer : playerSwapSystem.smallPlayer).GetComponent<MovementController>().enabled = true;
+        }
         selectionText.text = "Level " + (selection + 1).ToString();
 
         if(window.activeInHierarchy)
@@ -89,9 +100,9 @@ public class ChapterSelect : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
                 selection++;
-                if(selection > 4)
+                if(selection > maxPuzzle)
                 {
-                    selection = 4;
+                    selection = maxPuzzle;
                 }
             }
 

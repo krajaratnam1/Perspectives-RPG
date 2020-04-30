@@ -425,13 +425,15 @@ public class PlayerSwitch : MonoBehaviour
         {
             if(isBigPlayer)
             {
-                Vector3 diff = bigPlayer.transform.position - (initBigStatuePos + Vector3.up * 100);
-                smallStatue.transform.position = (initSmallPlayerPos + Vector3.up * 100) + new Vector3(diff.x, diff.y, -diff.z);
+                //Vector3 diff = bigPlayer.transform.position - (initBigStatuePos + Vector3.up * 100);
+                //smallStatue.transform.position = (initSmallPlayerPos + Vector3.up * 100) + new Vector3(diff.x, diff.y, -diff.z);
                 smallStatue.transform.eulerAngles = -(bigPlayer.transform.eulerAngles - (new Vector3(0, 180, 0))) + new Vector3(0, 180, 0);
             } else
             {
-                Vector3 diff = smallPlayer.transform.position - initSmallPlayerPos;
-                bigStatue.transform.position = initBigStatuePos + new Vector3(diff.x, diff.y, -diff.z);
+                //Vector3 diff = smallPlayer.transform.position - initSmallPlayerPos;
+                //bigStatue.transform.position = initBigStatuePos + new Vector3(diff.x, diff.y, -diff.z);
+                bigStatue.transform.eulerAngles = -(smallPlayer.transform.eulerAngles) - (new Vector3(0, 180, 0)) + new Vector3(0, 180, 0);
+
             }
         }
     }
