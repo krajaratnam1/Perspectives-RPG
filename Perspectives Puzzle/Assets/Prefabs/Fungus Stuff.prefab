@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 277.4254, y: 25.122837}
+  scrollPos: {x: 281.38773, y: 46.91559}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 356
@@ -746,8 +746,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 3890792709088699668}
-  selectedCommands: []
+  - {fileID: 3513091713279495068}
+  selectedCommands:
+  - {fileID: 3513091713279495067}
   variables:
   - {fileID: 3890792709088699666}
   - {fileID: 3890792709088699667}
@@ -3730,7 +3731,8 @@ MonoBehaviour:
   indentLevel: 1
   storyText: 'Puzzle 5 - Invisible Obstacles
 
-    She kept pushing me, but she didn''t see the obstacles in my way.'
+    She thought I wasn''t trying hard enough. It never mattered how much I did, only
+    that there was more to be done.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4169,7 +4171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -235.47672
+    x: -233.49553
     y: 265.77856
     width: 133.2095
     height: 40
@@ -4295,7 +4297,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -137.52835
-    y: 156.81403
+    y: 156.81401
     width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4322,8 +4324,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 1
-  storyText: I had obstacles she couldn't see. The world had changed from when she
-    was growing up.
+  storyText: 'I had obstacles she couldn''t see. She could only see what was right
+    in front of her. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4499,8 +4501,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 112
   indentLevel: 1
-  storyText: I could reach into places she couldn't, navigate terrain that she saw
-    as solid walls with no path forward.
+  storyText: I could see the terrain she couldn't, navigate the solid walls where
+    she saw no path forward.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6468,7 +6470,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -184.22565
-    y: 475.12766
+    y: 473.14648
     width: 156.98364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6991,8 +6993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: Her hospital had a change in management. They were all about the bottom
-    line. It was hard to focus in an environment like that.
+  storyText: Her hospital had a change in management. That meant getting her a blanket
+    when she'd crash on the couch after the graveyard shift, holidays alone, or hearing
+    about another patient death. It shoudn't have been up to me to help her.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7413,8 +7416,8 @@ MonoBehaviour:
   storyText: 'The Story of My Mother
 
     I had solved many puzzles for other people throughout my life. But it was finally
-    time to solve the puzzles in my own. This is first story of several stories in
-    my life.'
+    time to solve the puzzles in my own. This is first story of 3 stories from my
+    life.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7497,9 +7500,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 239
   indentLevel: 0
-  storyText: 'She didn''t get her bachelor''s but she knew education was important.
-    She thought all she needed was to provide for me. Scholarships, exams, fancy forms?
-    She never navigated them herself. '
+  storyText: She didn't get her bachelor's but she knew education was important. She
+    tried to control what she couldn't control in her life. Scholarships, exams, fancy
+    forms? She never navigated them herself, but she didn't want me slacking off.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7527,7 +7530,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -86.41008
-    y: 118.7331
+    y: 120.71428
     width: 145.09659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7553,10 +7556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 237
   indentLevel: 0
-  storyText: Years later, I was boiling water again. I finished homework, so I went
-    back to my room to play computer games, a dorky where a green guy taught us math.
-    She was so tired that she didn't hear it and the stove caught fire and we called
-    the fire department.
+  storyText: Years later, I was boiling water again. I was tired of homework, so I
+    went back to my room to play computer games. Who cares about the smoltification
+    of steelhead rainbow trout, anyway? Mom was so tired, she didn't notice the stove
+    caught fire and I had to call the fire department.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

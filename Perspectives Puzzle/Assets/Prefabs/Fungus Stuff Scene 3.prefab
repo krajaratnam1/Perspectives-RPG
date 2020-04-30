@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 389.39948, y: -353.66254}
+  scrollPos: {x: 173.4875, y: 50.533123}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 356
@@ -255,7 +255,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 8271409054674974865}
+  - {fileID: 8271409054885203173}
   selectedCommands: []
   variables:
   - {fileID: 8271409054885203197}
@@ -3680,8 +3680,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -235.47672
-    y: 265.77856
+    x: -247.53215
+    y: 287.47842
     width: 124.19897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6471,9 +6471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: I had a future she never had a chance at, but she could only get me part
-    of the way there. Parents only help out where they can, but every child's life
-    is a puzzle for themselves to solve. You're lucky if you do it in one lifetime.
+  storyText: 
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7005,7 +7003,8 @@ MonoBehaviour:
   itemId: 239
   indentLevel: 0
   storyText: 'I thought the lay of the land was the same, but I couldn''t possibly
-    see from her perspective. I was only looking at her world from my perspective. '
+    see from her perspective. If I was looking at her world, I was only seeing it
+    from my perspective. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7033,7 +7032,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -86.41008
-    y: 118.7331
+    y: 118.73311
     width: 133.19278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7170,9 +7169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 248
   indentLevel: 0
-  storyText: She had a future she never had a chance at, but I could only get her
-    part of the way there. Parents only help out where they can, but every child's
-    life is a puzzle for themselves to solve. You're lucky if you do it in one lifetime.
+  storyText: She had a future I never had a chance at, but I could only get her part
+    of the way there. Parents only help out where they can, but every child's life
+    is a puzzle for themselves to solve. You're lucky if you do it in one lifetime.
+    Or two.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
