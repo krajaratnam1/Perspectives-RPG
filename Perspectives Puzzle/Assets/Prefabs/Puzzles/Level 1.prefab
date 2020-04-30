@@ -52922,6 +52922,11 @@ PrefabInstance:
       propertyPath: bigPlayerBlock
       value: Interstitial 0 - 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: pushingBlock
+      value: Interstitial 0 - 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922087, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_Size.x
@@ -53576,7 +53581,7 @@ PrefabInstance:
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
@@ -53651,6 +53656,11 @@ PrefabInstance:
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: bigPlayerBlock
+      value: Interstitial 0 - 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: pushingBlock
       value: Interstitial 0 - 1
       objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922087, guid: 5103e8734b3774253a3123748c433b13,
