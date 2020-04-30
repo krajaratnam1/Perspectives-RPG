@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Color based
+  m_Shader: {fileID: 4800000, guid: a1d4db013b07b824eb6ea5f28b86f924, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 8400000, guid: 65ce88c8e8587224ab68d6bf04f6bb78, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _1: 0.03
+    - _2: -0.07
+    - _3: 1
+    - _4: -0.57
+    - _Angle: 0.999
+    - _Angle2: 0.6
+    - _ColorThreshold: 0
+    - _ContrastON: 0.3
+    - _Contrast_Check: 1.1
+    - _Dx: 0.87
+    - _Dy: 0
+    - _GradThresh: 0.000001
+    - _OutLineOnly: 0
+    - _RANGE: 70.79
+    - _test: 0.29
+    m_Colors:
+    - _OutLineColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
