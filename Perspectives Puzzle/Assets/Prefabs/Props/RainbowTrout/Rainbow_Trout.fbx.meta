@@ -1,51 +1,111 @@
 fileFormatVersion: 2
 guid: b580974c9327fb347b570665204b9c7e
-timeCreated: 1430143123
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: RainbowTrout
-    100004: RainbowTroutMesh
-    100006: RainbowTrout|Bone
-    100008: RainbowTrout|Bone.001
-    100010: RainbowTrout|Bone.002
-    100012: RainbowTrout|Bone.003
-    400000: //RootNode
-    400002: RainbowTrout
-    400004: RainbowTroutMesh
-    400006: RainbowTrout|Bone
-    400008: RainbowTrout|Bone.001
-    400010: RainbowTrout|Bone.002
-    400012: RainbowTrout|Bone.003
-    4300000: RainbowTroutMesh
-    7400000: RainbowTrout|DeadFish
-    7400002: RainbowTrout|FastSwim
-    7400004: RainbowTrout|FishJump
-    7400006: RainbowTrout|SlowSwim
-    7400008: RainbowTrout|SpearStick
-    9500000: //RootNode
-    13700000: RainbowTroutMesh
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: RainbowTrout
+  - first:
+      1: 100004
+    second: RainbowTroutMesh
+  - first:
+      1: 100006
+    second: RainbowTrout|Bone
+  - first:
+      1: 100008
+    second: RainbowTrout|Bone.001
+  - first:
+      1: 100010
+    second: RainbowTrout|Bone.002
+  - first:
+      1: 100012
+    second: RainbowTrout|Bone.003
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: RainbowTrout
+  - first:
+      4: 400004
+    second: RainbowTroutMesh
+  - first:
+      4: 400006
+    second: RainbowTrout|Bone
+  - first:
+      4: 400008
+    second: RainbowTrout|Bone.001
+  - first:
+      4: 400010
+    second: RainbowTrout|Bone.002
+  - first:
+      4: 400012
+    second: RainbowTrout|Bone.003
+  - first:
+      43: 4300000
+    second: RainbowTroutMesh
+  - first:
+      74: 7400000
+    second: RainbowTrout|DeadFish
+  - first:
+      74: 7400002
+    second: RainbowTrout|FastSwim
+  - first:
+      74: 7400004
+    second: RainbowTrout|FishJump
+  - first:
+      74: 7400006
+    second: RainbowTrout|SlowSwim
+  - first:
+      74: 7400008
+    second: RainbowTrout|SpearStick
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: RainbowTroutMesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: b20e10a9e42d79c49a19cfc45fd35b16, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: RainbowTrout|DeadFish
       takeName: RainbowTrout|DeadFish
+      internalID: 0
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -53,6 +113,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -83,9 +144,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: RainbowTrout|FastSwim
       takeName: RainbowTrout|FastSwim
+      internalID: 0
       firstFrame: 0
       lastFrame: 10
       wrapMode: 0
@@ -93,6 +156,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -123,9 +187,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: RainbowTrout|FishJump
       takeName: RainbowTrout|FishJump
+      internalID: 0
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -133,6 +199,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -163,9 +230,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: RainbowTrout|SlowSwim
       takeName: RainbowTrout|SlowSwim
+      internalID: 0
       firstFrame: 0
       lastFrame: 20
       wrapMode: 0
@@ -173,6 +242,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -203,19 +273,30 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -223,24 +304,34 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1438057797512121627
 Transform:
   m_ObjectHideFlags: 0
@@ -755,6 +755,7 @@ MonoBehaviour:
   level5SmallPlayer: {fileID: 0}
   level5SmallStatue: {fileID: 0}
   selection: 0
+  maxPuzzle: 0
   selectionText: {fileID: 7668183223355789782}
   playerSwapSystem: {fileID: 0}
   flowchart: {fileID: 0}

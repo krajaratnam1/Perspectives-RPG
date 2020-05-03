@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 574966597466920290}
   - component: {fileID: 574966597466920301}
   - component: {fileID: 574966597466920300}
+  - component: {fileID: 3947558208357717759}
   m_Layer: 9
   m_Name: Big Statue 1
   m_TagString: Player
@@ -47,7 +48,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2
   m_Radius: 0.37
-  m_SlopeLimit: 45
+  m_SlopeLimit: 60
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
@@ -86,6 +87,19 @@ MonoBehaviour:
   centeringTime: 0.2
   pushKey: 102
   prompt: {fileID: 0}
+--- !u!65 &3947558208357717759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574966597466920303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7521054, y: 1.9999669, z: 0.7788617}
+  m_Center: {x: 0.011833608, y: 1.0105151, z: -0.007307589}
 --- !u!1 &5207970623644688916
 GameObject:
   m_ObjectHideFlags: 0

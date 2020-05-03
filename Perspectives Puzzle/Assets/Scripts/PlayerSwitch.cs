@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class PlayerSwitch : MonoBehaviour
 {
@@ -445,6 +446,28 @@ public class PlayerSwitch : MonoBehaviour
         Fade();
         EnterToSwap();
         Mirroring();
+
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1))
+        {
+            SceneManager.LoadScene("MainScene");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha2) || Input.GetKeyUp(KeyCode.Keypad2))
+        {
+            SceneManager.LoadScene("Scene2");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha3) || Input.GetKeyUp(KeyCode.Keypad3))
+        {
+            SceneManager.LoadScene("Scene 3");
+        }
+
+
 
 
         if (!smallPlayer.GetComponent<MovementController>().characterController.isGrounded)

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3002744632812857980}
   - component: {fileID: 3002744632812857981}
   - component: {fileID: 3002744632812857954}
+  - component: {fileID: 5936884459526362505}
   m_Layer: 8
   m_Name: Small Statue 1
   m_TagString: Player
@@ -47,7 +48,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 1
   m_Radius: 0.25
-  m_SlopeLimit: 45
+  m_SlopeLimit: 60
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
@@ -85,6 +86,19 @@ MonoBehaviour:
   speed: 4
   pushKey: 102
   prompt: {fileID: 0}
+--- !u!65 &5936884459526362505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002744632812857955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.53949356, y: 0.9146042, z: 0.71060944}
+  m_Center: {x: -0.036325455, y: 0.9766731, z: 0.0004081726}
 --- !u!1 &8921237342670207427
 GameObject:
   m_ObjectHideFlags: 0
