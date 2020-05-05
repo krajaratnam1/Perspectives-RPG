@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 930180771465930082}
   - component: {fileID: 930180771465930093}
   - component: {fileID: 5110648991912960778}
+  - component: {fileID: 3139862048104418091}
   m_Layer: 8
   m_Name: Big Camera
   m_TagString: MainCamera
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930180771465930092}
-  m_LocalRotation: {x: 0.32762438, y: -0.091819845, z: -0.28317314, w: 0.8966852}
+  m_LocalRotation: {x: 0.70094913, y: -0.22357434, z: 0.1875186, w: -0.65078545}
   m_LocalPosition: {x: -1.0179155, y: 1.615473, z: -135.63707}
   m_LocalScale: {x: 1.6209602, y: 2.378671, z: 1.0003686}
   m_Children:
@@ -133,6 +134,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499c167e5f80f4fc88f09a08c1b50c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3139862048104418091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930180771465930092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf51eff9f858b4eabfb5e43dde908b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cam_2: {fileID: 0}
+  Post: {fileID: 2100000, guid: ac214c9369e556b45813f94f5566eda8, type: 2}
 --- !u!1 &4209182776222451212
 GameObject:
   m_ObjectHideFlags: 0

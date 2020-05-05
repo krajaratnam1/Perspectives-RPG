@@ -1071,6 +1071,7 @@ GameObject:
   - component: {fileID: 5971700717793593473}
   - component: {fileID: 5971700717793593486}
   - component: {fileID: 3358314138671018161}
+  - component: {fileID: 8379282191051570570}
   m_Layer: 9
   m_Name: Small Camera
   m_TagString: Untagged
@@ -1085,7 +1086,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5971700717793593487}
-  m_LocalRotation: {x: -0.95380723, y: 0.2990969, z: 0.0021042158, w: 0.028079754}
+  m_LocalRotation: {x: -0.11999448, y: 0.025483858, z: 0.29757982, w: -0.94678307}
   m_LocalPosition: {x: -26, y: 4, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1191,6 +1192,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499c167e5f80f4fc88f09a08c1b50c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8379282191051570570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971700717793593487}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf51eff9f858b4eabfb5e43dde908b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cam_2: {fileID: 0}
+  Post: {fileID: 2100000, guid: ac214c9369e556b45813f94f5566eda8, type: 2}
 --- !u!1 &5971700718052313564
 GameObject:
   m_ObjectHideFlags: 0
