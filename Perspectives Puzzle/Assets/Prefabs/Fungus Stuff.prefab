@@ -41,7 +41,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b8712672be0f74f85b205f61d16d143d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7cb50ea6fc1784cac90cc7d8d9ca6997, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -168,7 +168,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1cd3948792e714bce9d1ba228c51624e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 49761041c8ef64154be4f618044a78af, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -295,7 +295,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c935a7cb820654fff9521a74a9f2d0b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e50bd2207b54541199f386557573974f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.347
   m_Pitch: 1
@@ -422,7 +422,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5e7494752e4ac4970805dddafc543778, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 42aa3de01d54f46e7a5ede5e6510cffa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -549,7 +549,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09fa9838dff05469d821d428e014b35d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7b8762a6bda5c4cc69139fa38790f0db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1397,7 +1397,7 @@ GameObject:
   - component: {fileID: 4102425105264935321}
   - component: {fileID: 4102425105264935270}
   - component: {fileID: 4102425105264935313}
-  - component: {fileID: 6264292535275791779}
+  - component: {fileID: 1073667939}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1432,10 +1432,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 408.73727, y: -71.84723}
+  scrollPos: {x: 336.38113, y: 4.21943}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 353
+  blockViewHeight: 352
   zoom: 0.53900105
   scrollViewRect:
     serializedVersion: 2
@@ -1444,8 +1444,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 4102425106109576387}
-  selectedCommands: []
+  - {fileID: 4102425106109576413}
+  selectedCommands:
+  - {fileID: 3277442251363911240}
   variables:
   - {fileID: 4102425105264935069}
   - {fileID: 4102425105264935068}
@@ -1582,6 +1583,7 @@ MonoBehaviour:
   - {fileID: 4462174013629014572}
   - {fileID: 8227376312168544161}
   - {fileID: 6504743380688190928}
+  - {fileID: 1073667939}
   - {fileID: 4102425105264935276}
   suppressAllAutoSelections: 0
 --- !u!114 &4102425105264935057
@@ -4435,7 +4437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -270.6211
+    x: -272.21094
     y: 225.4817
     width: 168.73817
     height: 40
@@ -4455,7 +4457,6 @@ MonoBehaviour:
   - {fileID: 3277442251363911240}
   - {fileID: 4102425105264935270}
   - {fileID: 4102425105264935322}
-  - {fileID: 6264292535275791779}
   suppressAllAutoSelections: 0
 --- !u!114 &4102425106109576410
 MonoBehaviour:
@@ -7722,9 +7723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 212
   indentLevel: 0
-  storyText: I had a future she never had a chance at, but she could only get me part
-    of the way there. Ultimately, every child's life is a puzzle for themselves to
-    solve. You're lucky if you do it in one lifetime.
+  storyText: A parent has keys to riddles from a bygone era, but a child's life is
+    a puzzle for themselves to solve. You're lucky if you do it in one lifetime.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7732,8 +7732,8 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
+  fadeWhenDone: 0
+  waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -9936,7 +9936,7 @@ MonoBehaviour:
     audioSourceVal: {fileID: 5236196258015169047}
   startVolume: 1
   endVolume: 0
-  fadeDuration: 3
+  fadeDuration: 4.7
   waitUntilFinished: 1
   audioSourceOLD: {fileID: 0}
 --- !u!114 &4102425105264935323
@@ -10028,7 +10028,7 @@ MonoBehaviour:
     audioSourceVal: {fileID: 7760222412570063175}
   startVolume: 1
   endVolume: 0
-  fadeDuration: 3
+  fadeDuration: 4.7
   waitUntilFinished: 0
   audioSourceOLD: {fileID: 0}
 --- !u!114 &4102425105264935313
@@ -10054,7 +10054,7 @@ MonoBehaviour:
   fadeDuration: 0
   waitUntilFinished: 1
   audioSourceOLD: {fileID: 0}
---- !u!114 &6264292535275791779
+--- !u!114 &1073667939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10063,24 +10063,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 4102425105264935277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 316
   indentLevel: 0
-  storyText: Press 2 to load Scene 2 when ready.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  control: 4
+  _audioSource:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 4454448107018700012}
+  startVolume: 1
+  endVolume: 0.0527
+  fadeDuration: 0
+  waitUntilFinished: 0
+  audioSourceOLD: {fileID: 0}
 --- !u!1 &4102425105836843299
 GameObject:
   m_ObjectHideFlags: 0
@@ -10155,7 +10151,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e8b5a2552f344762be5e0f1bc988be1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ff5178984442f40be8f4a38aee3d331e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.347
   m_Pitch: 1
@@ -10282,7 +10278,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 12766639bd4c7408f8540944fd952801, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e9df831d4da0a4e518d03b67fd0acc3d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.19
   m_Pitch: 1
@@ -10409,7 +10405,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 48926e13dc4c74b48ad721d3bf9592fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e47b599c341eb4d7089ce51d6c5a3d0f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.175
   m_Pitch: 1
@@ -10536,7 +10532,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6e285a605e2f84a9abd5acba61f269be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 36da1362326014bd5845e0e2e65f609a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.19
   m_Pitch: 1
@@ -10706,7 +10702,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a6ecdaee60d584903b79bc32ef5c9121, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 476c0a4c904ac48bb86fbd40cc757dc6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10833,7 +10829,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b40718a554d948ba94295365f2c31a0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b8bb36021d04a4a5ea06506611d8276d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10960,7 +10956,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4f08d8b64499247359149ec4d3485097, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 93ce51d93080e43188c89d4eeb01b0d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11087,7 +11083,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25a25dfe72e034cf485613aa9f324690, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3507f36b65e35437da01c3a77f0427d9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.347
   m_Pitch: 1
