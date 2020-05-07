@@ -65,7 +65,7 @@ public class PushableObject : MonoBehaviour
 
         if(prompting || carried) 
         {
-            prompt.GetComponent<Text>().text = carried ? "Press F to Put Down" : "Press F to Pick Up";
+            prompt.GetComponent<Text>().text = carried ? " " : "F to Carry.";
             prompt.SetActive(true);
             movement.carrying = carried;
             if(Input.GetKeyDown(pushKey))
