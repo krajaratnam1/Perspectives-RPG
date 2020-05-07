@@ -10,6 +10,8 @@ public class PlayerSwitch : MonoBehaviour
 {
     Vector3 initSmallPlayerPos, initBigStatuePos; // for mirroring... "small" is first player.
 
+    //volume controls
+    public float volume = 0.05f, prevVolume = 0, volIncr = 0.05f;
 
     bool firstFade = true;
     public bool enterToSwap = false, mirroring = false;
@@ -439,8 +441,36 @@ public class PlayerSwitch : MonoBehaviour
         }
     }
 
+
+    public void VolumeAdjustment()
+    {
+
+        if (Input.GetKeyDown(KeyCode.I)) //volume up by incr
+        {
+            volume += volIncr;
+        }
+
+        if(Input.GetKeyDown(KeyCode.K)) // volume down by incr
+        {
+            volume -= volIncr;
+            if(volume <= 0)
+            {
+                volume = 0;
+            }
+        }
+
+        if(Mathf.Abs(prevVolume - volume) <= 0.001f)
+        {
+            return;
+        }
+
+        prevVolume = volume;
+        AudioListener.volume = volume;
+    }
+
     public void Update()
     {
+        VolumeAdjustment();
         Track();
         Synchronize();
         Fade();

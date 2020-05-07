@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1140422831961106541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7823446306589399572}
+  - component: {fileID: 3622770090069508921}
+  m_Layer: 0
+  m_Name: Level 1 Music Change
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7823446306589399572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140422831961106541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3622770090069508921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140422831961106541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: 72deae4d18418f94688abef8e8483df0, type: 2}
 --- !u!1 &1251744346732706669
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +552,138 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2517655625692270921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3078445848377283565}
+  - component: {fileID: 8252881626363988892}
+  m_Layer: 0
+  m_Name: Level 0 Music Change
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3078445848377283565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517655625692270921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8252881626363988892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517655625692270921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
+--- !u!1 &2529222655607546730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206240008691357875}
+  - component: {fileID: 8091575032340259086}
+  m_Layer: 0
+  m_Name: 'Level 3 Music Change '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1206240008691357875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529222655607546730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8091575032340259086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529222655607546730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: 34ec9556ffe211049b2410ea03850f6e, type: 2}
+--- !u!1 &2865099107551006187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6673147673361527372}
+  - component: {fileID: 5512868835973831185}
+  m_Layer: 0
+  m_Name: 'Level 4 Music Change '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6673147673361527372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2865099107551006187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5512868835973831185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2865099107551006187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: cede08c9fc471e64884909cd4bbeaf59, type: 2}
 --- !u!1 &3613562203940319006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1574,8 @@ GameObject:
   - component: {fileID: 4102425105264935270}
   - component: {fileID: 4102425105264935313}
   - component: {fileID: 1073667939}
+  - component: {fileID: 5848666884576191069}
+  - component: {fileID: 5558243242796187425}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1432,11 +1610,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 336.38113, y: 4.21943}
+  scrollPos: {x: 150.59668, y: -56.17737}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 352
-  zoom: 0.53900105
+  blockViewHeight: 436
+  zoom: 0.75941265
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1445,8 +1623,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 4102425106109576413}
-  selectedCommands:
-  - {fileID: 3277442251363911240}
+  selectedCommands: []
   variables:
   - {fileID: 4102425105264935069}
   - {fileID: 4102425105264935068}
@@ -1480,7 +1657,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.41004
     y: 64
-    width: 140.9089
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1509,7 +1686,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 53.559723
     y: 112.61082
-    width: 155.75119
+    width: 142.8349
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1564,8 +1741,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 74.79645
-    y: 170.70872
-    width: 168.73817
+    y: 168.65762
+    width: 155.34457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1575,6 +1752,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4102425105264935313}
+  - {fileID: 5848666884576191069}
   - {fileID: 9074328995912305353}
   - {fileID: 4068487060386894690}
   - {fileID: 597804652252685012}
@@ -1602,7 +1780,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 340.48224
     y: 250.22498
-    width: 122.35607
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1648,7 +1826,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 360.535
     y: 481.20508
-    width: 137.19835
+    width: 127.03322
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1739,7 +1917,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 88.51132
     y: 207.25084
-    width: 127.92193
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2122,7 +2300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.94606
     y: 78.493
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2152,7 +2330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.7781
     y: 135.83333
-    width: 150.18533
+    width: 142.1765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2286,7 +2464,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 226.3696
     y: 382.712
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2400,7 +2578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 197.59178
     y: 311.08878
-    width: 150.18533
+    width: 142.1765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3397,7 +3575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 47.456467
     y: 295.17392
-    width: 140.9089
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3902,7 +4080,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 73.33103
     y: 438.0242
-    width: 127.92193
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3935,7 +4113,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 57.50872
     y: 395.70468
-    width: 168.73817
+    width: 155.34457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3945,6 +4123,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5125141723555707419}
+  - {fileID: 5558243242796187425}
   - {fileID: 4102425105264935315}
   - {fileID: 278912170189024706}
   - {fileID: 6128632904554796415}
@@ -4035,7 +4214,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -264.86432
     y: 151.44966
-    width: 155.75119
+    width: 142.8349
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4439,7 +4618,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -272.21094
     y: 225.48169
-    width: 168.73817
+    width: 155.34457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4887,7 +5066,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 45.40207
     y: 326.68573
-    width: 155.75119
+    width: 142.8349
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4915,7 +5094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -235.47672
     y: 265.77856
-    width: 127.92193
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5012,7 +5191,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -266.98468
     y: 119.17027
-    width: 140.9089
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5040,7 +5219,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -137.52835
     y: 156.81403
-    width: 150.18533
+    width: 142.1765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5337,7 +5516,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -116.37422
     y: 233.81116
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5450,7 +5629,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 64.48199
     y: 692.7348
-    width: 127.92193
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5931,7 +6110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 33.090374
     y: 584.66376
-    width: 155.75119
+    width: 142.8349
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5959,7 +6138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 48.449295
     y: 645.9537
-    width: 168.73817
+    width: 155.34457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6123,7 +6302,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 41.07202
     y: 537.5049
-    width: 140.9089
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6151,7 +6330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.45758
     y: 630.66956
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6327,9 +6506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 166.15906
-    y: 579.4341
-    width: 150.18533
+    x: 217.36055
+    y: 544.9516
+    width: 142.1765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6469,7 +6648,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -305.52548
     y: 522.9419
-    width: 168.73817
+    width: 155.34457
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6569,7 +6748,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -311.43707
     y: 463.83704
-    width: 155.75119
+    width: 142.8349
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7011,7 +7190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -285.3952
     y: 581.3967
-    width: 127.92193
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7074,7 +7253,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -155.5452
     y: 525.4721
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7231,7 +7410,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -184.22565
     y: 475.12766
-    width: 150.18533
+    width: 142.1765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7613,7 +7792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -307.01465
     y: 429.0796
-    width: 140.9089
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7937,7 +8116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -56.659264
     y: 353.65314
-    width: 267.06824
+    width: 249.49628
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -7963,7 +8142,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 64.33373
     y: 743.704
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -7989,7 +8168,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -322.76312
     y: 631.5023
-    width: 317.1609
+    width: 289.6589
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8015,7 +8194,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -383.68933
     y: 70.37745
-    width: 274.48938
+    width: 258.05554
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8039,9 +8218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -383.68933
-    y: 70.37745
-    width: 274.48938
+    x: -284.42096
+    y: -114.57527
+    width: 258.05554
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8067,7 +8246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -322.76312
     y: 631.5023
-    width: 317.1609
+    width: 289.6589
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8093,7 +8272,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 64.33373
     y: 745.4371
-    width: 137.19835
+    width: 130.32523
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8119,7 +8298,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -58.47827
     y: 255.42679
-    width: 267.06824
+    width: 249.49628
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -8145,7 +8324,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 192.41101
     y: 14.481533
-    width: 142.76419
+    width: 134.93405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8202,7 +8381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 152.6832
     y: 258.6814
-    width: 142.76419
+    width: 134.93405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8287,7 +8466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -86.41008
     y: 118.7331
-    width: 142.76419
+    width: 134.93405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8344,7 +8523,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -146.45616
     y: 423.3921
-    width: 142.76419
+    width: 134.93405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8400,7 +8579,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.07312
     y: 502.48962
-    width: 142.76419
+    width: 134.93405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10076,6 +10255,48 @@ MonoBehaviour:
   fadeDuration: 0
   waitUntilFinished: 0
   audioSourceOLD: {fileID: 0}
+--- !u!114 &5848666884576191069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102425105264935277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 317
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1140422831961106541}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &5558243242796187425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102425105264935277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 318
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 8994525113107400295}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &4102425105836843299
 GameObject:
   m_ObjectHideFlags: 0
@@ -10106,6 +10327,7 @@ Transform:
   - {fileID: 4102425105039681280}
   - {fileID: 4102425105264935274}
   - {fileID: 1565224860440641339}
+  - {fileID: 6212174549434573653}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10236,6 +10458,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &4441684559097890420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6212174549434573653}
+  m_Layer: 0
+  m_Name: Skybox Change Cues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6212174549434573653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4441684559097890420}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.24, y: -102.5, z: -2.5299997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3078445848377283565}
+  - {fileID: 7823446306589399572}
+  - {fileID: 7445076350903832451}
+  - {fileID: 1206240008691357875}
+  - {fileID: 6673147673361527372}
+  - {fileID: 3771148747005656640}
+  m_Father: {fileID: 4102425105836843296}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4454448105504688243
 GameObject:
   m_ObjectHideFlags: 0
@@ -10787,6 +11045,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &6109796314236248351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3771148747005656640}
+  - component: {fileID: 1367184395124621231}
+  m_Layer: 0
+  m_Name: 'Level 5 Music Change '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3771148747005656640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109796314236248351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1367184395124621231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109796314236248351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: c494c335823f54b52b2e87e1b7a63a23, type: 2}
 --- !u!1 &6259920255218691497
 GameObject:
   m_ObjectHideFlags: 0
@@ -11168,3 +11470,47 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8994525113107400295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7445076350903832451}
+  - component: {fileID: 4482841144369709594}
+  m_Layer: 0
+  m_Name: 'Level 2 Music Change '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7445076350903832451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994525113107400295}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6212174549434573653}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4482841144369709594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994525113107400295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyBox: {fileID: 2100000, guid: 85cf0b004bc4a654b9e501efcce47902, type: 2}
