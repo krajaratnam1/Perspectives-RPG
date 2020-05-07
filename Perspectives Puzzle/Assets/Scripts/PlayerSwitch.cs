@@ -39,11 +39,18 @@ public class PlayerSwitch : MonoBehaviour
 
     public float angleEpsilon = 0.0025f, positionEpsilon = 0.1f;
 
+    //OutlineEffect smallCamOutlineEffect;
+
     //check state of fog globally
     public bool fogIsClose = false;
 
+    /*
+    void Awake(){
+        smallCamOutlineEffect = GameObject.Find("Small Camera").GetComponent<OutlineEffect>();
+        smallCamOutlineEffect.enabled = false;
 
-
+    }
+    */
 
     public void Start()
     {
@@ -68,6 +75,7 @@ public class PlayerSwitch : MonoBehaviour
         climbPromptParent = GameObject.Find("Climb Prompt Parent");
         whoosh = GameObject.Find("Whoosh").GetComponent<AudioSource>();
 
+
         SetPlayer(isBigPlayer);
         if (isBigPlayer)
         {
@@ -81,6 +89,8 @@ public class PlayerSwitch : MonoBehaviour
 
         initSmallPlayerPos = smallPlayer.transform.position;
         initBigStatuePos = bigStatue.transform.position;
+
+        //smallCamOutlineEffect.enabled = true;
     }
 
     public void LockMouse()
@@ -196,6 +206,8 @@ public class PlayerSwitch : MonoBehaviour
     public void SwitchPlayers()
     {
         SetPlayer(!isBigPlayer);
+
+        //
 
     }
 
