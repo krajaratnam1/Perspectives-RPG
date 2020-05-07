@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7823446306589399572}
-  - component: {fileID: 3622770090069508921}
+  - component: {fileID: 8657237411872306118}
   m_Layer: 0
   m_Name: Level 1 Music Change
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3622770090069508921
+--- !u!114 &8657237411872306118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,10 +40,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1140422831961106541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkyBox: {fileID: 2100000, guid: 72deae4d18418f94688abef8e8483df0, type: 2}
+  SkyBox: {fileID: 2100000, guid: ec2edf56418e24ec49da4522d3be53d1, type: 2}
 --- !u!1 &1251744346732706669
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3078445848377283565}
-  - component: {fileID: 8252881626363988892}
+  - component: {fileID: 7379601182338952840}
   m_Layer: 0
   m_Name: Level 0 Music Change
   m_TagString: Untagged
@@ -583,7 +583,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8252881626363988892
+--- !u!114 &7379601182338952840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -592,10 +592,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2517655625692270921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkyBox: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
+  SkyBox: {fileID: 2100000, guid: 7fdf09f05601649cab877af96bbe666c, type: 2}
 --- !u!1 &2529222655607546730
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206240008691357875}
-  - component: {fileID: 8091575032340259086}
+  - component: {fileID: 8434344272914109129}
   m_Layer: 0
   m_Name: 'Level 3 Music Change '
   m_TagString: Untagged
@@ -627,7 +627,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8091575032340259086
+--- !u!114 &8434344272914109129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2529222655607546730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SkyBox: {fileID: 2100000, guid: 34ec9556ffe211049b2410ea03850f6e, type: 2}
@@ -649,7 +649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6673147673361527372}
-  - component: {fileID: 5512868835973831185}
+  - component: {fileID: 5525819116812630824}
   m_Layer: 0
   m_Name: 'Level 4 Music Change '
   m_TagString: Untagged
@@ -671,7 +671,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5512868835973831185
+--- !u!114 &5525819116812630824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -680,10 +680,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2865099107551006187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkyBox: {fileID: 2100000, guid: cede08c9fc471e64884909cd4bbeaf59, type: 2}
+  SkyBox: {fileID: 2100000, guid: 3ca15301040c248bbaf25f74072e20cf, type: 2}
 --- !u!1 &3613562203940319006
 GameObject:
   m_ObjectHideFlags: 0
@@ -11054,7 +11054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771148747005656640}
-  - component: {fileID: 1367184395124621231}
+  - component: {fileID: 4416129318968414285}
   m_Layer: 0
   m_Name: 'Level 5 Music Change '
   m_TagString: Untagged
@@ -11076,7 +11076,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1367184395124621231
+--- !u!114 &4416129318968414285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11085,10 +11085,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6109796314236248351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkyBox: {fileID: 2100000, guid: c494c335823f54b52b2e87e1b7a63a23, type: 2}
+  SkyBox: {fileID: 2100000, guid: d60610c6865c44e0293622952216d031, type: 2}
 --- !u!1 &6259920255218691497
 GameObject:
   m_ObjectHideFlags: 0
@@ -11479,7 +11479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7445076350903832451}
-  - component: {fileID: 4482841144369709594}
+  - component: {fileID: 8429776174884412733}
   m_Layer: 0
   m_Name: 'Level 2 Music Change '
   m_TagString: Untagged
@@ -11501,7 +11501,7 @@ Transform:
   m_Father: {fileID: 6212174549434573653}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4482841144369709594
+--- !u!114 &8429776174884412733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11510,7 +11510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8994525113107400295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34d555e6435d4ed7a694cb97af75cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 31be99d4defcc4b4bb69110d3633cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkyBox: {fileID: 2100000, guid: 85cf0b004bc4a654b9e501efcce47902, type: 2}
+  SkyBox: {fileID: 2100000, guid: 6158d4e18a7be47feb675b95b66459c7, type: 2}

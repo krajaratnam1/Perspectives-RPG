@@ -17,7 +17,7 @@ public class FungusTrigger : MonoBehaviour
     {
         playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
-        timeManager = GameObject.Find("Timer").GetComponent<TimestampManager>();
+        //timeManager = GameObject.Find("Timer").GetComponent<TimestampManager>();
 
     }
 
