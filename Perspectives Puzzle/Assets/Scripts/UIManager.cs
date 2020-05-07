@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
 
-    public Text controlText;
+    public GameObject titleCard;
     bool textVisible = true;
 
     // Start is called before the first frame update
@@ -18,17 +18,12 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W) && textVisible){
-            controlText.gameObject.SetActive(false);
-            textVisible = false;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Backslash)){
+        if(Input.GetKeyDown(KeyCode.Tab)){
             if(textVisible){
-                controlText.gameObject.SetActive(false);
+                titleCard.SetActive(false);
                 textVisible = !textVisible;
             } else{
-                controlText.gameObject.SetActive(true);
+                titleCard.SetActive(true);
                 textVisible = !textVisible;
             }
         }

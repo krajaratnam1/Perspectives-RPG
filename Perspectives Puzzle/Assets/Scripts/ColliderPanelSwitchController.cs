@@ -12,6 +12,7 @@ public class ColliderPanelSwitchController : ColliderInteractionController
 
     public ColliderPanelSwitchController friendToSyncWith;
     public bool isUp = false;
+    public float lerpSpeed = 1;
 
     // Start is called before the first frame update
     public void Start()
@@ -40,6 +41,26 @@ public class ColliderPanelSwitchController : ColliderInteractionController
 
     public void MoveSwitch()
     {
-        pSwitchToMove.transform.SetPositionAndRotation(isUp ? newPosition : originalPosition, pSwitchToMove.transform.rotation);
+        //lerp it!
+        StartCoroutine(LerpThing(pSwitchToMove.transform, lerpSpeed, pSwitchToMove.transform.position, isUp ? newPosition : originalPosition));
+
+        //pSwitchToMove.transform.SetPositionAndRotation(isUp ? newPosition : originalPosition, pSwitchToMove.transform.rotation);
+    }
+
+    IEnumerator LerpThing(Transform thing, float waitTime, Vector3 start, Vector3 target){
+         float elapsedTime = 0;
+         
+         while (elapsedTime < waitTime)
+        {
+            thing.position = Vector3.Lerp(start, target, (elapsedTime / waitTime));
+            elapsedTime += Time.deltaTime;
+        
+            // Yield here
+            yield return null;
+        }  
+        // Make sure we got there
+        thing.position = target;
+
+        yield return null;
     }
 }
