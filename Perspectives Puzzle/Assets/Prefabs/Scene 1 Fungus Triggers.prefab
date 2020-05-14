@@ -37,9 +37,101 @@ Transform:
   - {fileID: 3683021453315828407}
   - {fileID: 7902280992920273143}
   - {fileID: 3683021453417726453}
+  - {fileID: 4006740345214919794}
+  - {fileID: 4006740346644938301}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &173190747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 556865184326193094}
+    m_Modifications:
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 116.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger End Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: bigPlayerBlock
+      value: End Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922087, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5103e8734b3774253a3123748c433b13, type: 3}
+--- !u!4 &4006740346644938301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 173190747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &613049561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47,16 +139,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 0 - 1 Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,6 +194,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 0 - 1 Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: bigPlayerBlock
@@ -145,6 +237,91 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 613049561}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1366258708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 556865184326193094}
+    m_Modifications:
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger End Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: smallPlayerBlock
+      value: End Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922087, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5103e8734b3774253a3123748c433b13, type: 3}
+--- !u!4 &4006740345214919794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1366258708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326077087074761127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,16 +329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 2 - 3 Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,6 +384,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 2 - 3 Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: pushingBlock
@@ -252,11 +429,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 0 - 1 Small
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -312,6 +484,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 0 - 1 Small
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: smallPlayerBlock
@@ -347,16 +524,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 4 - 5 Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -412,6 +579,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 4 - 5 Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: pushingBlock
@@ -447,16 +624,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 3 - 4 Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -512,6 +679,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 3 - 4 Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: pushingBlock
@@ -547,16 +724,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 1 - 2 Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -612,6 +779,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 1 - 2 Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: pushingBlock
@@ -647,11 +824,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 3 - 4 Small
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -707,6 +879,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 3 - 4 Small
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: smallPlayerBlock
@@ -742,11 +919,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 2 - 3 Small
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -802,6 +974,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 2 - 3 Small
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: smallPlayerBlock
@@ -837,11 +1014,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 4 - 5 Small
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -897,6 +1069,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 4 - 5 Small
+      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: smallPlayerBlock
@@ -932,11 +1109,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556865184326193094}
     m_Modifications:
-    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
-        type: 3}
-      propertyPath: m_Name
-      value: Fungus Trigger 1 - 2 Small
-      objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922086, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,6 +1163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006740346538922085, guid: 5103e8734b3774253a3123748c433b13,
+        type: 3}
+      propertyPath: m_Name
+      value: Fungus Trigger 1 - 2 Small
       objectReference: {fileID: 0}
     - target: {fileID: 4006740346538922080, guid: 5103e8734b3774253a3123748c433b13,
         type: 3}
