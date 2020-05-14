@@ -13,9 +13,13 @@ public class PressurePlate : MonoBehaviour
     MeshRenderer mr;
     public int weight = 0;
 
+    //Animator
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        /*
         mr = gameObject.GetComponent<MeshRenderer>();
         if (highlightColor.a <= 0) // if highlight color not specified
         {
@@ -28,9 +32,10 @@ public class PressurePlate : MonoBehaviour
         {
             mr.material.SetColor("_Color", baseColor);
         }
+        */
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
         
-        
+        anim = gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -38,7 +43,7 @@ public class PressurePlate : MonoBehaviour
     {
         if (weight > 0)
         {
-            mr.material.SetColor("_Color", highlightColor);
+            //mr.material.SetColor("_Color", highlightColor);
 
             
             if (toDisappear != null)
@@ -52,7 +57,7 @@ public class PressurePlate : MonoBehaviour
             }
         } else
         {
-            mr.material.SetColor("_Color", baseColor);
+            //mr.material.SetColor("_Color", baseColor);
             /*if (toDisappear != null)
             {
                 toDisappear.SetActive(true);
@@ -69,6 +74,11 @@ public class PressurePlate : MonoBehaviour
     {
         if(other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null || other.GetComponent<CharacterController>() != null)
         {
+            //Animator
+            if(anim != null){
+                anim.SetBool("Play", true);
+            }
+
             weight++;
             if (toDisappear != null)
             {
@@ -84,6 +94,12 @@ public class PressurePlate : MonoBehaviour
     {
         if (other.GetComponent<MovementController>() != null || other.GetComponent<ClimbableObject>() != null || other.GetComponent<PushableObject>() != null || other.GetComponent<CharacterController>() != null)
         {
+
+            //Animator
+            if(anim != null){
+                anim.SetBool("Play", false);
+            }
+
             weight--;
             if(weight <= 0)
             {

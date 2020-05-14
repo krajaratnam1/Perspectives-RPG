@@ -8,23 +8,32 @@ public abstract class ColliderInteractionController : MonoBehaviour
     public UnityAction MethodToCall;
     public KeyCode KeyInput;
     public PlayerSwitch playerSwapSystem;
-    public Color baseColor;
-    public Color highlightColor;
+    //public Color baseColor;
+    //public Color highlightColor;
     public float highlightTimeout = 0.3f;
     public string selected = "";
     float timer = 0; // time out to dehighlight button
+
+    //Animator
+    Animator anim;
 
     // Start is called before the first frame update
     public void Start()
     {
         //playerSwapSystem = GameObject.FindWithTag("PlayerSwap").GetComponent<PlayerSwitch>();
-        MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-        baseColor = objectHitRenderer.material.GetColor("_Color");
+        //MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+        //baseColor = objectHitRenderer.material.GetColor("_Color");
         playerSwapSystem = GameObject.Find("PlayerSwitch").GetComponent<PlayerSwitch>();
+
+        //Animator
+        anim = gameObject.GetComponentInChildren<Animator>();
+
+        /*
         if (highlightColor.a <= 0)
         {
             highlightColor = new Color(1, 1, 1, 1); // default highlight color will be white
         }
+        */
 
         if (KeyInput == KeyCode.F) // this is for climbing; can't be the same as buttons!
         {
@@ -35,10 +44,10 @@ public abstract class ColliderInteractionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer > 0.3f) // timed out
+        if (timer > highlightTimeout) // timed out
         {
-            MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-            objectHitRenderer.material.SetColor("_Color", baseColor);
+            //MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+            //objectHitRenderer.material.SetColor("_Color", baseColor);
             selected = "";
         }
         else
@@ -76,9 +85,14 @@ public abstract class ColliderInteractionController : MonoBehaviour
 
         if (CheckColliderIsPlayer(other))
         {
-            MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-            objectHitRenderer.material.SetColor("_Color", highlightColor);
+            //MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+            //objectHitRenderer.material.SetColor("_Color", highlightColor);
             selected = other.name;
+
+            //Animator
+            if(anim != null){
+                anim.SetBool("Play", true);
+            }
         }
     }
 
@@ -102,9 +116,14 @@ public abstract class ColliderInteractionController : MonoBehaviour
 
         if (CheckColliderIsPlayer(other))
         {
-            MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-            objectHitRenderer.material.SetColor("_Color", baseColor);
+            //MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+            //objectHitRenderer.material.SetColor("_Color", baseColor);
             selected = "";
+
+            //Animator
+            if(anim != null){
+                anim.SetBool("Play", false);
+            }
         }
     }
 
@@ -118,8 +137,8 @@ public abstract class ColliderInteractionController : MonoBehaviour
                 if (selected != other.name)
                 {
                     selected = other.name;
-                    MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
-                    objectHitRenderer.material.SetColor("_Color", highlightColor);
+                    //MeshRenderer objectHitRenderer = this.GetComponent<MeshRenderer>();
+                    //objectHitRenderer.material.SetColor("_Color", highlightColor);
                 }
             }
             /*if (Input.GetKeyUp(KeyInput) && playerSwapSystem.fadeDir == 0)
